@@ -1,7 +1,6 @@
 <template>
   <div>
     <top-header></top-header>
-    <p>aaaa</p>
   </div>
 </template>
 
