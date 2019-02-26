@@ -1,15 +1,21 @@
 <template>
   <div>
-    <top-header></top-header>
+    <top-visual/>
+    <search/>
+    <top-message/>
   </div>
 </template>
 
 <script>
-import TopHeader from "../components/TopHeader";
+import TopVisual from "../components/TopVisual";
+import Search from "../components/Search";
+import TopMessage from "../components/TopMessage";
 
 export default {
   components: {
-    TopHeader
+    TopVisual,
+    Search,
+    TopMessage
   }
 };
 </script>

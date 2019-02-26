@@ -1,12 +1,19 @@
 <template>
   <div>
     <!-- <p>App.vue</p> -->
+    <top-header></top-header>
     <router-view></router-view>
   </div>
 </template>
  
 <script>
-export default {};
+import TopHeader from "./components/TopHeader";
+
+export default {
+  components: {
+    TopHeader
+  }
+};
 </script>
 
  

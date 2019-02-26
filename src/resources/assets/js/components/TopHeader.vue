@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
           <img src="../store/images/kifuruka_logo.png" alt="がっこう寄付納税サイト【きふるか】" decoding="async">
