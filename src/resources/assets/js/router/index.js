@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Top from '../pages/TheTop';
+import Register from '../pages/Register';
 
 Vue.use(VueRouter);
 
@@ -8,6 +9,10 @@ const routes = [
     {
         path: '/',
         component: Top
+    },
+    {
+        path: '/register',
+        component: Register
     }
 ];
 

@@ -30,7 +30,7 @@
             <strong>新規登録</strong>
           </router-link>
           <div class="navbar-item">
-            <div class>
+            <div>
               <router-link to="/login" class="button is-medium custom-btn">
                 <strong>ログイン</strong>
               </router-link>
