@@ -1,9 +1,8 @@
-# Laradev - simple development environment for Docker
-
+# kifuruka
+## Laradev - simple development environment for Docker
 ## usage
 
 ```bash
-git clone git@github.com:taichi0529/laradev.git
-cd laradev
+git clone https://github.com/kifuruka/kifuruka.git
 ./start.sh
 ```
