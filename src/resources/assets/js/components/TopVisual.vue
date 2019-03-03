@@ -4,7 +4,9 @@
       <!-- 左 -->
       <div class="tile is-parent parent-frame">
         <div class="tile is-child">
-          <img :src="Homeimg1" class="u-img" alt="#">
+          <router-link to="/Donation">
+            <img :src="Homeimg1" class="u-img" alt="#">
+          </router-link>
         </div>
       </div>
       <!-- 右 -->
@@ -13,7 +15,7 @@
           <div class="tile is-ancestor">
             <div class="tile is-parent upper-frame">
               <div class="tile is-child is-6 grandson-frame" style="margin-bottom:0;">
-                <img :src="Homeimg2" class="u-img" alt="#">
+                <img :src="Homeimg2" class="u-img" alt>
               </div>
               <div class="tileis-child is-6">
                 <img :src="Homeimg3" class="u-img" alt="#">

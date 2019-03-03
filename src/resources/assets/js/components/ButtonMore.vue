@@ -35,6 +35,13 @@ section {
       width: 6.3em;
       border-color: #ffe035;
     }
+
+    .facebook {
+      background-color: #3b5998;
+      color: white;
+      width: 90%;
+      border-color: #3b5998;
+    }
   }
 }
 </style>

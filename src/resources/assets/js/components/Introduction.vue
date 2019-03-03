@@ -103,7 +103,7 @@ section {
 
   .container {
     // background-color: #212121;
-
+    max-width: 1160px;
     .info-title {
       max-width: 1120px;
       margin: 0 auto;

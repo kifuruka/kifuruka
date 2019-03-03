@@ -143,14 +143,13 @@ export default {
     };
   },
   mounted() {
-    axios
-      .get
-      // "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"
-      ()
-      .then(response => {
+    axios.get;
+    "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"().then(
+      response => {
         response.data.shift(); //スプレッドシートの1行目は日本語の列名だから除く
         this.info = response.data;
-      });
+      }
+    );
   }
 };
 </script>
@@ -163,11 +162,12 @@ section {
 }
 .container {
   display: flex;
-  margin-right: 20px;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
 .card {
-  margin: 0 16px;
+  margin: 0 24px;
 }
 .card_image_container {
   position: relative;
