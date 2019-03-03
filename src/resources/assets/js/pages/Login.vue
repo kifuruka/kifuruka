@@ -1,23 +1,22 @@
 <template>
   <div>
     <message-title :message="message"/>
-    <register-form/>
+    <login-form/>
   </div>
 </template>
 
 <script>
 import MessageTitle from "../components/MessageTitle";
-import RegisterForm from "../components/RegisterForm";
+import LoginForm from "../components/LoginForm";
 export default {
   data() {
     return {
-      message: "新規登録"
+      message: "ログイン"
     };
   },
   components: {
     MessageTitle,
-    RegisterForm
+    LoginForm
   }
 };
 </script>
-
