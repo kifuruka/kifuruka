@@ -1,20 +1,23 @@
 <template>
   <div>
     <detail-school-top/>
-    <donation-main/>
-    <school-sub-info/>
+    <detail-school-main-title/>
+    <detail-school-active-title/>
+    <activity-card/>
   </div>
 </template>
 
 <script>
 import DetailSchoolTop from "../components/DetailSchoolTop";
-import DonationMain from "../components/DonationMain";
-import SchoolSubInfo from "../components/SchoolSubInfo";
+import DetailSchoolMainTitle from "../components/DetailSchoolMainTitle";
+import DetailSchoolActiveTitle from "../components/DetailSchoolActiveTitle";
+import ActivityCard from "../components/ActivityCard";
 export default {
   components: {
     DetailSchoolTop,
-    DonationMain,
-    SchoolSubInfo
+    DetailSchoolMainTitle,
+    DetailSchoolActiveTitle,
+    ActivityCard
   }
 };
 </script>
