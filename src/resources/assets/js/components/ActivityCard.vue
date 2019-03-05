@@ -1,75 +1,176 @@
 <template>
   <section>
-        <div class="card" style="width:30%">
-            <div calss="card_image_container" style="position: relative;">
-                <div class="card-image item item--first">
-                    <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" class="card-img-top" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="school_msg has-text-centered">
-                    <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
-                    <p class="subtitle is-6  is-size-7-mobile school_message">全国制覇したい</p>
-                </div>
-            </div>
-            <div class="card-content">
-                <p class="subtitle is-6 has-text-centered">近畿大学</p>
-            </div>
-            <div class="columns detail">
-                <div class="column">
-                    <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額<br><strong>{{ amount }}円〜</strong></p>
-                </div>
-                <div class="column">
-                    <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数<br><strong>{{ supporter }}人</strong></p>
-                </div>
-                <div class="column">
-                    <p class="card-text col has-text-centered" style="font-size:0.9rem">残り<br><strong>{{ days }}日</strong></p>
-                </div>
-            </div>
-       </div>
+    <div class="container flex-flame">
+      <!-- カード１ -->
+      <div class="card" style="width:30%">
+        <div calss="card_image_container" style="position: relative;">
+          <div class="card-image item item--first">
+            <figure class="image is-4by3">
+              <img
+                src="https://bulma.io/images/placeholders/1280x960.png"
+                class="card-img-top"
+                alt="Placeholder image"
+              >
+            </figure>
+          </div>
+          <div class="school_msg has-text-centered">
+            <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+            <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="subtitle is-6 has-text-centered">近畿大学</p>
+        </div>
+        <div class="columns detail">
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
+              <br>
+              <strong>{{ amount }}円〜</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
+              <br>
+              <strong>{{ supporter }}人</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
+              <br>
+              <strong>{{ days }}日</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- カード２ -->
+      <div class="card" style="width:30%">
+        <div calss="card_image_container" style="position: relative;">
+          <div class="card-image item item--first">
+            <figure class="image is-4by3">
+              <img
+                src="https://bulma.io/images/placeholders/1280x960.png"
+                class="card-img-top"
+                alt="Placeholder image"
+              >
+            </figure>
+          </div>
+          <div class="school_msg has-text-centered">
+            <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+            <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="subtitle is-6 has-text-centered">近畿大学</p>
+        </div>
+        <div class="columns detail">
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
+              <br>
+              <strong>{{ amount }}円〜</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
+              <br>
+              <strong>{{ supporter }}人</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
+              <br>
+              <strong>{{ days }}日</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- カード３ -->
+      <div class="card" style="width:30%">
+        <div calss="card_image_container" style="position: relative;">
+          <div class="card-image item item--first">
+            <figure class="image is-4by3">
+              <img
+                src="https://bulma.io/images/placeholders/1280x960.png"
+                class="card-img-top"
+                alt="Placeholder image"
+              >
+            </figure>
+          </div>
+          <div class="school_msg has-text-centered">
+            <p class="title is-7 is-size-7-mobile school_name">近畿大学</p>
+            <p class="subtitle is-6 is-size-7-mobile school_message">全国制覇したい</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="subtitle is-6 has-text-centered">近畿大学</p>
+        </div>
+        <div class="columns detail">
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
+              <br>
+              <strong>{{ amount }}円〜</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
+              <br>
+              <strong>{{ supporter }}人</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
+              <br>
+              <strong>{{ days }}日</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment-with-locales.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone.min.js"></script>
-
 <script>
 export default {
-    data () {
-        return {
-            info: null,
-            image: 'https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg',
-            school_name: "近畿大学",
-            message: "車椅子バスケを広めたい",
-            amount:100,
-            supporter:10,
-            days:5
-
-        }
-    },
-    mounted () {
-        axios
-            .get('https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec')
-            .then(response => {
-                response.data.shift();//スプレッドシートの1行目は日本語の列名だから除く
-                this.info = response.data
-            })
-    }
-}
+  data() {
+    return {
+      info: null,
+      image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg",
+      school_name: "近畿大学",
+      message: "車椅子バスケを広めたい",
+      amount: 100,
+      supporter: 10,
+      days: 5
+    };
+  },
+  mounted() {
+    axios.get;
+    "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"().then(
+      response => {
+        response.data.shift(); //スプレッドシートの1行目は日本語の列名だから除く
+        this.info = response.data;
+      }
+    );
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 81px;
+}
 .container {
-    display:inline-block;
-    margin-right: 20px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
-.card_image_container{
-    position: relative;
+.card {
+  margin: 0 24px;
+}
+.card_image_container {
+  position: relative;
 }
 
 .item {
@@ -77,9 +178,10 @@ export default {
   overflow: hidden;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
- 
-.item:after {/*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/
-  content: '';
+
+.item:after {
+  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -90,51 +192,53 @@ export default {
 }
 
 .item--first:after {
-  background-image: linear-gradient(to bottom,transparent 0%,transparent 10%,#212529);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 10%,
+    #212529
+  );
 }
 
-.school_msg{
+.school_msg {
   position: absolute;
   color: white;
   top: 80%;
   left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 
-.school_name{
+.school_name {
   position: relative;
   display: inline-block;
   color: white;
   border-bottom-style: solid;
-  border-bottom-color: #FFE035;
+  border-bottom-color: #ffe035;
   padding-bottom: 2%;
   margin-bottom: 3em;
   font-size: 0.5rem;
 }
 
-.school_message{
-    color: white;
+.school_message {
+  color: white;
 }
-.card-body-school_name{
-    margin: -5%;
-    /* border-bottom:dotted; 
+.card-body-school_name {
+  margin: -5%;
+  /* border-bottom:dotted; 
     border-bottom-width: 10%; */
 }
 
-.detail{
+.detail {
   padding: -0.5rem;
-
 }
 
-.card-text{
-   color: #707070;
+.card-text {
+  color: #707070;
 }
-
-    
 
 // section {
 //   max-width: 1160px;
