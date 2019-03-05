@@ -4,6 +4,7 @@ import Top from '../pages/TheTop';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Donation from '../pages/Donation';
+import DetailSchool from '../pages/DetailSchool';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,10 @@ const routes = [
     {
         path: '/donation',
         component: Donation
+    },
+    {
+        path: '/DetailSchool',
+        component: DetailSchool
     }
 
 ];
