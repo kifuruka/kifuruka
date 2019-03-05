@@ -1905,6 +1905,138 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMain1.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus1_jpg__ = __webpack_require__("./resources/assets/images/SchoolCampus/aoyama_campus1.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus1_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus1_jpg__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      SchoolCampus: __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus1_jpg___default.a
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMain2.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus2_jpg__ = __webpack_require__("./resources/assets/images/SchoolCampus/aoyama_campus2.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus2_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus2_jpg__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      SchoolCampus: __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_campus2_jpg___default.a
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMain3.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_active01_jpg__ = __webpack_require__("./resources/assets/images/SchoolCampus/aoyama_active01.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_active01_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_active01_jpg__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      SchoolActive: __WEBPACK_IMPORTED_MODULE_0__images_SchoolCampus_aoyama_active01_jpg___default.a
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMainTitle.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2962,10 +3094,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_DetailSchoolTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_DetailSchoolTop__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_DetailSchoolMainTitle__ = __webpack_require__("./resources/assets/js/components/DetailSchoolMainTitle.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_DetailSchoolMainTitle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_DetailSchoolMainTitle__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolActiveTitle__ = __webpack_require__("./resources/assets/js/components/DetailSchoolActiveTitle.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolActiveTitle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolActiveTitle__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_ActivityCard__ = __webpack_require__("./resources/assets/js/components/ActivityCard.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_ActivityCard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_ActivityCard__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolMain1__ = __webpack_require__("./resources/assets/js/components/DetailSchoolMain1.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolMain1___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolMain1__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_DetailSchoolMain2__ = __webpack_require__("./resources/assets/js/components/DetailSchoolMain2.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_DetailSchoolMain2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_DetailSchoolMain2__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_DetailSchoolMain3__ = __webpack_require__("./resources/assets/js/components/DetailSchoolMain3.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_DetailSchoolMain3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_DetailSchoolMain3__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_DetailSchoolActiveTitle__ = __webpack_require__("./resources/assets/js/components/DetailSchoolActiveTitle.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_DetailSchoolActiveTitle___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_DetailSchoolActiveTitle__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_ActivityCard__ = __webpack_require__("./resources/assets/js/components/ActivityCard.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_ActivityCard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_ActivityCard__);
 //
 //
 //
@@ -2975,6 +3113,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+
+
+
 
 
 
@@ -2984,8 +3128,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   components: {
     DetailSchoolTop: __WEBPACK_IMPORTED_MODULE_0__components_DetailSchoolTop___default.a,
     DetailSchoolMainTitle: __WEBPACK_IMPORTED_MODULE_1__components_DetailSchoolMainTitle___default.a,
-    DetailSchoolActiveTitle: __WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolActiveTitle___default.a,
-    ActivityCard: __WEBPACK_IMPORTED_MODULE_3__components_ActivityCard___default.a
+    DetailSchoolMain1: __WEBPACK_IMPORTED_MODULE_2__components_DetailSchoolMain1___default.a,
+    DetailSchoolMain2: __WEBPACK_IMPORTED_MODULE_3__components_DetailSchoolMain2___default.a,
+    DetailSchoolMain3: __WEBPACK_IMPORTED_MODULE_4__components_DetailSchoolMain3___default.a,
+    DetailSchoolActiveTitle: __WEBPACK_IMPORTED_MODULE_5__components_DetailSchoolActiveTitle___default.a,
+    ActivityCard: __WEBPACK_IMPORTED_MODULE_6__components_ActivityCard___default.a
   }
 });
 
@@ -3181,7 +3328,7 @@ exports.push([module.i, "\nsection[data-v-14695c3e] {\n  padding: 128px 24px;\n}
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 
@@ -3380,6 +3527,39 @@ exports.push([module.i, "\nfooter[data-v-bbf831ae] {\n  display: -webkit-box;\n 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, "\nsection[data-v-c8b3a85a] {\n  padding-top: 3%;\n  padding-bottom: 3%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-c8b3a85a] {\n    max-width: 1160px;\n}\nsection .container p[data-v-c8b3a85a] {\n      text-align: center;\n      font-size: 1.5rem;\n      font-weight: bold;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eca10464\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain3.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\nsection .container[data-v-eca10464] {\n  max-width: 1160px;\n  margin: 80px auto;\n}\nsection .container h2[data-v-eca10464] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecbd3366\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain2.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\nsection[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  padding-bottom: 0.5%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-ecbd3366] {\n    max-width: 1160px;\n    margin-top: 80px;\n    margin-bottom: 80px;\n}\nsection .container h2[data-v-ecbd3366] {\n      font-size: 1.5rem;\n      font-weight: bold;\n      text-align: left;\n      padding-bottom: 2%;\n}\n@media screen and (max-width: 768px) {\n.is-parent[data-v-ecbd3366] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.is-parent[data-v-ecbd3366] {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.order-1[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1;\n}\n.order-2[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n}\n.order-3[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3;\n}\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecd96268\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain1.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n", ""]);
 
 
 
@@ -22333,6 +22513,12 @@ var render = function() {
       _vm._v(" "),
       _c("detail-school-main-title"),
       _vm._v(" "),
+      _c("detail-school-main1"),
+      _vm._v(" "),
+      _c("detail-school-main2"),
+      _vm._v(" "),
+      _c("detail-school-main3"),
+      _vm._v(" "),
       _c("detail-school-active-title"),
       _vm._v(" "),
       _c("activity-card")
@@ -24292,6 +24478,210 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-eb7fdcbe", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-eca10464\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/DetailSchoolMain3.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", [
+    _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "tile is-ancestor" }, [
+        _c("div", { staticClass: "tile is-parent" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "tile is-child is-1" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "tile is-child is-6" }, [
+            _c(
+              "div",
+              { staticClass: "img-flame" },
+              [
+                _c("router-link", { attrs: { to: "/" } }, [
+                  _c("img", {
+                    staticClass: "u-img",
+                    attrs: { src: _vm.SchoolActive, alt: "#" }
+                  })
+                ])
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("h2", [_vm._v("寄附の取り組みについて")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tile is-child is-5" }, [
+      _c("div", { staticClass: "school_text" }, [
+        _c("p", [
+          _vm._v(
+            "青山学院大学は、「青山学院教育方針」に立脚した、 神と人とに仕え社会に貢献する 「地の塩、世の光」としての教育研究共同体である。 本学は、地球規模の視野にもとづく正しい認識をもって 自ら問題を発見し解決する知恵と力をもつ人材を育成する。 それは、人類への奉仕をめざす自由で幅広い学問研究を通してなされる。 本学のすべての教員、職員、学生は、 相互の人格を尊重し、建学以来の伝統を重んじつつ、 おのおのの立場において、 時代の要請に応えうる大学の創出に努める。"
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-eca10464", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ecbd3366\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/DetailSchoolMain2.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "tile is-ancestor" }, [
+        _c("div", { staticClass: "tile is-parent" }, [
+          _c("div", { staticClass: "tile is-child is-6 order-3" }, [
+            _c(
+              "div",
+              { staticClass: "img-flame" },
+              [
+                _c("router-link", { attrs: { to: "/" } }, [
+                  _c("img", {
+                    staticClass: "u-img",
+                    attrs: { src: _vm.SchoolCampus, alt: "#" }
+                  })
+                ])
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "tile is-child is-1 order-2" }),
+          _vm._v(" "),
+          _vm._m(0)
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tile is-child is-5 order-1" }, [
+      _c("div", { staticClass: "school_text" }, [
+        _c("h2", [_vm._v("当校の活動について")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "青山学院大学は、「青山学院教育方針」に立脚した、 神と人とに仕え社会に貢献する 「地の塩、世の光」としての教育研究共同体である。 本学は、地球規模の視野にもとづく正しい認識をもって 自ら問題を発見し解決する知恵と力をもつ人材を育成する。 それは、人類への奉仕をめざす自由で幅広い学問研究を通してなされる。 本学のすべての教員、職員、学生は、 相互の人格を尊重し、建学以来の伝統を重んじつつ、 おのおのの立場において、 時代の要請に応えうる大学の創出に努める。"
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ecbd3366", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ecd96268\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/DetailSchoolMain1.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", [
+    _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "tile is-ancestor" }, [
+        _c("div", { staticClass: "tile is-parent" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "tile is-child is-1" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "tile is-child is-6" }, [
+            _c(
+              "div",
+              { staticClass: "img-flame" },
+              [
+                _c("router-link", { attrs: { to: "/" } }, [
+                  _c("img", {
+                    staticClass: "u-img",
+                    attrs: { src: _vm.SchoolCampus, alt: "#" }
+                  })
+                ])
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("h2", [_vm._v("学校の特長")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tile is-child is-5" }, [
+      _c("div", { staticClass: "school_text" }, [
+        _c("p", [
+          _vm._v(
+            "青山学院大学は、「青山学院教育方針」に立脚した、 神と人とに仕え社会に貢献する 「地の塩、世の光」としての教育研究共同体である。 本学は、地球規模の視野にもとづく正しい認識をもって 自ら問題を発見し解決する知恵と力をもつ人材を育成する。 それは、人類への奉仕をめざす自由で幅広い学問研究を通してなされる。 本学のすべての教員、職員、学生は、 相互の人格を尊重し、建学以来の伝統を重んじつつ、 おのおのの立場において、 時代の要請に応えうる大学の創出に努める。"
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ecd96268", module.exports)
   }
 }
 
@@ -27492,6 +27882,87 @@ if(false) {
  if(!content.locals) {
    module.hot.accept("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c8b3a85a\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMainTitle.vue", function() {
      var newContent = require("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c8b3a85a\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMainTitle.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eca10464\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain3.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eca10464\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain3.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6fe73bfe", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eca10464\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMain3.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eca10464\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMain3.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecbd3366\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain2.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecbd3366\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain2.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1aa9454e", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecbd3366\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMain2.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecbd3366\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMain2.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecd96268\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain1.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecd96268\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain1.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("e38faac2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecd96268\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMain1.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecd96268\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DetailSchoolMain1.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40861,10 +41332,31 @@ module.exports = "/images/message3.png?74f02c6bb256efdf0c28f388451ca502";
 
 /***/ }),
 
+/***/ "./resources/assets/images/SchoolCampus/aoyama_active01.jpg":
+/***/ (function(module, exports) {
+
+module.exports = "/images/aoyama_active01.jpg?554117f4c7b17c19ba9030f5bcd40342";
+
+/***/ }),
+
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus.jpg":
 /***/ (function(module, exports) {
 
 module.exports = "/images/aoyama_campus.jpg?e19a9228c98c97d0acb2e435b44138f5";
+
+/***/ }),
+
+/***/ "./resources/assets/images/SchoolCampus/aoyama_campus1.jpg":
+/***/ (function(module, exports) {
+
+module.exports = "/images/aoyama_campus1.jpg?2759e5ef5868f74f9b2823b52994f7b8";
+
+/***/ }),
+
+/***/ "./resources/assets/images/SchoolCampus/aoyama_campus2.jpg":
+/***/ (function(module, exports) {
+
+module.exports = "/images/aoyama_campus2.jpg?9d29ed023c83d59db3658b80f75d055d";
 
 /***/ }),
 
@@ -41289,6 +41781,162 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-aeadbbb4", Component.options)
   } else {
     hotAPI.reload("data-v-aeadbbb4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/DetailSchoolMain1.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecd96268\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain1.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMain1.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ecd96268\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/DetailSchoolMain1.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-ecd96268"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/DetailSchoolMain1.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ecd96268", Component.options)
+  } else {
+    hotAPI.reload("data-v-ecd96268", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/DetailSchoolMain2.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ecbd3366\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain2.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMain2.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ecbd3366\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/DetailSchoolMain2.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-ecbd3366"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/DetailSchoolMain2.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ecbd3366", Component.options)
+  } else {
+    hotAPI.reload("data-v-ecbd3366", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/components/DetailSchoolMain3.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eca10464\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/DetailSchoolMain3.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/DetailSchoolMain3.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-eca10464\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/DetailSchoolMain3.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-eca10464"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/DetailSchoolMain3.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-eca10464", Component.options)
+  } else {
+    hotAPI.reload("data-v-eca10464", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
