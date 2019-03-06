@@ -44,13 +44,8 @@ section {
         font-size: 1.5rem;
         font-weight: bold;
         text-align: left;
-        // padding-left:2%;
         padding-bottom: 2%;
     }
   }
 }
-.school_text{
-    // padding-left:5%
-}
-
 </style>
