@@ -3,6 +3,14 @@
     <div class="feature" id="app">
         <h2>参加学校</h2>
 
+            <slick
+            ref="slick"
+            :options="slickOptions">
+            <div v-for="(image, index) in images" :key="index" class="image-thumb">
+                <img :src="image.first_image_url">
+            </div>
+            </slick>
+
         <carousel class="container_feature" v-bind:per-page=4>
             <slide class="item" v-for='(value, i) in 4' :key='i'>
             <!-- <slide class="item" v-for="i in info.length"> -->
@@ -20,10 +28,9 @@
             </slide>
         </carousel>
 
-        <!-- <carousel class="container_feature" v-bind:per-page=4>
-            <slide class="item" v-for='(value, i) in info.length' :key='i'> -->
-            <!-- <slide class="item" v-for="i in info.length"> -->
-                <!-- <a href="http://webcreatorbox.com/about">
+         <carousel class="container_feature" v-bind:per-page=4>
+            <slide class="item" v-for='(value, i) in info.length' :key='i'>
+                 <a href="http://webcreatorbox.com/about">
                     <section class="card">
                         <div class="card-content">
                             <h3 class="card-title">{{ info[i-1].school_name }}</h3>
@@ -35,34 +42,90 @@
                     </section>
                 </a>
             </slide>
-        </carousel> -->
+        </carousel>
     </div>
   </section>
 </template>
 
 
-
-
 <script>
 
-export default {
-    // data () {
-    //     return {
-    //         info: null
-    //     }
-    // },
-    // components: {
-    //     'carousel': VueCarousel.Carousel,
-    //     'slide': VueCarousel.Slide
-    // },
-    // mounted () {
-    //     axios
-    //         .get('https://script.google.com/macros/s/AKfycbx7EQYeIRZzh1P42JDWBsqCVQPEcnum4FU2Qy6_ta4-ofRe19eh/exec')
-    //         .then(response => {
-    //             this.info = response.data
-    //         })
-    // }
-}
+    // vue-slickをインポート
+    import Slick from 'vue-slick';
+    export default {
+        // bladeから受け取るデータを指定
+        props: ['images'],
+        // コンポーネント使用の宣言
+        components: { Slick },
+        data() {
+            return {
+                // slickの設定
+                slickOptions: {
+                    autoplay: true,
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 6,
+                    slidesToScroll: 3,
+                    responsive: [
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 2
+                            }
+                        },
+                    ]
+                },
+            };
+        },
+        methods: {
+            next() {
+                this.$refs.slick.next();
+            },
+            prev() {
+                this.$refs.slick.prev();
+            },
+            reInit() {
+                this.$nextTick(() => {
+                    this.$refs.slick.reSlick();
+                });
+            },
+        },
+    }
+
+// import VueCarousel from "https://ssense.github.io/vue-carousel/js/vue-carousel.min.js";
+// import Axios from "https://unpkg.com/axios/dist/axios.min.js";
+// import Moment from "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js";
+// import MomentWithLocales from "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment-with-locales.min.js";
+// import MomentTimezone from "https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone.min.js";
+// import axios from 'axios';
+
+// export default {
+//     data () {
+//         return {
+//             info: null
+//         }
+//     },
+//     components: {
+//         // 'carousel': VueCarousel.Carousel,
+//         // 'slide': VueCarousel.Slide
+//     },
+//     mounted () {
+//         axios
+//             .get('https://script.google.com/macros/s/AKfycbx7EQYeIRZzh1P42JDWBsqCVQPEcnum4FU2Qy6_ta4-ofRe19eh/exec')
+//             .then(response => {
+//                 this.info = response.data
+//             })
+//     }
+// }
 </script>
 
 <style lang="scss" scoped>
