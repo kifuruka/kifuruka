@@ -1,19 +1,19 @@
 <template>
   <div>
     <settlement-top/>
-    <entory-school/>
+    <settlement-form/>
     <school-sub-info/>
   </div>
 </template>
 
 <script>
 import SettlementTop from "../components/SettlementTop";
-import EntorySchool from "../components/EntorySchool";
+import SettlementForm from "../components/SettlementForm";
 import SchoolSubInfo from "../components/SchoolSubInfo";
 export default {
   components: {
     SettlementTop,
-    EntorySchool,
+    SettlementForm,
     SchoolSubInfo
   }
 };
