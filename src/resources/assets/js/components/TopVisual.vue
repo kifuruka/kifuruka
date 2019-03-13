@@ -33,11 +33,14 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapActions } from "vuex";
 import Homeimg1 from "../../images/topvisual/top001.jpg";
 import Homeimg2 from "../../images/topvisual/top002.jpg";
 import Homeimg3 from "../../images/topvisual/top003.jpg";
 import Homeimg4 from "../../images/topvisual/top4.jpg";
+
 export default {
+  // あとでデータを引っ張ってくるまで載せておく
   data() {
     return {
       Homeimg1,
@@ -45,6 +48,22 @@ export default {
       Homeimg3,
       Homeimg4
     };
+  },
+
+  mounted: function() {
+    // `this` は vm インスタンスを指します
+    getimages();
+  },
+
+  methods: {
+    // ...はスプレットオペレーター
+    ...mapActions(["fetchPostTopVisual"]),
+
+    getimages() {
+      this.fetchPostTopVisual();
+    }
+    // 画像を表示させる
+    // Vuexを使って写真を表示させる
   }
 };
 </script>

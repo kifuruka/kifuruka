@@ -46,7 +46,7 @@
                 </div>
                 <div class="media card-flame">
                   <div class="media-content">
-                    <router-link to="/" class="button is-medium custom-btn">
+                    <router-link to="/DonationDetails" class="button is-medium custom-btn">
                       <strong>この寄付を選ぶ</strong>
                     </router-link>
                   </div>

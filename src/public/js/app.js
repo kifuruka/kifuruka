@@ -1648,7 +1648,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -1667,6 +1666,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__("./node_modules/axios/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
 //
@@ -1798,6 +1799,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1814,7 +1816,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     var _this = this;
 
-    axios.get;
+    __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get;
     "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"().then(function (response) {
       response.data.shift(); //スプレッドシートの1行目は日本語の列名だから除く
       _this.info = response.data;
@@ -1855,9 +1857,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
 //
 //
 //
@@ -2191,7 +2190,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      DonationImg: __WEBPACK_IMPORTED_MODULE_0__images_donation_d_kin_rag_top_jpg___default.a
+      DonationImg: __WEBPACK_IMPORTED_MODULE_0__images_donation_d_kin_rag_top_jpg___default.a,
+      activitytitle: "インカレ総合優勝を目指して",
+      clubname: "東海大学スキー部",
+      clubcomment: "私たち東海大学スキー部は、部員45名で日本一の大学スキー部を目指して日々頑張っております。本年度は、首相の〇〇を筆頭に昨年に奇しくも３位だった屈辱を晴らすべく全国制覇を目指し日々頑張っております。是非ご支援のほどよろしくお願いいたします。"
     };
   }
 });
@@ -2209,6 +2211,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_images_topintro_message2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__public_images_topintro_message2_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_images_topintro_message3_png__ = __webpack_require__("./public/images/topintro/message3.png");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_images_topintro_message3_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_images_topintro_message3_png__);
+//
+//
 //
 //
 //
@@ -2683,8 +2687,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ }),
 
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/TopFooter.vue":
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
@@ -2706,10 +2712,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -2718,6 +2722,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -2803,14 +2810,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_topvisual_top001_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top001.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_topvisual_top001_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__images_topvisual_top001_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top002_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top002.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top002_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_topvisual_top002_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top003_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top003.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top003_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_topvisual_top003_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top4_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top4.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top4_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_topvisual_top4_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top001.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top002.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top003.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top4.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -2845,20 +2855,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
+
 
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  // あとでデータを引っ張ってくるまで載せておく
   data: function data() {
     return {
-      Homeimg1: __WEBPACK_IMPORTED_MODULE_0__images_topvisual_top001_jpg___default.a,
-      Homeimg2: __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top002_jpg___default.a,
-      Homeimg3: __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top003_jpg___default.a,
-      Homeimg4: __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top4_jpg___default.a
+      Homeimg1: __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg___default.a,
+      Homeimg2: __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg___default.a,
+      Homeimg3: __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg___default.a,
+      Homeimg4: __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg___default.a
     };
-  }
+  },
+
+
+  mounted: function mounted() {
+    // `this` は vm インスタンスを指します
+    getimages();
+  },
+
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])(["fetchPostTopVisual"]), {
+    getimages: function getimages() {
+      this.fetchPostTopVisual();
+    }
+    // 画像を表示させる
+    // Vuexを使って写真を表示させる
+
+  })
 });
 
 /***/ }),
@@ -3152,7 +3180,7 @@ exports.push([module.i, "\nsection[data-v-7cdae69f] {\n  max-width: 1160px;\n  m
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-8d3e665e] {\n  max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n    max-width: 1120px;\n    margin: 0 auto;\n    margin-top: 56px;\n    font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n      text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n    max-width: 1120px;\n    margin: 0 auto;\n    margin-top: 32px;\n    font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n  margin-top: 32px;\n  font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n    margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n      width: 100%;\n      height: 100% !important;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n}\nsection .container[data-v-8d3e665e] {\n    max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 56px;\n      font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n        text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 32px;\n      font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n    margin-top: 32px;\n    font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n      margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n        width: 100%;\n        height: 100% !important;\n}\n", ""]);
 
 
 
@@ -3196,7 +3224,7 @@ exports.push([module.i, "\nsection[data-v-9d156b08] {\n  padding-top: 63px;\n  b
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-a8116b20] {\n  background-color: #808080;\n}\nsection .container h2[data-v-a8116b20] {\n    padding: 32px;\n    font-size: 2rem;\n    color: #f2f2f2;\n    text-align: center;\n}\nsection .container div p[data-v-a8116b20] {\n    font-size: 1.6rem;\n    color: #f2f2f2;\n    padding: 16px;\n    text-align: right;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n    background-color: #db6b6b;\n    color: white;\n    border-radius: 2em;\n    width: 7.2em;\n    border-color: #db6b6b;\n    margin-top: 12px;\n    margin-left: 16px;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-a8116b20] {\n  background-color: #808080;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-a8116b20] {\n    padding: 16px;\n    font-size: 2rem;\n    color: #f2f2f2;\n    text-align: center;\n}\nsection .container div[data-v-a8116b20] {\n    margin: 0 auto;\n}\nsection .container div p[data-v-a8116b20] {\n      font-size: 1.6rem;\n      color: #f2f2f2;\n      padding: 8px;\n      text-align: right;\n}\nsection .container div p span[data-v-a8116b20] {\n        padding-left: 16px;\n}\nsection .container div .custom-btn[data-v-a8116b20] {\n      background-color: #db6b6b;\n      color: white;\n      border-radius: 2em;\n      width: 7.2em;\n      border-color: #db6b6b;\n      margin-top: 12px;\n      margin-left: 16px;\n}\n", ""]);
 
 
 
@@ -3207,7 +3235,7 @@ exports.push([module.i, "\nsection[data-v-a8116b20] {\n  background-color: #8080
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nfooter[data-v-bbf831ae] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  font-weight: bold;\n  padding: 72px 16px 16px 16px;\n  background-color: #fcfaf0;\n}\n@media (max-width: 767px) {\nfooter[data-v-bbf831ae] {\n      display: block;\n}\n}\nfooter .footer__items[data-v-bbf831ae] {\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    line-height: 100%;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\nfooter .footer__items .footer__item[data-v-bbf831ae] {\n      margin: 0 16px 0 0;\n      padding: 0;\n      list-style-type: none;\n}\nfooter .footer__items .footer__item .footer_item_text[data-v-bbf831ae] {\n        padding: 16px 4px;\n        display: inline-block;\n        font-size: 1rem;\n        letter-spacing: 0.1em;\n        color: #4a4a4a;\n}\nfooter .footer__rights[data-v-bbf831ae] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: end;\n        -ms-flex-pack: end;\n            justify-content: flex-end;\n    font-weight: bold;\n    font-size: 0.9rem;\n    -webkit-box-flex: 0;\n        -ms-flex: none;\n            flex: none;\n    letter-spacing: 0.05em;\n}\n@media (max-width: 767px) {\nfooter .footer__rights[data-v-bbf831ae] {\n        font-size: 0.8rem;\n}\n}\n", ""]);
+exports.push([module.i, "\nfooter[data-v-bbf831ae] {\n  background-color: #ffe035;\n  font-weight: bold;\n  padding: 24px 32px;\n}\n@media (max-width: 767px) {\nfooter[data-v-bbf831ae] {\n      padding: 8px;\n      width: 100%;\n      display: block;\n      font-size: 0.8rem;\n}\nfooter p[data-v-bbf831ae] {\n        text-align: center;\n}\nfooter .level-right[data-v-bbf831ae] {\n        text-align: center;\n        margin-top: 0.5rem;\n}\n}\n", ""]);
 
 
 
@@ -23153,7 +23181,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "tile is-parent" }, [
               _c("p", [
                 _vm._v(
-                  "\n                寄付を受け取った各団体は、それ\n                ぞれ、活動に沿ったお礼を寄付者\n                に届けます。こうすることで、き\n                ふるかを通して、寄付者と学生そ\n                れぞれがつながることができます。また、寄付を行うことで、学校からの寄付控除を受けられます。\n              "
+                  "\n                寄付を受け取った各団体は、それ\n                ぞれ、活動に沿ったお礼を寄付者\n                に届けます。こうすることで、き\n                ふるかを通して、寄付者と学生そ\n                れぞれがつながることができます。\n                また、寄付を行うことで、学校か\n                らの寄付控除を受けられます。\n              "
                 )
               ])
             ])
@@ -23240,7 +23268,7 @@ var render = function() {
                         "router-link",
                         {
                           staticClass: "button is-medium custom-btn",
-                          attrs: { to: "/" }
+                          attrs: { to: "/DonationDetails" }
                         },
                         [_c("strong", [_vm._v("この寄付を選ぶ")])]
                       )
@@ -23647,7 +23675,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", [
     _c("div", { staticClass: "container" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "donation-title" }, [
+        _c("h1", [_vm._v(_vm._s(_vm.activitytitle))])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "tile is-ancestor" }, [
         _c("div", { staticClass: "tile is-parent" }, [
@@ -23659,16 +23689,20 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _vm._m(1)
+            _c("div", { staticClass: "donaition-text-flame" }, [
+              _c("h1", [_vm._v(_vm._s(_vm.clubname))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.clubcomment))])
+            ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "tile is-child is-4 child-right-flame" }, [
             _c("div", { staticClass: "top-right-flame" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
               _vm._m(2),
-              _vm._v(" "),
-              _vm._m(3),
-              _vm._v(" "),
-              _vm._m(4),
               _vm._v(" "),
               _c(
                 "div",
@@ -23686,9 +23720,9 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _vm._m(5),
+              _vm._m(3),
               _vm._v(" "),
-              _vm._m(6)
+              _vm._m(4)
             ])
           ])
         ])
@@ -23697,28 +23731,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "donation-title" }, [
-      _c("h1", [_vm._v("活動タイトル")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "donaition-text-flame" }, [
-      _c("h1", [_vm._v("クラブネイム")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "これはサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。"
-        )
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -23818,16 +23830,12 @@ var render = function() {
       _c("div", { staticClass: "tile is-ancestor" }, [
         _c("div", { staticClass: "tile is-vertical is-12 flame" }, [
           _c("div", { staticClass: "tile" }, [
-            _c("div", { staticClass: "tile is-parent is-1" }),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
             _c(
               "div",
-              { staticClass: "tile is-parent is-4" },
+              { staticClass: "tile is-parent" },
               [
+                _vm._m(0),
+                _vm._v(" "),
                 _c(
                   "router-link",
                   {
@@ -23850,16 +23858,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "tile is-parent is-6" }, [
-      _c("p", [_vm._v("法人・企業の皆様の寄付はこちらから")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "tile is-parent is-1" }, [
-      _c("p", [_vm._v("→")])
+    return _c("p", [
+      _vm._v(
+        "\n              法人・企業の皆様の寄付はこちらから\n              "
+      ),
+      _c("span", [_vm._v("→")])
     ])
   }
 ]
@@ -23881,21 +23884,44 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("footer", [
+    _c("div", { staticClass: "level" }, [
+      _c(
+        "div",
+        { staticClass: "level-left" },
+        [
+          _c(
+            "router-link",
+            { staticClass: "navbar-item", attrs: { to: "/" } },
+            [
+              _c("img", {
+                attrs: {
+                  src: __webpack_require__("./resources/assets/js/store/images/kifuruka_logo.png"),
+                  alt: "がっこう寄付納税サイト【きふるか】",
+                  decoding: "async"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(0)
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "level-right" }, [
+        _vm._v("© 2019 Kifuruka Co.,Ltd.All rights reserved.")
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", [
-      _c("div", { staticClass: "content has-text-centered" }, [
-        _c("ul", { staticClass: "footer__items" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "footer__rights" }, [
-          _vm._v("© 2019 Kifuruka Co.,Ltd.All rights reserved.")
-        ])
-      ])
+    return _c("div", { staticClass: "navbar-start" }, [
+      _c("p", [_vm._v("学生のチャレンジをあなたの寄付で応援しよう。")])
     ])
   }
 ]
@@ -41667,6 +41693,9 @@ module.exports = "/images/kifuruka_logo.png?4a04380ce77386a27a872ffbefee5e22";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_auth__ = __webpack_require__("./resources/assets/js/store/modules/auth.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__("./node_modules/axios/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
+
 
 
 
@@ -41674,9 +41703,46 @@ module.exports = "/images/kifuruka_logo.png?4a04380ce77386a27a872ffbefee5e22";
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
+
     modules: {
         auth: __WEBPACK_IMPORTED_MODULE_2__modules_auth__["a" /* default */]
+    },
+    state: {
+        posts: [],
+        userId: 'aaaaa'
+    },
+    getters: {
+        posts: function posts(state) {
+            return state.posts;
+        },
+        userId: function userId(state) {
+            return state.userId;
+        }
+    },
+
+    mutations: {
+        setPosts: function setPosts(state, ary) {
+            state.posts = ary;
+        },
+        imgPosts: function imgPosts(state, ary) {
+            state.posts = ary;
+        }
+    },
+    actions: {
+        fetchPosts: function fetchPosts(context) {
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/json/test.json').then(function (response) {
+                // console.log(response.data)
+                context.commit('setPosts', response.data);
+            });
+        },
+        fetchPostTopVisual: function fetchPostTopVisual(context) {
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/json/gazou.json').then(function (response) {
+                console.log(response.data);
+                context.commit('setPosts', response.data);
+            });
+        }
     }
+
 }));
 
 /***/ }),

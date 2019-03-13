@@ -23,7 +23,7 @@ const routes = [
     {
         path: '/donation',
         component: Donation
-    }
+    },
 
 ];
 

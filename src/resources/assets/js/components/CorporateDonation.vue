@@ -5,14 +5,11 @@
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12 flame">
           <div class="tile">
-            <div class="tile is-parent is-1"></div>
-            <div class="tile is-parent is-6">
-              <p>法人・企業の皆様の寄付はこちらから</p>
-            </div>
-            <div class="tile is-parent is-1">
-              <p>→</p>
-            </div>
-            <div class="tile is-parent is-4">
+            <div class="tile is-parent">
+              <p>
+                法人・企業の皆様の寄付はこちらから
+                <span>→</span>
+              </p>
               <router-link to="/login" class="button is-medium custom-btn">
                 <strong>法人寄付</strong>
               </router-link>
@@ -32,19 +29,24 @@ export default {};
 <style lang="scss" scoped >
 section {
   background-color: #808080;
+  margin-bottom: 80px;
   .container {
     h2 {
-      padding: 32px;
+      padding: 16px;
       font-size: 2rem;
       color: #f2f2f2;
       text-align: center;
     }
     div {
+      margin: 0 auto;
       p {
         font-size: 1.6rem;
         color: #f2f2f2;
-        padding: 16px;
+        padding: 8px;
         text-align: right;
+        span {
+          padding-left: 16px;
+        }
       }
       .custom-btn {
         background-color: #db6b6b;
