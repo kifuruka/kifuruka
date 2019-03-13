@@ -1,0 +1,22 @@
+[
+    {
+        "price": 800,
+        "name": "ダミー",
+        "src": "/assets/images/xxx.png"
+    },
+    {
+        "price": 1100,
+        "name": "ダミー2",
+        "src": "/assets/images/xxx.png"
+    },
+    {
+        "price": 8200,
+        "name": "ダミー3",
+        "src": "/assets/images/xxx.png"
+    },
+    {
+        "price": 83300,
+        "name": "ダミー4",
+        "src": "/assets/images/xxx.png"
+    }
+]

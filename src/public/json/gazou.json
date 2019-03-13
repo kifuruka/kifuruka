@@ -1,0 +1,26 @@
+[
+    {
+        "schoolname": "青山学院大学",
+        "title": "タイトル１",
+        "top_contents": "トップコメント１",
+        "img": "../../images/topvisual/top001.jpg"
+    },
+    {
+        "schoolname": "近畿大学",
+        "title": "タイトル２",
+        "top_contents": "トップコメント２",
+        "img": "../../images/topvisual/top002.jpg"
+    },
+    {
+        "schoolname": "関西学院大学",
+        "title": "タイトル３",
+        "top_contents": "トップコメント３",
+        "img": "../../images/topvisual/top003.jpg"
+    },
+    {
+        "schoolname": "近畿大学",
+        "title": "タイトル４",
+        "top_contents": "トップコメント４",
+        "img": "../../images/topvisual/top4.jpg"
+    }
+]

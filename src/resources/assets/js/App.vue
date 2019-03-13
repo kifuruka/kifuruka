@@ -1,9 +1,8 @@
 <template>
   <div>
-    <!-- <p>App.vue</p> -->
-    <top-header></top-header>
-    <router-view></router-view>
-    <top-footer></top-footer>
+    <top-header/>
+    <router-view/>
+    <top-footer/>
   </div>
 </template>
  

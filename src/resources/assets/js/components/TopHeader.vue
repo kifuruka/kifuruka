@@ -24,14 +24,17 @@
       <div id="navbarHomeHeader" class="navbar-menu" :class="{'is-active': dropdownActive}">
         <div class="navbar-end">
           <router-link to="/mypage" class="navbar-item flex3 buttons">
+            <!-- TODO: ログイン実装 -->
             <strong>マイページ</strong>
           </router-link>
           <router-link to="/register" class="navbar-item flex3 buttons">
+            <!-- TODO: ログイン実装 -->
             <strong>新規登録</strong>
           </router-link>
           <div class="navbar-item">
             <div>
               <router-link to="/login" class="button is-medium custom-btn">
+                <!-- TODO: ログイン実装 -->
                 <strong>ログイン</strong>
               </router-link>
             </div>
@@ -74,12 +77,6 @@ header {
   nav.navbar {
     max-width: 1440px;
     margin: 0 auto;
-
-    // .navbar__item--logo {
-    //   font-size: 27px;
-    //   letter-spacing: 5px;
-    //   color: #03a1eb;
-    // }
 
     .navbar-start p {
       font-size: 16px;
