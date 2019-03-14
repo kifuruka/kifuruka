@@ -4,6 +4,7 @@
     <search/>
     <activity-card/>
     <button-more/>
+    <entory-school/>
     <top-message/>
     <introduction/>
     <corporate-donation/>
@@ -18,6 +19,7 @@ import ButtonMore from "../components/ButtonMore";
 import TopMessage from "../components/TopMessage";
 import Introduction from "../components/Introduction";
 import CorporateDonation from "../components/CorporateDonation";
+import EntorySchool from "../components/EntorySchool";
 
 export default {
   components: {
@@ -27,7 +29,8 @@ export default {
     ActivityCard,
     ButtonMore,
     Introduction,
-    CorporateDonation
+    CorporateDonation,
+    EntorySchool
   }
 };
 </script>
