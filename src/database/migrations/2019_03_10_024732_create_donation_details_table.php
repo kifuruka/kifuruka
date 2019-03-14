@@ -37,6 +37,10 @@ class CreateDonationDetailsTable extends Migration
             ->references('id')
             ->on('users');
 
+            $table->foreign('donation_id')
+            ->references('id')
+            ->on('donations');
+
 
 
         });

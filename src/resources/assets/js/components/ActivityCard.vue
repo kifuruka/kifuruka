@@ -1,6 +1,14 @@
 <template>
   <section>
     <div class="container flex-flame">
+      <div v-for="item in fetchAllData" :key="item.id" class>
+        <router-link :to="{ name : '', params : { id: item.id }}">
+          <card :data="item"/>
+        </router-link>
+      </div>
+
+      <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div>
+
       <!-- カード１ -->
       <div class="card" style="width:30%">
         <div calss="card_image_container" style="position: relative;">
@@ -130,7 +138,9 @@
 
 
 <script>
-import axios from "axios";
+// import axios from "axios";
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   data() {
     return {
@@ -143,14 +153,16 @@ export default {
       days: 5
     };
   },
-  mounted() {
-    axios.get;
-    "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"().then(
-      response => {
-        response.data.shift(); //スプレッドシートの1行目は日本語の列名だから除く
-        this.info = response.data;
-      }
-    );
+  computed: {
+    ...mapGetters(["fetchAllData"])
+  },
+
+  created() {
+    this.fetchPostHomeCard();
+  },
+
+  methods: {
+    ...mapActions(["fetchPostHomeCard"])
   }
 };
 </script>

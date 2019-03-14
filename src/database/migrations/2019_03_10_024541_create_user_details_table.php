@@ -20,12 +20,10 @@ class CreateUserDetailsTable extends Migration
             $table->string('user_last_name',20)->nullable();
             $table->string('user_first_kana',20)->nullable();
             $table->string('user_last_kana',20)->nullable();
-
             $table->string('tel',20)->nullable();
             $table->string('sex',10)->nullable();
             $table->string('birthday',10)->nullable();
             $table->string('user_img',250)->nullable();
-           
             $table->string('postal_code',10)->nullable();
             $table->string('u_state',50)->nullable();
             $table->string('u_city',50)->nullable();

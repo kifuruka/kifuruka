@@ -50,20 +50,22 @@ export default {
     };
   },
 
-  mounted: function() {
-    // `this` は vm インスタンスを指します
-    getimages();
-  },
+  // mounted: function() {
+  //   // `this` は vm インスタンスを指します
+  //   getimages();
+  // },
 
-  methods: {
-    // ...はスプレットオペレーター
-    ...mapActions(["fetchPostTopVisual"]),
-
-    getimages() {
-      this.fetchPostTopVisual();
-    }
+  created() {
+    this.fetchPostTopVisual();
+    // getimages() {
+    //   this.fetchPostTopVisual();
+    // }
     // 画像を表示させる
     // Vuexを使って写真を表示させる
+  },
+  methods: {
+    // ...はスプレットオペレーター
+    ...mapActions(["fetchPostTopVisual"])
   }
 };
 </script>

@@ -11,7 +11,8 @@ export default new Vuex.Store({
         auth: auth
     },
     state: {
-        posts: [],
+        activities: [],
+        card: [],
         userId: 'aaaaa'
     },
     getters: {
@@ -20,16 +21,21 @@ export default new Vuex.Store({
         },
         userId(state) {
             return state.userId
+        },
+        fetchAllData(state) {
+            return state.activities
         }
     },
-
     mutations: {
         setPosts(state, ary) {
-            state.posts = ary;
-        }
-        ,
-        imgPosts(state, ary) {
-            state.posts = ary
+            state.posts = ary.concat();
+        },
+        imgPosts(state, payload) {
+            state.posts = payload
+        },
+        setPostCards(state, payload) {
+            state.activities = payload.concat();
+            console.log(payload)
         }
     },
     actions: {
@@ -43,9 +49,30 @@ export default new Vuex.Store({
         fetchPostTopVisual(context) {
             axios.get('/json/gazou.json')
                 .then(function (response) {
-                    console.log(response.data)
+                    // console.log(response.data)
                     context.commit('setPosts', response.data)
                 })
+        },
+        fetchPostHomeCard(context) {
+            const invocation = new XMLHttpRequest();
+            const url = 'https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec';
+
+            function callOtherDomain() {
+                if (invocation) {
+                    invocation.open('GET', url, true);
+                    invocation.onreadystatechange = handler;
+                    invocation.send();
+                }
+            }
+            axios.get(url)
+                .then(function (response) {
+                    context.commit('setPostCards', response.data)
+                }
+                );
+
+
+
+
         }
     }
 

@@ -1640,6 +1640,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_TopHeader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_TopHeader__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_TopFooter__ = __webpack_require__("./resources/assets/js/components/TopFooter.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_TopFooter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_TopFooter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_http__ = __webpack_require__("./resources/assets/js/services/http.js");
 //
 //
 //
@@ -1648,6 +1649,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 
@@ -1656,6 +1658,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   components: {
     TopHeader: __WEBPACK_IMPORTED_MODULE_0__components_TopHeader___default.a,
     TopFooter: __WEBPACK_IMPORTED_MODULE_1__components_TopFooter___default.a
+  },
+  created: function created() {
+    __WEBPACK_IMPORTED_MODULE_2__services_http__["a" /* default */].init();
   }
 });
 
@@ -1666,8 +1671,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__("./node_modules/axios/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -1799,6 +1805,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+
+// import axios from "axios";
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1813,15 +1829,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       days: 5
     };
   },
-  mounted: function mounted() {
-    var _this = this;
 
-    __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get;
-    "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"().then(function (response) {
-      response.data.shift(); //スプレッドシートの1行目は日本語の列名だから除く
-      _this.info = response.data;
-    });
-  }
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])(["fetchAllData"])),
+
+  created: function created() {
+    this.fetchPostHomeCard();
+  },
+
+
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])(["fetchPostHomeCard"]))
 });
 
 /***/ }),
@@ -2874,19 +2890,21 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
   },
 
 
-  mounted: function mounted() {
-    // `this` は vm インスタンスを指します
-    getimages();
-  },
+  // mounted: function() {
+  //   // `this` は vm インスタンスを指します
+  //   getimages();
+  // },
 
-  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])(["fetchPostTopVisual"]), {
-    getimages: function getimages() {
-      this.fetchPostTopVisual();
-    }
+  created: function created() {
+    this.fetchPostTopVisual();
+    // getimages() {
+    //   this.fetchPostTopVisual();
+    // }
     // 画像を表示させる
     // Vuexを使って写真を表示させる
+  },
 
-  })
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])(["fetchPostTopVisual"]))
 });
 
 /***/ }),
@@ -22545,175 +22563,203 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
-    _c("div", { staticClass: "container flex-flame" }, [
-      _c("div", { staticClass: "card", staticStyle: { width: "30%" } }, [
-        _vm._m(0),
+    _c(
+      "div",
+      { staticClass: "container flex-flame" },
+      [
+        _vm._l(_vm.fetchAllData, function(item) {
+          return _c(
+            "div",
+            { key: item.id },
+            [
+              _c(
+                "router-link",
+                { attrs: { to: { name: "", params: { id: item.id } } } },
+                [_c("card", { attrs: { data: item } })],
+                1
+              )
+            ],
+            1
+          )
+        }),
         _vm._v(" "),
-        _vm._m(1),
+        _vm._l(_vm.fetchAllData, function(item) {
+          return _c("div", {
+            key: item.id,
+            staticClass: "column is-one-quarter"
+          })
+        }),
         _vm._v(" "),
-        _c("div", { staticClass: "columns detail" }, [
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("寄付金額\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
-              ]
-            )
-          ]),
+        _c("div", { staticClass: "card", staticStyle: { width: "30%" } }, [
+          _vm._m(0),
           _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("応募数\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
-              ]
-            )
-          ]),
+          _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("残り\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
-              ]
-            )
+          _c("div", { staticClass: "columns detail" }, [
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("寄付金額\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("応募数\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("残り\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
+                ]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card", staticStyle: { width: "30%" } }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("div", { staticClass: "columns detail" }, [
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("寄付金額\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("応募数\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("残り\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
+                ]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card", staticStyle: { width: "30%" } }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("div", { staticClass: "columns detail" }, [
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("寄付金額\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("応募数\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "p",
+                {
+                  staticClass: "card-text col has-text-centered",
+                  staticStyle: { "font-size": "0.9rem" }
+                },
+                [
+                  _vm._v("残り\n            "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
+                ]
+              )
+            ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card", staticStyle: { width: "30%" } }, [
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns detail" }, [
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("寄付金額\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("応募数\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("残り\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card", staticStyle: { width: "30%" } }, [
-        _vm._m(4),
-        _vm._v(" "),
-        _vm._m(5),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns detail" }, [
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("寄付金額\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("応募数\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("残り\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
-              ]
-            )
-          ])
-        ])
-      ])
-    ])
+      ],
+      2
+    )
   ])
 }
 var staticRenderFns = [
@@ -39347,7 +39393,7 @@ function cloneRoute (to, from) {
 /* unused harmony export install */
 /* unused harmony export mapState */
 /* unused harmony export mapMutations */
-/* unused harmony export mapGetters */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return mapGetters; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return mapActions; });
 /* unused harmony export createNamespacedHelpers */
 /**
@@ -41678,6 +41724,62 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 
 /***/ }),
 
+/***/ "./resources/assets/js/services/http.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__("./node_modules/axios/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    request: function request(method, url, data) {
+        var successCb = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+        var errorCb = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : null;
+
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.request({
+            url: url,
+            data: data,
+            method: method.toLowerCase()
+        }).then(successCb).catch(errorCb);
+    },
+    get: function get(url) {
+        var successCb = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+        var errorCb = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+
+        return this.request('get', url, {}, successCb, errorCb);
+    },
+    post: function post(url, data) {
+        var successCb = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+        var errorCb = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+
+        return this.request('post', url, data, successCb, errorCb);
+    },
+    put: function put(url, data) {
+        var successCb = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+        var errorCb = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+
+        return this.request('put', url, data, successCb, errorCb);
+    },
+    delete: function _delete(url) {
+        var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        var successCb = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+        var errorCb = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+
+        return this.request('delete', url, data, successCb, errorCb);
+    },
+    init: function init() {
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.defaults.baseURL = '/api';
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.interceptors.request.use(function (config) {
+            config.headers['X-CSRF-TOKEN'] = window.Laravel.csrfToken;
+            config.headers['X-Requested-With'] = 'XMLHttpRequest';
+            return config;
+        });
+    }
+});
+
+/***/ }),
+
 /***/ "./resources/assets/js/store/images/kifuruka_logo.png":
 /***/ (function(module, exports) {
 
@@ -41708,7 +41810,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         auth: __WEBPACK_IMPORTED_MODULE_2__modules_auth__["a" /* default */]
     },
     state: {
-        posts: [],
+        activities: [],
+        card: [],
         userId: 'aaaaa'
     },
     getters: {
@@ -41717,15 +41820,21 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         },
         userId: function userId(state) {
             return state.userId;
+        },
+        fetchAllData: function fetchAllData(state) {
+            return state.activities;
         }
     },
-
     mutations: {
         setPosts: function setPosts(state, ary) {
-            state.posts = ary;
+            state.posts = ary.concat();
         },
-        imgPosts: function imgPosts(state, ary) {
-            state.posts = ary;
+        imgPosts: function imgPosts(state, payload) {
+            state.posts = payload;
+        },
+        setPostCards: function setPostCards(state, payload) {
+            state.activities = payload.concat();
+            console.log(payload);
         }
     },
     actions: {
@@ -41737,8 +41846,23 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         },
         fetchPostTopVisual: function fetchPostTopVisual(context) {
             __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get('/json/gazou.json').then(function (response) {
-                console.log(response.data);
+                // console.log(response.data)
                 context.commit('setPosts', response.data);
+            });
+        },
+        fetchPostHomeCard: function fetchPostHomeCard(context) {
+            var invocation = new XMLHttpRequest();
+            var url = 'https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec';
+
+            function callOtherDomain() {
+                if (invocation) {
+                    invocation.open('GET', url, true);
+                    invocation.onreadystatechange = handler;
+                    invocation.send();
+                }
+            }
+            __WEBPACK_IMPORTED_MODULE_3_axios___default.a.get(url).then(function (response) {
+                context.commit('setPostCards', response.data);
             });
         }
     }
