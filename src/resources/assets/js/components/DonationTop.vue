@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <div class="donation-title">
-        <h1>活動タイトル</h1>
+        <h1>{{activitytitle}}</h1>
       </div>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
@@ -12,8 +12,8 @@
               <img :src="DonationImg" class="u-img" alt="#">
             </div>
             <div class="donaition-text-flame">
-              <h1>クラブネイム</h1>
-              <p>これはサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。</p>
+              <h1>{{clubname}}</h1>
+              <p>{{clubcomment}}</p>
             </div>
           </div>
           <!-- 右側 -->
@@ -78,7 +78,11 @@ import DonationImg from "../../images/donation/d_kin_rag_top.jpg";
 export default {
   data() {
     return {
-      DonationImg
+      DonationImg,
+      activitytitle: "インカレ総合優勝を目指して",
+      clubname: "東海大学スキー部",
+      clubcomment:
+        "私たち東海大学スキー部は、部員45名で日本一の大学スキー部を目指して日々頑張っております。本年度は、首相の〇〇を筆頭に昨年に奇しくも３位だった屈辱を晴らすべく全国制覇を目指し日々頑張っております。是非ご支援のほどよろしくお願いいたします。"
     };
   }
 };

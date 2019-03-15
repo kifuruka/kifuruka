@@ -71,7 +71,9 @@
                   ぞれ、活動に沿ったお礼を寄付者
                   に届けます。こうすることで、き
                   ふるかを通して、寄付者と学生そ
-                  れぞれがつながることができます。また、寄付を行うことで、学校からの寄付控除を受けられます。
+                  れぞれがつながることができます。
+                  また、寄付を行うことで、学校か
+                  らの寄付控除を受けられます。
                 </p>
               </div>
             </div>
@@ -100,6 +102,7 @@ export default {
 <style  lang="scss" scoped >
 section {
   // background-color: aqua;
+  margin-bottom: 80px;
 
   .container {
     // background-color: #212121;
