@@ -5,6 +5,7 @@ import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Donation from '../pages/Donation';
 import DetailSchool from '../pages/DetailSchool';
+import Settlement from '../pages/Settlement';
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,10 @@ const routes = [
     {
         path: '/DetailSchool',
         component: DetailSchool
+    },
+    {
+        path: '/Settlement',
+        component: Settlement
     }
 
 ];
