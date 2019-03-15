@@ -146,7 +146,7 @@ section {
         padding-bottom: 24px;
       }
       h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: bold;
         padding-bottom: 16px;
       }

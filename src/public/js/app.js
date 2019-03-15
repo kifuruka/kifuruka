@@ -3104,6 +3104,94 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3798,7 +3886,7 @@ exports.push([module.i, "\nsection[data-v-4b8e7fc8] {\n  padding-top: 63px;\n  t
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-4f708504] {\n  padding-top: 63px;\n}\nsection .container[data-v-4f708504] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-4f708504] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-4f708504] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-4f708504] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-4f708504] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame h2[data-v-4f708504] {\n      font-size: 1rem;\n      font-weight: bold;\n      padding-bottom: 16px;\n}\nsection .child-flame .donaition-text-flame p[data-v-4f708504] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-4f708504] {\n    margin-top: 32px;\n}\nsection .top-right-flame[data-v-4f708504] {\n    margin-top: 32px;\n}\nsection .top-right-flame .top-title[data-v-4f708504] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-4f708504] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-4f708504] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-4f708504] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.cart-gray[data-v-4f708504] {\n  background: #EDEDED;\n  margin-top: 5%;\n  padding: 5%;\n}\n.remarks[data-v-4f708504] {\n  margin-top: 5%;\n}\n.custom-btn[data-v-4f708504] {\n  background-color: #ffe035;\n  color: black;\n  font-size: 1rem;\n  border-radius: 2em;\n  width: 6.3em;\n  padding: 0 4em;\n  margin-left: 0.5em;\n  border-color: #ffe035;\n}\n.field-label[data-v-4f708504] {\n  text-align: left;\n  margin-right: 0rem;\n}\n.label[data-v-4f708504] {\n  font-size: 0.8rem;\n  font-weight: normal;\n}\n.radio-text[data-v-4f708504] {\n  font-size: 0.8rem;\n}\n.control1[data-v-4f708504] {\n  margin-left: 40%;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-4f708504] {\n  padding-top: 63px;\n}\nsection .container[data-v-4f708504] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-4f708504] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-4f708504] {\n        font-size: 2rem;\n        font-weight: bold;\n}\nsection .container .donation-title h2[data-v-4f708504] {\n        font-size: 1.5rem;\n        font-weight: bold;\n        padding-bottom: 16px;\n}\nsection .container .donaition-text-flame[data-v-4f708504] {\n      margin-top: 16px;\n      font-size: 1.3rem;\n}\nsection .container .donaition-text-flame h2[data-v-4f708504] {\n        font-size: 1.5rem;\n        font-weight: bold;\n        padding-bottom: 16px;\n}\nsection .container .donaition-text-flame p[data-v-4f708504] {\n        padding-bottom: 32px;\n}\nsection .container .radio-box[data-v-4f708504] {\n      border-bottom: solid 0.01em LightGrey;\n}\nsection .container .custom-btn[data-v-4f708504] {\n      background-color: #ffe035;\n      color: black;\n      font-size: 1rem;\n      border-radius: 2em;\n      width: 6.3em;\n      padding: 0 4em;\n      margin-left: 0.5em;\n      border-color: #ffe035;\n}\n.cart-gray[data-v-4f708504] {\n  background: #EDEDED;\n  margin-top: 5%;\n  padding: 5%;\n}\n.remarks[data-v-4f708504] {\n  margin-top: 5%;\n}\n.custom-btn[data-v-4f708504] {\n  background-color: #ffe035;\n  color: black;\n  font-size: 1rem;\n  border-radius: 2em;\n  width: 6.3em;\n  padding: 0 4em;\n  margin-left: 0.5em;\n  border-color: #ffe035;\n}\n.is-horizontal[data-v-4f708504] {\n  margin: 2em 0em;\n}\n.field-label[data-v-4f708504] {\n  text-align: left;\n  margin-right: 0rem;\n}\n.label[data-v-4f708504] {\n  font-size: 1rem;\n  font-weight: normal;\n  color: gray;\n}\n.radio-text[data-v-4f708504] {\n  font-size: 0.8rem;\n}\n.control1[data-v-4f708504] {\n  margin-left: 40%;\n}\n", ""]);
 
 
 
@@ -3809,7 +3897,7 @@ exports.push([module.i, "\nsection[data-v-4f708504] {\n  padding-top: 63px;\n}\n
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-5a8c64c5] {\n  padding-top: 63px;\n}\nsection .container[data-v-5a8c64c5] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-5a8c64c5] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-5a8c64c5] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-5a8c64c5] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-5a8c64c5] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame h2[data-v-5a8c64c5] {\n      font-size: 1rem;\n      font-weight: bold;\n      padding-bottom: 16px;\n}\nsection .child-flame .donaition-text-flame p[data-v-5a8c64c5] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-5a8c64c5] {\n    margin-top: 32px;\n}\nsection .top-right-flame[data-v-5a8c64c5] {\n    margin-top: 32px;\n}\nsection .top-right-flame .top-title[data-v-5a8c64c5] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-5a8c64c5] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-5a8c64c5] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-5a8c64c5] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.cart-gray[data-v-5a8c64c5] {\n  background: #EDEDED;\n  margin-top: 5%;\n  padding: 5%;\n}\n.remarks[data-v-5a8c64c5] {\n  margin-top: 5%;\n}\n.custom-btn[data-v-5a8c64c5] {\n  background-color: #ffe035;\n  color: black;\n  font-size: 1rem;\n  border-radius: 2em;\n  width: 6.3em;\n  padding: 0 4em;\n  margin-left: 0.5em;\n  border-color: #ffe035;\n}\n.field-label[data-v-5a8c64c5] {\n  text-align: left;\n  margin-right: 0rem;\n}\n.label[data-v-5a8c64c5] {\n  font-size: 0.8rem;\n  font-weight: normal;\n}\n.radio-text[data-v-5a8c64c5] {\n  font-size: 0.8rem;\n}\n.control1[data-v-5a8c64c5] {\n  margin-left: 40%;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-5a8c64c5] {\n  padding-top: 63px;\n}\nsection .container[data-v-5a8c64c5] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-5a8c64c5] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-5a8c64c5] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-5a8c64c5] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-5a8c64c5] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame h2[data-v-5a8c64c5] {\n      font-size: 1.5rem;\n      font-weight: bold;\n      padding-bottom: 16px;\n}\nsection .child-flame .donaition-text-flame p[data-v-5a8c64c5] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-5a8c64c5] {\n    margin-top: 32px;\n}\nsection .top-right-flame[data-v-5a8c64c5] {\n    margin-top: 32px;\n}\nsection .top-right-flame .top-title[data-v-5a8c64c5] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-5a8c64c5] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-5a8c64c5] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-5a8c64c5] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.cart-gray[data-v-5a8c64c5] {\n  background: #EDEDED;\n  margin-top: 5%;\n  padding: 5%;\n}\n.remarks[data-v-5a8c64c5] {\n  margin-top: 5%;\n}\n.custom-btn[data-v-5a8c64c5] {\n  background-color: #ffe035;\n  color: black;\n  font-size: 1rem;\n  border-radius: 2em;\n  width: 6.3em;\n  padding: 0 4em;\n  margin-left: 0.5em;\n  border-color: #ffe035;\n}\n.field-label[data-v-5a8c64c5] {\n  text-align: left;\n  margin-right: 0rem;\n}\n.label[data-v-5a8c64c5] {\n  font-size: 0.8rem;\n  font-weight: normal;\n}\n.radio-text[data-v-5a8c64c5] {\n  font-size: 0.8rem;\n}\n.control1[data-v-5a8c64c5] {\n  margin-left: 40%;\n}\n", ""]);
 
 
 
@@ -23335,9 +23423,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", [
       _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "donaition-text-flame" }, [
+          _c("h2", [_vm._v("寄付者情報")])
+        ]),
+        _vm._v(" "),
         _c("div", { staticClass: "field is-horizontal" }, [
           _c("div", { staticClass: "field-label is-normal" }, [
-            _c("label", { staticClass: "label" }, [_vm._v("From")])
+            _c("label", { staticClass: "label" }, [_vm._v("氏名")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "field-body" }, [
@@ -23345,7 +23437,7 @@ var staticRenderFns = [
               _c("p", { staticClass: "control is-expanded has-icons-left" }, [
                 _c("input", {
                   staticClass: "input",
-                  attrs: { type: "text", placeholder: "Name" }
+                  attrs: { type: "text", placeholder: "姓" }
                 }),
                 _vm._v(" "),
                 _c("span", { staticClass: "icon is-small is-left" }, [
@@ -23355,57 +23447,15 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "field" }, [
-              _c(
-                "p",
-                {
-                  staticClass:
-                    "control is-expanded has-icons-left has-icons-right"
-                },
-                [
-                  _c("input", {
-                    staticClass: "input is-success",
-                    attrs: {
-                      type: "email",
-                      placeholder: "Email",
-                      value: "alex@smith.com"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "icon is-small is-left" }, [
-                    _c("i", { staticClass: "fas fa-envelope" })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "icon is-small is-right" }, [
-                    _c("i", { staticClass: "fas fa-check" })
-                  ])
-                ]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _c("div", { staticClass: "field-label" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field is-expanded" }, [
-              _c("div", { staticClass: "field has-addons" }, [
-                _c("p", { staticClass: "control" }, [
-                  _c("a", { staticClass: "button is-static" }, [
-                    _vm._v("\n                    +44\n                  ")
-                  ])
-                ]),
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "名" }
+                }),
                 _vm._v(" "),
-                _c("p", { staticClass: "control is-expanded" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "tel", placeholder: "Your phone number" }
-                  })
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-user" })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "help" }, [
-                _vm._v("Do not enter the first zero")
               ])
             ])
           ])
@@ -23413,20 +23463,113 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "field is-horizontal" }, [
           _c("div", { staticClass: "field-label is-normal" }, [
-            _c("label", { staticClass: "label" }, [_vm._v("Department")])
+            _c("label", { staticClass: "label" }, [_vm._v("ふりがな")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field is-narrow" }, [
-              _c("div", { staticClass: "control" }, [
-                _c("div", { staticClass: "select is-fullwidth" }, [
-                  _c("select", [
-                    _c("option", [_vm._v("Business development")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Marketing")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Sales")])
-                  ])
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "せい" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-user" })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "めい" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-user" })
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _c("div", { staticClass: "field-label is-normal" }, [
+            _c("label", { staticClass: "label" }, [_vm._v("住所")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "郵便番号" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-map-marker-alt" })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "都道府県" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-globe-asia" })
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _c("div", { staticClass: "field-label is-normal" }, [
+            _c("label", { staticClass: "label" })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "市町区村" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-city" })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "番地" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-map-signs" })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("p", { staticClass: "control is-expanded has-icons-left" }, [
+                _c("input", {
+                  staticClass: "input",
+                  attrs: { type: "text", placeholder: "マンション名" }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon is-small is-left" }, [
+                  _c("i", { staticClass: "fas fa-building" })
                 ])
               ])
             ])
@@ -23435,20 +23578,127 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "field is-horizontal" }, [
           _c("div", { staticClass: "field-label" }, [
-            _c("label", { staticClass: "label" }, [_vm._v("Already a member?")])
+            _c("label", { staticClass: "label" }, [_vm._v("電話番号")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field is-expanded" }, [
+              _c("div", { staticClass: "field has-addons" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass:
+                      "control is-expanded has-icons-left has-icons-right"
+                  },
+                  [
+                    _c("input", {
+                      staticClass: "input",
+                      attrs: { type: "tel", placeholder: "電話番号" }
+                    }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "icon is-small is-left" }, [
+                      _c("i", { staticClass: "fas fa-phone" })
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _c("div", { staticClass: "field-label" }, [
+            _c("label", { staticClass: "label" }, [_vm._v("メールアドレス")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field is-expanded" }, [
+              _c("div", { staticClass: "field has-addons" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass:
+                      "control is-expanded has-icons-left has-icons-right"
+                  },
+                  [
+                    _c("input", {
+                      staticClass: "input is-success",
+                      attrs: {
+                        type: "email",
+                        placeholder: "Email",
+                        value: "info@kifuruka.com"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "icon is-small is-left" }, [
+                      _c("i", { staticClass: "fas fa-envelope" })
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "icon is-small is-right" }, [
+                      _c("i", { staticClass: "fas fa-check" })
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal " }, [
+          _c("div", { staticClass: "field-label" }, [
+            _c("label", { staticClass: "label" }, [
+              _vm._v("寄付を行う学校について")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body radio-box" }, [
             _c("div", { staticClass: "field is-narrow" }, [
               _c("div", { staticClass: "control" }, [
                 _c("label", { staticClass: "radio" }, [
-                  _c("input", { attrs: { type: "radio", name: "member" } }),
-                  _vm._v("\n                  Yes\n                ")
+                  _c("input", {
+                    attrs: { type: "radio", name: "registration" }
+                  }),
+                  _vm._v(
+                    "\n                  卒業校として登録する\n            "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("label", { staticClass: "radio" }, [
-                  _c("input", { attrs: { type: "radio", name: "member" } }),
-                  _vm._v("\n                  No\n                ")
+                  _c("input", {
+                    attrs: { type: "radio", name: "registration" }
+                  }),
+                  _vm._v(
+                    "\n                  お気に入り校として登録する\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("label", { staticClass: "radio" }, [
+                  _c("input", {
+                    attrs: { type: "radio", name: "registration" }
+                  }),
+                  _vm._v("\n                  今回は登録しない\n            ")
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal " }, [
+          _c("div", { staticClass: "field-label" }, [
+            _c("label", { staticClass: "label" }, [_vm._v("学校からの案内")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body radio-box" }, [
+            _c("div", { staticClass: "field is-narrow" }, [
+              _c("div", { staticClass: "control" }, [
+                _c("label", { staticClass: "radio" }, [
+                  _c("input", { attrs: { type: "radio", name: "hope" } }),
+                  _vm._v("\n                  希望する\n            ")
+                ]),
+                _vm._v(" "),
+                _c("label", { staticClass: "radio" }, [
+                  _c("input", { attrs: { type: "radio", name: "hope" } }),
+                  _vm._v("\n                  希望しない\n            ")
                 ])
               ])
             ])
@@ -23457,31 +23707,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "field is-horizontal" }, [
           _c("div", { staticClass: "field-label is-normal" }, [
-            _c("label", { staticClass: "label" }, [_vm._v("Subject")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "field-body" }, [
-            _c("div", { staticClass: "field" }, [
-              _c("div", { staticClass: "control" }, [
-                _c("input", {
-                  staticClass: "input is-danger",
-                  attrs: {
-                    type: "text",
-                    placeholder: "e.g. Partnership opportunity"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "help is-danger" }, [
-                _vm._v(" This field is required ")
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field is-horizontal" }, [
-          _c("div", { staticClass: "field-label is-normal" }, [
-            _c("label", { staticClass: "label" }, [_vm._v("Question")])
+            _c("label", { staticClass: "label" }, [_vm._v("備考欄")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "field-body" }, [
@@ -23489,7 +23715,24 @@ var staticRenderFns = [
               _c("div", { staticClass: "control" }, [
                 _c("textarea", {
                   staticClass: "textarea",
-                  attrs: { placeholder: "Explain how we can help you" }
+                  attrs: { placeholder: "備考欄" }
+                })
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-horizontal" }, [
+          _c("div", { staticClass: "field-label is-normal" }, [
+            _c("label", { staticClass: "label" }, [_vm._v("応援メッセージ")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field-body" }, [
+            _c("div", { staticClass: "field" }, [
+              _c("div", { staticClass: "control" }, [
+                _c("textarea", {
+                  staticClass: "textarea",
+                  attrs: { placeholder: "応援メッセージ" }
                 })
               ])
             ])
@@ -23502,8 +23745,8 @@ var staticRenderFns = [
           _c("div", { staticClass: "field-body" }, [
             _c("div", { staticClass: "field" }, [
               _c("div", { staticClass: "control" }, [
-                _c("button", { staticClass: "button is-primary" }, [
-                  _vm._v("\n                  Send message\n                ")
+                _c("button", { staticClass: "button is-warning custom-btn" }, [
+                  _vm._v("\n                  確認画面へ\n                ")
                 ])
               ])
             ])
