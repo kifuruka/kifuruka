@@ -41,12 +41,12 @@
 </template>
 
 <script>
+// Vuexの読み込み
+import { mapGetters, mapMutations, mapActions } from "vuex";
 import SchoolLogo from "../../images/schoolLogo/kinkiuniv.jpg";
 export default {
   data() {
-    return {
-      SchoolLogo
-    };
+    return {};
   }
 };
 </script>

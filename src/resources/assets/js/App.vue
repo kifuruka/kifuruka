@@ -9,16 +9,16 @@
 <script>
 import TopHeader from "./components/TopHeader";
 import TopFooter from "./components/TopFooter";
-import httpinit from "./services/http";
+// import httpinit from "./services/http";
 
 export default {
   components: {
     TopHeader,
     TopFooter
-  },
-  created() {
-    httpinit.init();
   }
+  // created() {
+  //   httpinit.init();
+  // }
 };
 </script>
 

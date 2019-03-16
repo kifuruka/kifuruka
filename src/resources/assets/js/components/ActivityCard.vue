@@ -1,14 +1,12 @@
 <template>
   <section>
     <div class="container flex-flame">
-      <div v-for="item in fetchAllData" :key="item.id" class>
+      <!-- <div v-for="item in fetchAllData" :key="item.id" class>
         <router-link :to="{ name : '', params : { id: item.id }}">
           <card :data="item"/>
         </router-link>
-      </div>
-
-      <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div>
-
+      </div>-->
+      <!-- <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div> -->
       <!-- カード１ -->
       <div class="card" style="width:30%">
         <div calss="card_image_container" style="position: relative;">
@@ -138,7 +136,6 @@
 
 
 <script>
-// import axios from "axios";
 import { mapGetters, mapMutations, mapActions } from "vuex";
 
 export default {
@@ -152,18 +149,18 @@ export default {
       supporter: 10,
       days: 5
     };
-  },
-  computed: {
-    ...mapGetters(["fetchAllData"])
-  },
-
-  created() {
-    this.fetchPostHomeCard();
-  },
-
-  methods: {
-    ...mapActions(["fetchPostHomeCard"])
   }
+  // computed: {
+  //   ...mapGetters(["fetchAllData"])
+  // },
+
+  // created() {
+  //   this.fetchPostHomeCard();
+  // },
+
+  // methods: {
+  //   ...mapActions(["fetchPostHomeCard"])
+  // }
 };
 </script>
 

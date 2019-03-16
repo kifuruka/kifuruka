@@ -2,11 +2,13 @@ import axios from 'axios'
 
 export default {
     request(method, url, data, successCb = null, errorCb = null) {
+        console.log("ここです" + method, url, data, successCb);
         axios.request({
             url,
             data,
             method: method.toLowerCase()
         }).then(successCb).catch(errorCb)
+
     },
     get(url, successCb = null, errorCb = null) {
         return this.request('get', url, {}, successCb, errorCb)
