@@ -4,10 +4,10 @@
     <search/>
     <activity-card/>
     <button-more/>
-    <!-- <entory-school/>
+    <entory-school/>
     <top-message/>
     <introduction/>
-    <corporate-donation/>-->
+    <corporate-donation/>
     <!-- <sample-vuex/> -->
     <swiper/>
   </div>
@@ -26,22 +26,22 @@ import SampleVuex from "../components/SampleVuex";
 import Swiper from "../components/Swiper";
 
 export default {
-  head: {
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
-      }
-    ],
-    script: [
-      {
-        type: "text/javascript",
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
-      }
-    ]
-  },
+  // head: {
+  //   link: [
+  //     {
+  //       rel: "stylesheet",
+  //       href:
+  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
+  //     }
+  //   ],
+  //   script: [
+  //     {
+  //       type: "text/javascript",
+  //       src:
+  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
+  //     }
+  //   ]
+  // },
 
   components: {
     TopVisual,

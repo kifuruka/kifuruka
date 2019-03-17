@@ -2439,7 +2439,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css__ = __webpack_require__("./node_modules/swiper/dist/css/swiper.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__ = __webpack_require__("./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 //
@@ -2473,15 +2477,36 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    swiper: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiper"],
+    swiperSlide: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiperSlide"]
+  },
   data: function data() {
-    return {};
+    return {
+      swiperOption: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      }
+    };
   },
 
-  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])({
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_2_vuex__["c" /* mapGetters */])({
     schools: "schoolData"
   })),
   created: function created() {
@@ -2495,7 +2520,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
   },
 
 
-  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])(["fetchSchoolData"]), {
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_2_vuex__["b" /* mapActions */])(["fetchSchoolData"]), {
     fetchSchool: function fetchSchool() {
       this.fetchSchoolData();
     }
@@ -3073,7 +3098,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     swiper: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiper"],
@@ -3506,16 +3530,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  head: {
-    link: [{
-      rel: "stylesheet",
-      href: "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
-    }],
-    script: [{
-      type: "text/javascript",
-      src: "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
-    }]
-  },
+  // head: {
+  //   link: [
+  //     {
+  //       rel: "stylesheet",
+  //       href:
+  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
+  //     }
+  //   ],
+  //   script: [
+  //     {
+  //       type: "text/javascript",
+  //       src:
+  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
+  //     }
+  //   ]
+  // },
 
   components: {
     TopVisual: __WEBPACK_IMPORTED_MODULE_0__components_TopVisual___default.a,
@@ -33343,52 +33373,79 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
-    _c("div", { staticClass: "feature", attrs: { id: "app" } }, [
-      _c("h2", [_vm._v("参加学校")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "swiper-container" }, [
+    _c(
+      "div",
+      { staticClass: "feature", attrs: { id: "app" } },
+      [
+        _c("h2", [_vm._v("参加学校")]),
+        _vm._v(" "),
         _c(
-          "div",
-          { staticClass: "swiper-wrapper" },
+          "carousel",
+          { staticClass: "container_feature", attrs: { "per-page": 4 } },
           [
             _c(
-              "carousel",
-              { staticClass: "container_feature", attrs: { "per-page": 4 } },
-              _vm._l(_vm.schools, function(school) {
-                return _c("slide", { key: school.id, staticClass: "item" }, [
-                  _c(
-                    "a",
-                    { attrs: { href: "http://webcreatorbox.com/about" } },
+              "swiper",
+              { attrs: { options: _vm.swiperOption } },
+              [
+                _vm._l(_vm.schools, function(school) {
+                  return _c(
+                    "swiper-slide",
+                    { key: school.id, staticClass: "item" },
                     [
-                      _c("section", { staticClass: "card" }, [
-                        _c("div", { staticClass: "card-content" }, [
-                          _c("h3", { staticClass: "card-title" }, [
-                            _vm._v(_vm._s(school.school_name))
+                      _c(
+                        "a",
+                        { attrs: { href: "http://webcreatorbox.com/about" } },
+                        [
+                          _c("section", { staticClass: "card" }, [
+                            _c("div", { staticClass: "card-content" }, [
+                              _c("h3", { staticClass: "card-title" }, [
+                                _vm._v(_vm._s(school.school_name))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("img", {
+                              staticClass: "card-img",
+                              attrs: { src: school.logo, alt: "写真" }
+                            }),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-content" }, [
+                              _c("h4", { staticClass: "card-title" }, [
+                                _vm._v("活動件数：" + _vm._s(school.activity))
+                              ])
+                            ])
                           ])
-                        ]),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass: "card-img",
-                          attrs: { src: school.logo, alt: "写真" }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "card-content" }, [
-                          _c("h4", { staticClass: "card-title" }, [
-                            _vm._v("活動件数：" + _vm._s(school.activity))
-                          ])
-                        ])
-                      ])
+                        ]
+                      )
                     ]
                   )
-                ])
-              }),
-              1
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "swiper-pagination",
+                  attrs: { slot: "pagination" },
+                  slot: "pagination"
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "swiper-button-prev",
+                  attrs: { slot: "button-prev" },
+                  slot: "button-prev"
+                }),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "swiper-button-next",
+                  attrs: { slot: "button-next" },
+                  slot: "button-next"
+                })
+              ],
+              2
             )
           ],
           1
         )
-      ])
-    ])
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -33511,6 +33568,14 @@ var render = function() {
       _c("activity-card"),
       _vm._v(" "),
       _c("button-more"),
+      _vm._v(" "),
+      _c("entory-school"),
+      _vm._v(" "),
+      _c("top-message"),
+      _vm._v(" "),
+      _c("introduction"),
+      _vm._v(" "),
+      _c("corporate-donation"),
       _vm._v(" "),
       _c("swiper")
     ],
@@ -52378,6 +52443,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuex
         }
     },
     actions: {
+
         // 学校の情報を取ってくる（SchoolSubInfo部分）
         fetchSchoolData: function () {
             var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee(_ref) {
@@ -52396,7 +52462,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuex
                                 _ref3 = _context.sent;
                                 data = _ref3.data;
 
-                                // console.log(data, 'data')
+
                                 commit('setShoolData', data);
 
                             case 5:

@@ -2,26 +2,27 @@
   <section>
     <div class="feature" id="app">
       <h2>参加学校</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <carousel class="container_feature" v-bind:per-page="4">
-            <slide class="item" v-for="school in schools" :key="school.id">
-              <!-- <slide class="item" v-for="i in info.length"> -->
-              <a href="http://webcreatorbox.com/about">
-                <section class="card">
-                  <div class="card-content">
-                    <h3 class="card-title">{{school.school_name}}</h3>
-                  </div>
-                  <img class="card-img" :src="school.logo" alt="写真">
-                  <div class="card-content">
-                    <h4 class="card-title">活動件数：{{school.activity}}</h4>
-                  </div>
-                </section>
-              </a>
-            </slide>
-          </carousel>
-        </div>
-      </div>
+      <carousel class="container_feature" v-bind:per-page="4">
+        <swiper :options="swiperOption">
+          <swiper-slide class="item" v-for="school in schools" :key="school.id">
+            <!-- <slide class="item" v-for="i in info.length"> -->
+            <a href="http://webcreatorbox.com/about">
+              <section class="card">
+                <div class="card-content">
+                  <h3 class="card-title">{{school.school_name}}</h3>
+                </div>
+                <img class="card-img" :src="school.logo" alt="写真">
+                <div class="card-content">
+                  <h4 class="card-title">活動件数：{{school.activity}}</h4>
+                </div>
+              </section>
+            </a>
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+          <div class="swiper-button-prev" slot="button-prev"></div>
+          <div class="swiper-button-next" slot="button-next"></div>
+        </swiper>
+      </carousel>
     </div>
   </section>
 </template>
@@ -30,11 +31,31 @@
 
 
 <script>
+import "swiper/dist/css/swiper.css";
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 import { mapGetters, mapMutations, mapActions } from "vuex";
 
 export default {
+  components: {
+    swiper,
+    swiperSlide
+  },
   data() {
-    return {};
+    return {
+      swiperOption: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      }
+    };
   },
   computed: {
     ...mapGetters({
