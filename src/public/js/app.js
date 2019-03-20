@@ -2607,6 +2607,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3573,7 +3599,7 @@ exports.push([module.i, "\nsection[data-v-7cdae69f] {\n  max-width: 1160px;\n  m
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n}\nsection .container[data-v-8d3e665e] {\n    max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 56px;\n      font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n        text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 32px;\n      font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n    margin-top: 32px;\n    font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n      margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n        width: 100%;\n        height: 100% !important;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n}\nsection .container[data-v-8d3e665e] {\n    max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 56px;\n      font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n        text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 32px;\n      font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n    margin-top: 32px;\n    font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n      margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n        width: 100%;\n        height: 100% !important;\n}\nsection .u-img-p[data-v-8d3e665e] {\n    display: none;\n}\n@media screen and (max-width: 768px) {\nsection .u-img-p[data-v-8d3e665e] {\n      display: block;\n}\nsection .u-img-p-pc[data-v-8d3e665e] {\n      display: none;\n}\n}\n", ""]);
 
 
 
@@ -23703,21 +23729,39 @@ var render = function() {
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Message1, alt: "#" }
-                })
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "u-img-p" }, [
+                  _vm._v(
+                    "\n                きふるかには、登録学校の活動ご\n                との寄付が掲載されています。\n                寄付者は、自分の卒業校の活動を\n                常に検索することができ、卒業校\n                だけでなく自分の応援したい活動\n                を選び寄付することができます。\n              "
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "tile is-parent" }, [
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Message2, alt: "#" }
-                })
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "u-img-p" }, [
+                  _vm._v(
+                    "\n                寄付者が行った寄付は、各学校を\n                経由して、学生が行う活動団体の\n                支援のために使われる寄付として\n                直接届きます。これにより寄付者\n                が応援したい活動にダイレクトに\n                寄付を届けることが可能となりま\n                す。\n              "
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "tile is-parent" }, [
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Message3, alt: "#" }
-                })
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "u-img-p" }, [
+                  _vm._v(
+                    "\n                寄付を受け取った各団体は、それ\n                ぞれ、活動に沿ったお礼を寄付者\n                に届けます。こうすることで、き\n                ふるかを通して、寄付者と学生そ\n                れぞれがつながることができます。\n                また、寄付を行うことで、学校か\n                らの寄付控除を受けられます。\n              "
+                  )
+                ])
               ])
             ])
           ])
@@ -23768,7 +23812,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "tile is-vertical is-12 flame" }, [
           _c("div", { staticClass: "tile" }, [
             _c("div", { staticClass: "tile is-parent" }, [
-              _c("p", [
+              _c("p", { staticClass: "u-img-p-pc" }, [
                 _vm._v(
                   "\n                きふるかには、登録学校の活動ご\n                との寄付が掲載されています。\n                寄付者は、自分の卒業校の活動を\n                常に検索することができ、卒業校\n                だけでなく自分の応援したい活動\n                を選び寄付することができます。\n              "
                 )
@@ -23776,7 +23820,7 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "tile is-parent" }, [
-              _c("p", [
+              _c("p", { staticClass: "u-img-p-pc" }, [
                 _vm._v(
                   "\n                寄付者が行った寄付は、各学校を\n                経由して、学生が行う活動団体の\n                支援のために使われる寄付として\n                直接届きます。これにより寄付者\n                が応援したい活動にダイレクトに\n                寄付を届けることが可能となりま\n                す。\n              "
                 )
@@ -23784,7 +23828,7 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "tile is-parent" }, [
-              _c("p", [
+              _c("p", { staticClass: "u-img-p-pc" }, [
                 _vm._v(
                   "\n                寄付を受け取った各団体は、それ\n                ぞれ、活動に沿ったお礼を寄付者\n                に届けます。こうすることで、き\n                ふるかを通して、寄付者と学生そ\n                れぞれがつながることができます。\n                また、寄付を行うことで、学校か\n                らの寄付控除を受けられます。\n              "
                 )
