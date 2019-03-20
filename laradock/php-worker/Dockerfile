@@ -36,7 +36,7 @@ RUN curl -s http://getcomposer.org/installer | php && \
 RUN . ~/.bashrc
 
 RUN php -v | head -n 1 | grep -q "PHP ${PHP_VERSION}."
-
+# RUN docker-php-ext-install pdo_mysql
 #--------------------------------------------------------------------------
 # Final Touch
 #--------------------------------------------------------------------------

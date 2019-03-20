@@ -9,7 +9,6 @@
     <introduction/>
     <corporate-donation/>
     <!-- <sample-vuex/> -->
-    <swiper/>
   </div>
 </template>
 
@@ -23,7 +22,6 @@ import Introduction from "../components/Introduction";
 import CorporateDonation from "../components/CorporateDonation";
 import EntorySchool from "../components/EntorySchool";
 import SampleVuex from "../components/SampleVuex";
-import Swiper from "../components/Swiper";
 
 export default {
   // head: {
@@ -52,8 +50,7 @@ export default {
     Introduction,
     CorporateDonation,
     EntorySchool,
-    SampleVuex,
-    Swiper
+    SampleVuex
   }
 };
 </script>

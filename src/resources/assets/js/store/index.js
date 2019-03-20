@@ -13,7 +13,7 @@ export default new Vuex.Store({
     },
 
     state: {
-        schoolData: null,
+        schoolData: [],
         activities: [],
         card: [],
         userId: 'aaaaa'
@@ -36,9 +36,11 @@ export default new Vuex.Store({
     mutations: {
 
         setShoolData(state, payload) {
-            // console.log(payload, 'mute')
-            state.schoolData = payload.concat()
-        },
+            console.log(payload, 'Route')
+            // state.schoolData = payload.concat()
+            state.schoolData = payload
+            // },
+        }
         // setPosts(state, ary) {
         //     state.posts = ary.concat();
         // },
@@ -53,12 +55,26 @@ export default new Vuex.Store({
     actions: {
 
         // 学校の情報を取ってくる（SchoolSubInfo部分）
-        async fetchSchoolData({ commit }) {
-            const { data } = await axios.get('/json/school.json')
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/json/school.json')
+        //     commit('setShoolData', data)
+        // },
 
 
-            commit('setShoolData', data)
+        // index.js
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/school')
+        //     console.log(data);
+        //     commit('setShoolData', data)
+        // },
+
+        fetchSchoolData({ commit }) {
+            http.get('/school', res => {
+                commit('setShoolData', res.data)
+            }, null)
+
         },
+
 
 
     }

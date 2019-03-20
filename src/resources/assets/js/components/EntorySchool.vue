@@ -2,27 +2,27 @@
   <section>
     <div class="feature" id="app">
       <h2>参加学校</h2>
-      <carousel class="container_feature" v-bind:per-page="4">
-        <swiper :options="swiperOption">
-          <swiper-slide class="item" v-for="school in schools" :key="school.id">
-            <!-- <slide class="item" v-for="i in info.length"> -->
-            <a href="http://webcreatorbox.com/about">
-              <section class="card">
-                <div class="card-content">
-                  <h3 class="card-title">{{school.school_name}}</h3>
-                </div>
-                <img class="card-img" :src="school.logo" alt="写真">
-                <div class="card-content">
-                  <h4 class="card-title">活動件数：{{school.activity}}</h4>
-                </div>
-              </section>
-            </a>
-          </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-          <div class="swiper-button-prev" slot="button-prev"></div>
-          <div class="swiper-button-next" slot="button-next"></div>
-        </swiper>
-      </carousel>
+      <!-- <carousel class="container_feature" v-bind:per-page="4"> -->
+      <swiper :options="swiperOption">
+        <swiper-slide class="item" v-for="school in schools" :key="school.id">
+          <!-- <slide class="item" v-for="i in info.length"> -->
+          <a href="http://webcreatorbox.com/about">
+            <section class="card">
+              <div class="card-content">
+                <h3 class="card-title">{{school.school_name}}</h3>
+              </div>
+              <img class="card-img" :src="school.logo" alt="写真">
+              <div class="card-content">
+                <h4 class="card-title">活動件数：{{school.activity}}</h4>
+              </div>
+            </section>
+          </a>
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
+      <!-- </carousel> -->
     </div>
   </section>
 </template>

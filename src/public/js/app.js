@@ -1640,6 +1640,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_TopHeader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_TopHeader__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_TopFooter__ = __webpack_require__("./resources/assets/js/components/TopFooter.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_TopFooter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_TopFooter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_http__ = __webpack_require__("./resources/assets/js/services/http.js");
 //
 //
 //
@@ -1651,16 +1652,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-// import httpinit from "./services/http";
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     TopHeader: __WEBPACK_IMPORTED_MODULE_0__components_TopHeader___default.a,
     TopFooter: __WEBPACK_IMPORTED_MODULE_1__components_TopFooter___default.a
-    // created() {
-    //   httpinit.init();
-    // }
-  } });
+  },
+  created: function created() {
+    __WEBPACK_IMPORTED_MODULE_2__services_http__["a" /* default */].init();
+  }
+});
 
 /***/ }),
 
@@ -3066,60 +3068,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/Swiper.vue":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css__ = __webpack_require__("./node_modules/swiper/dist/css/swiper.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__ = __webpack_require__("./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    swiper: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiper"],
-    swiperSlide: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiperSlide"]
-  },
-  data: function data() {
-    return {
-      swiperOption: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      }
-    };
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/TopFooter.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3500,8 +3448,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_EntorySchool___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_EntorySchool__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_SampleVuex__ = __webpack_require__("./resources/assets/js/components/SampleVuex.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_SampleVuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_SampleVuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Swiper__ = __webpack_require__("./resources/assets/js/components/Swiper.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_Swiper__);
 //
 //
 //
@@ -3516,8 +3462,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-
 
 
 
@@ -3556,8 +3500,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     Introduction: __WEBPACK_IMPORTED_MODULE_5__components_Introduction___default.a,
     CorporateDonation: __WEBPACK_IMPORTED_MODULE_6__components_CorporateDonation___default.a,
     EntorySchool: __WEBPACK_IMPORTED_MODULE_7__components_EntorySchool___default.a,
-    SampleVuex: __WEBPACK_IMPORTED_MODULE_8__components_SampleVuex___default.a,
-    Swiper: __WEBPACK_IMPORTED_MODULE_9__components_Swiper___default.a
+    SampleVuex: __WEBPACK_IMPORTED_MODULE_8__components_SampleVuex___default.a
   }
 });
 
@@ -32434,64 +32377,6 @@ if (false) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7a437d22\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Swiper.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c(
-        "swiper",
-        { attrs: { options: _vm.swiperOption } },
-        [
-          _c("swiper-slide", [_vm._v("Slide 1")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 2")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 3")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 4")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 5")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 6")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 7")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 8")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 9")]),
-          _vm._v(" "),
-          _c("swiper-slide", [_vm._v("Slide 10")]),
-          _vm._v(" "),
-          _c("div", {
-            staticClass: "swiper-pagination",
-            attrs: { slot: "pagination" },
-            slot: "pagination"
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7a437d22", module.exports)
-  }
-}
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7cdae69f\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Search.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33380,68 +33265,61 @@ var render = function() {
         _c("h2", [_vm._v("参加学校")]),
         _vm._v(" "),
         _c(
-          "carousel",
-          { staticClass: "container_feature", attrs: { "per-page": 4 } },
+          "swiper",
+          { attrs: { options: _vm.swiperOption } },
           [
-            _c(
-              "swiper",
-              { attrs: { options: _vm.swiperOption } },
-              [
-                _vm._l(_vm.schools, function(school) {
-                  return _c(
-                    "swiper-slide",
-                    { key: school.id, staticClass: "item" },
+            _vm._l(_vm.schools, function(school) {
+              return _c(
+                "swiper-slide",
+                { key: school.id, staticClass: "item" },
+                [
+                  _c(
+                    "a",
+                    { attrs: { href: "http://webcreatorbox.com/about" } },
                     [
-                      _c(
-                        "a",
-                        { attrs: { href: "http://webcreatorbox.com/about" } },
-                        [
-                          _c("section", { staticClass: "card" }, [
-                            _c("div", { staticClass: "card-content" }, [
-                              _c("h3", { staticClass: "card-title" }, [
-                                _vm._v(_vm._s(school.school_name))
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass: "card-img",
-                              attrs: { src: school.logo, alt: "写真" }
-                            }),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "card-content" }, [
-                              _c("h4", { staticClass: "card-title" }, [
-                                _vm._v("活動件数：" + _vm._s(school.activity))
-                              ])
-                            ])
+                      _c("section", { staticClass: "card" }, [
+                        _c("div", { staticClass: "card-content" }, [
+                          _c("h3", { staticClass: "card-title" }, [
+                            _vm._v(_vm._s(school.school_name))
                           ])
-                        ]
-                      )
+                        ]),
+                        _vm._v(" "),
+                        _c("img", {
+                          staticClass: "card-img",
+                          attrs: { src: school.logo, alt: "写真" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "card-content" }, [
+                          _c("h4", { staticClass: "card-title" }, [
+                            _vm._v("活動件数：" + _vm._s(school.activity))
+                          ])
+                        ])
+                      ])
                     ]
                   )
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "swiper-pagination",
-                  attrs: { slot: "pagination" },
-                  slot: "pagination"
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "swiper-button-prev",
-                  attrs: { slot: "button-prev" },
-                  slot: "button-prev"
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "swiper-button-next",
-                  attrs: { slot: "button-next" },
-                  slot: "button-next"
-                })
-              ],
-              2
-            )
+                ]
+              )
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "swiper-pagination",
+              attrs: { slot: "pagination" },
+              slot: "pagination"
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "swiper-button-prev",
+              attrs: { slot: "button-prev" },
+              slot: "button-prev"
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "swiper-button-next",
+              attrs: { slot: "button-next" },
+              slot: "button-next"
+            })
           ],
-          1
+          2
         )
       ],
       1
@@ -33575,9 +33453,7 @@ var render = function() {
       _vm._v(" "),
       _c("introduction"),
       _vm._v(" "),
-      _c("corporate-donation"),
-      _vm._v(" "),
-      _c("swiper")
+      _c("corporate-donation")
     ],
     1
   )
@@ -51756,54 +51632,6 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/Swiper.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
-/* script */
-var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/Swiper.vue")
-/* template */
-var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7a437d22\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Swiper.vue")
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Swiper.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7a437d22", Component.options)
-  } else {
-    hotAPI.reload("data-v-7a437d22", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
 /***/ "./resources/assets/js/components/TopFooter.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -52328,12 +52156,12 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = ({
+/* harmony default export */ __webpack_exports__["a"] = ({
     request: function request(method, url, data) {
         var successCb = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
         var errorCb = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : null;
 
-        console.log("ここです" + method, url, data, successCb);
+        console.log(method, url, data, successCb);
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.request({
             url: url,
             data: data,
@@ -52366,7 +52194,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
         return this.request('delete', url, data, successCb, errorCb);
     },
     init: function init() {
-        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.defaults.baseURL = '/api';
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.defaults.baseURL = '/api/v1';
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.interceptors.request.use(function (config) {
             config.headers['X-CSRF-TOKEN'] = window.Laravel.csrfToken;
             config.headers['X-Requested-With'] = 'XMLHttpRequest';
@@ -52388,35 +52216,29 @@ module.exports = "/images/kifuruka_logo.png?4a04380ce77386a27a872ffbefee5e22";
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("./node_modules/babel-runtime/regenerator/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_auth__ = __webpack_require__("./resources/assets/js/store/modules/auth.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios__ = __webpack_require__("./node_modules/axios/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_http__ = __webpack_require__("./resources/assets/js/services/http.js");
-
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_auth__ = __webpack_require__("./resources/assets/js/store/modules/auth.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__("./node_modules/axios/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_http__ = __webpack_require__("./resources/assets/js/services/http.js");
 
 
 
 
 
 
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuex__["a" /* default */]);
-
-/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_2_vuex__["a" /* default */].Store({
+/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 
     modules: {
-        auth: __WEBPACK_IMPORTED_MODULE_3__modules_auth__["a" /* default */]
+        auth: __WEBPACK_IMPORTED_MODULE_2__modules_auth__["a" /* default */]
     },
 
     state: {
-        schoolData: null,
+        schoolData: [],
         activities: [],
         card: [],
         userId: 'aaaaa'
@@ -52438,47 +52260,46 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuex
     },
     mutations: {
         setShoolData: function setShoolData(state, payload) {
-            // console.log(payload, 'mute')
-            state.schoolData = payload.concat();
+            console.log(payload, 'Route');
+            // state.schoolData = payload.concat()
+            state.schoolData = payload;
+            // },
         }
+        // setPosts(state, ary) {
+        //     state.posts = ary.concat();
+        // },
+        // imgPosts(state, payload) {
+        //     state.posts = payload
+        // },
+        // setPostCards(state, payload) {
+        //     state.activities = payload.concat();
+        //     // console.log(payload)
+        // }
+
     },
     actions: {
 
         // 学校の情報を取ってくる（SchoolSubInfo部分）
-        fetchSchoolData: function () {
-            var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee(_ref) {
-                var commit = _ref.commit;
-
-                var _ref3, data;
-
-                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                _context.next = 2;
-                                return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('/json/school.json');
-
-                            case 2:
-                                _ref3 = _context.sent;
-                                data = _ref3.data;
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/json/school.json')
+        //     commit('setShoolData', data)
+        // },
 
 
-                                commit('setShoolData', data);
+        // index.js
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/school')
+        //     console.log(data);
+        //     commit('setShoolData', data)
+        // },
 
-                            case 5:
-                            case 'end':
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this);
-            }));
+        fetchSchoolData: function fetchSchoolData(_ref) {
+            var commit = _ref.commit;
 
-            function fetchSchoolData(_x) {
-                return _ref2.apply(this, arguments);
-            }
-
-            return fetchSchoolData;
-        }()
+            __WEBPACK_IMPORTED_MODULE_4__services_http__["a" /* default */].get('/school', function (res) {
+                commit('setShoolData', res.data);
+            }, null);
+        }
     }
 
 }));

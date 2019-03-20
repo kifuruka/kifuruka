@@ -13,6 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
+// phpinfo();exit;
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+// ルートが
+Route::group(['prefix'=>'v1'],function(){
+    Route::get('/school', 'SchoolController@index');
 });
