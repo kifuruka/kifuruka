@@ -15,13 +15,13 @@ class CreateActivitieContentsTable extends Migration
     {
         Schema::create('activitie_contents', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('activitie_id')->unsigned();
-            $table->string('sub_title',100);
-            $table->string('sub_contents',250);
-            $table->string('sub_image',250)->nullable();
+            $table->integer('activity_id')->unsigned();
+            $table->string('sub_title',255);
+            $table->text('sub_contents');
+            $table->string('sub_image',255)->nullable();
             $table->timestamps();
 
-            $table->foreign('activitie_id')
+            $table->foreign('activity_id')
             ->references('id')
             ->on('activities')
             ->onDelete('cascade');

@@ -15,17 +15,19 @@ class CreateDonationsTable extends Migration
     {
         Schema::create('donations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('activitie_id')->unsigned();
+            $table->integer('activity_id')->unsigned();
             $table->string('title',100);
-            $table->string('contents',250);
-            $table->integer('price');
-            $table->string('donation_img',250)->nullable();
-            $table->timestamp('period_at');
+            $table->text('contents')->nullable();
+            $table->integer('price')->nullable();
+            $table->string('donation_img',255)->nullable();
+            $table->timestamp('period_at')->nullable();
             $table->timestamps();
+            $table->boolean('is_published')->default(0);
 
-            $table->foreign('activitie_id')
+            $table->foreign('activity_id')
             ->references('id')
-            ->on('activities');
+            ->on('activities')
+            ->onDelete('cascade');
            
         });
     }

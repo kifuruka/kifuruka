@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAlumniActivitysTable extends Migration
+class CreateAlumniActivitiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,20 @@ class CreateAlumniActivitysTable extends Migration
      */
     public function up()
     {
-        Schema::create('alumni_activitys', function (Blueprint $table) {
+        Schema::create('alumni_activities', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('activitie_id')->unsigned();
+            $table->integer('activity_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('user_id')
             ->references('id')
             ->on('users');
 
-            $table->foreign('activitie_id')
+            $table->foreign('activity_id')
             ->references('id')
             ->on('activities');
+
         });
     }
 
@@ -36,6 +37,6 @@ class CreateAlumniActivitysTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('alumni_activitys');
+        Schema::dropIfExists('alumni_activities');
     }
 }

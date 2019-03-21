@@ -16,9 +16,9 @@ class CreateSchoolContentsTable extends Migration
         Schema::create('school_contents', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('school_id')->unsigned();
-            $table->string('sub_title',100);
-            $table->string('sub_contents',250);
-            $table->string('sub_image',250)->nullable();
+            $table->string('sub_title',255);
+            $table->text('sub_contents');
+            $table->string('sub_image',255)->nullable();
             $table->timestamps();
 
             $table->foreign('school_id')

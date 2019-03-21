@@ -54,7 +54,8 @@ export default new Vuex.Store({
     },
     actions: {
 
-        // 学校の情報を取ってくる（SchoolSubInfo部分）
+
+        // ＜練習１＞別ファイルのJSONから学校の情報を取ってくる
         // async fetchSchoolData({ commit }) {
         //     const { data } = await axios.get('/json/school.json')
         //     commit('setShoolData', data)
