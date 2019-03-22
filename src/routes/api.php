@@ -26,15 +26,6 @@ Route::group(['prefix'=>'v1'],function(){
     Route::get('/school', 'SchoolController@index');
 });
 // ユーザー認証・登録
-Route::post("/auth/register", "Auth\RegisterController@register");//新規登録
-Route::post("/auth/login", "Auth\LoginController@login"); //ログイン
-Route::post("/auth/logout", "Auth\AuthController@logout");//ログアウト
-// 各種データ取得
-Route::get('/school', 'SchoolController@index'); //学校一覧
-Route::get('/activity', 'ActivityController@index'); //活動一覧
-Route::get('/donation', 'DonationController@index'); //寄付一覧
-// データ送信・作成
-Route::post('/donation/send','DonationController@create');//寄付を送る
 
 // Route::patch("/events/{EVENT_ID}", "EventController@update");
 // Route::delete("/events/{EVENT_ID}", "EventController@destroy");

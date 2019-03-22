@@ -2479,7 +2479,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
 
 
 
@@ -33273,30 +33272,24 @@ var render = function() {
                 "swiper-slide",
                 { key: school.id, staticClass: "item" },
                 [
-                  _c(
-                    "a",
-                    { attrs: { href: "http://webcreatorbox.com/about" } },
-                    [
-                      _c("section", { staticClass: "card" }, [
-                        _c("div", { staticClass: "card-content" }, [
-                          _c("h3", { staticClass: "card-title" }, [
-                            _vm._v(_vm._s(school.school_name))
-                          ])
+                  _c("a", { attrs: { href: school.url } }, [
+                    _c("section", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("h3", { staticClass: "card-title" }, [
+                          _vm._v(_vm._s(school.school_name) + "学校")
                         ]),
                         _vm._v(" "),
-                        _c("img", {
-                          staticClass: "card-img",
-                          attrs: { src: school.logo, alt: "写真" }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "card-content" }, [
-                          _c("h4", { staticClass: "card-title" }, [
-                            _vm._v("活動件数：" + _vm._s(school.activity))
-                          ])
+                        _c("h4", { staticClass: "card-title" }, [
+                          _vm._v("活動件数：" + _vm._s(school.activity_count))
                         ])
-                      ])
-                    ]
-                  )
+                      ]),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "card-img",
+                        attrs: { src: school.school_img, alt: "写真" }
+                      })
+                    ])
+                  ])
                 ]
               )
             }),
@@ -52240,8 +52233,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
     state: {
         schoolData: [],
         activities: [],
-        card: [],
-        userId: 'aaaaa'
+        card: []
+        // userId: 'aaaaa'
     },
     getters: {
         schoolData: function schoolData(state) {
@@ -52279,19 +52272,22 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
     },
     actions: {
 
-        // 学校の情報を取ってくる（SchoolSubInfo部分）
+        // ＜練習１＞別ファイルのJSONから学校の情報を取ってくる
+
         // async fetchSchoolData({ commit }) {
         //     const { data } = await axios.get('/json/school.json')
         //     commit('setShoolData', data)
         // },
 
 
-        // index.js
+        // ＜練習２＞そのまま、Laravelのコントローラー経由でMySQLデータをを取ってくる
+
         // async fetchSchoolData({ commit }) {
         //     const { data } = await axios.get('/school')
         //     console.log(data);
         //     commit('setShoolData', data)
         // },
+
 
         fetchSchoolData: function fetchSchoolData(_ref) {
             var commit = _ref.commit;

@@ -5,16 +5,14 @@
       <!-- <carousel class="container_feature" v-bind:per-page="4"> -->
       <swiper :options="swiperOption">
         <swiper-slide class="item" v-for="school in schools" :key="school.id">
-          <!-- <slide class="item" v-for="i in info.length"> -->
-          <a href="http://webcreatorbox.com/about">
+          <a v-bind:href="school.url">
             <section class="card">
               <div class="card-content">
-                <h3 class="card-title">{{school.school_name}}</h3>
+                <h3 class="card-title">{{school.school_name}}学校</h3>
+                <h4 class="card-title">活動件数：{{school.activity_count}}</h4>
               </div>
-              <img class="card-img" :src="school.logo" alt="写真">
-              <div class="card-content">
-                <h4 class="card-title">活動件数：{{school.activity}}</h4>
-              </div>
+              <img class="card-img" :src="school.school_img" alt="写真">
+              <!-- <div class="card-content"></div> -->
             </section>
           </a>
         </swiper-slide>
@@ -22,6 +20,7 @@
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
+
       <!-- </carousel> -->
     </div>
   </section>

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Test;
+use App\Models\Activity;
 use Illuminate\Http\Request;
 
-class TestController extends Controller
+class ActivityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class TestController extends Controller
      */
     public function index()
     {
-     $school =  School::all();
-     dd($school);
+        //
     }
 
     /**
@@ -42,10 +41,10 @@ class TestController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Test  $test
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function show(Test $test)
+    public function show(Activity $activity)
     {
         //
     }
@@ -53,10 +52,10 @@ class TestController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Test  $test
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function edit(Test $test)
+    public function edit(Activity $activity)
     {
         //
     }
@@ -65,10 +64,10 @@ class TestController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Test  $test
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Test $test)
+    public function update(Request $request, Activity $activity)
     {
         //
     }
@@ -76,10 +75,10 @@ class TestController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Test  $test
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Test $test)
+    public function destroy(Activity $activity)
     {
         //
     }

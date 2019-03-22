@@ -16,7 +16,7 @@ export default new Vuex.Store({
         schoolData: [],
         activities: [],
         card: [],
-        userId: 'aaaaa'
+        // userId: 'aaaaa'
     },
     getters: {
         schoolData(state) {
@@ -56,18 +56,21 @@ export default new Vuex.Store({
 
 
         // ＜練習１＞別ファイルのJSONから学校の情報を取ってくる
+
         // async fetchSchoolData({ commit }) {
         //     const { data } = await axios.get('/json/school.json')
         //     commit('setShoolData', data)
         // },
 
 
-        // index.js
+        // ＜練習２＞そのまま、Laravelのコントローラー経由でMySQLデータをを取ってくる
+
         // async fetchSchoolData({ commit }) {
         //     const { data } = await axios.get('/school')
         //     console.log(data);
         //     commit('setShoolData', data)
         // },
+
 
         fetchSchoolData({ commit }) {
             http.get('/school', res => {
