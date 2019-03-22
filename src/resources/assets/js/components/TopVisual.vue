@@ -102,5 +102,21 @@ section {
     height: 100% !important;
   }
 }
+
+@media screen and (max-width: 768px){
+  .tile:not(.is-child) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  .tile.is-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 50%;
+  }
+}
+
+
 </style>
 
