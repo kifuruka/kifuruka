@@ -3430,7 +3430,7 @@ module.exports = __webpack_require__("./node_modules/regenerator-runtime/runtime
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-087cd353] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-087cd353] {\n  padding: 16px;\n}\n.school-right-flame h1[data-v-087cd353] {\n    font-size: 3rem;\n    font-weight: bold;\n    text-align: right;\n    padding-bottom: 16px;\n}\n.school-right-flame p[data-v-087cd353] {\n    font-size: 1.8rem;\n}\n.school-right-flame div[data-v-087cd353] {\n    text-align: right;\n}\n.school-right-flame div a[data-v-087cd353] {\n      font-weight: bold;\n      font-size: 1.6rem;\n}\n.btn-flame[data-v-087cd353] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-087cd353] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.img-flame[data-v-087cd353] {\n  padding: 24px;\n}\n", ""]);
+exports.push([module.i, "\nsection .container[data-v-087cd353] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-087cd353] {\n  padding: 16px;\n}\n.school-right-flame h1[data-v-087cd353] {\n    font-size: 3rem;\n    font-weight: bold;\n    text-align: right;\n    padding-bottom: 16px;\n}\n.school-right-flame p[data-v-087cd353] {\n    font-size: 1.8rem;\n}\n.school-right-flame div[data-v-087cd353] {\n    text-align: right;\n}\n.school-right-flame div a[data-v-087cd353] {\n      font-weight: bold;\n      font-size: 1.6rem;\n}\n.btn-flame[data-v-087cd353] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-087cd353] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.img-flame[data-v-087cd353] {\n  padding: 24px;\n}\n@media screen and (max-width: 768px) {\n.school-right-flame[data-v-087cd353] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.school-right-flame h1[data-v-087cd353] {\n      display: none;\n}\n.school-right-flame p[data-v-087cd353] {\n      display: none;\n}\n.school-right-flame .sns-link[data-v-087cd353] {\n      width: 33%;\n      text-align: center;\n}\n}\n", ""]);
 
 
 
@@ -22346,11 +22346,17 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", [_vm._v("公式SNS")]),
       _vm._v(" "),
-      _c("div", [_c("a", { attrs: { href: "" } }, [_vm._v("Facebook")])]),
+      _c("div", { staticClass: "sns-link" }, [
+        _c("a", { attrs: { href: "" } }, [_vm._v("Facebook")])
+      ]),
       _vm._v(" "),
-      _c("div", [_c("a", { attrs: { href: "" } }, [_vm._v("Twitter")])]),
+      _c("div", { staticClass: "sns-link" }, [
+        _c("a", { attrs: { href: "" } }, [_vm._v("Twitter")])
+      ]),
       _vm._v(" "),
-      _c("div", [_c("a", { attrs: { href: "" } }, [_vm._v("Instagram")])])
+      _c("div", { staticClass: "sns-link" }, [
+        _c("a", { attrs: { href: "" } }, [_vm._v("Instagram")])
+      ])
     ])
   }
 ]
