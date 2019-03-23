@@ -53,4 +53,13 @@ section {
     // padding-left:5%
 }
 
+
+@media screen and (max-width:768px) { 
+
+section .container {
+    margin-bottom: 0px;
+}
+
+}
+
 </style>

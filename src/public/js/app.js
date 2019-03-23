@@ -3694,7 +3694,7 @@ exports.push([module.i, "\nsection[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  p
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n", ""]);
+exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecd96268] {\n    margin-bottom: 0px;\n}\n}\n", ""]);
 
 
 
