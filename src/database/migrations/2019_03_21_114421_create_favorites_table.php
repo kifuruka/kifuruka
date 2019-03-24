@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCheeringsTable extends Migration
+class CreateFavoritesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCheeringsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cheerings', function (Blueprint $table) {
+        Schema::create('favorites', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('activity_id')->unsigned();
@@ -21,12 +21,12 @@ class CreateCheeringsTable extends Migration
 
             $table->foreign('user_id')
             ->references('id')
-            ->on('users')
-            ->onDelete('cascade');
-            
+            ->on('users');
+
             $table->foreign('activity_id')
             ->references('id')
             ->on('activities');
+
         });
     }
 
@@ -37,6 +37,6 @@ class CreateCheeringsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cheerings');
+        Schema::dropIfExists('favorites');
     }
 }

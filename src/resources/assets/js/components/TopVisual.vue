@@ -48,25 +48,21 @@ export default {
       Homeimg3,
       Homeimg4
     };
-  },
+  }
 
   // mounted: function() {
   //   // `this` は vm インスタンスを指します
   //   getimages();
   // },
 
-  created() {
-    this.fetchPostTopVisual();
-    // getimages() {
-    //   this.fetchPostTopVisual();
-    // }
-    // 画像を表示させる
-    // Vuexを使って写真を表示させる
-  },
-  methods: {
-    // ...はスプレットオペレーター
-    ...mapActions(["fetchPostTopVisual"])
-  }
+  // created() {
+  //   this.fetchPostTopVisual();
+
+  // },
+  // methods: {
+
+  //   ...mapActions(["fetchPostTopVisual"])
+  // }
 };
 </script>
 

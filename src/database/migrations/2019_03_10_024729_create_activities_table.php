@@ -17,18 +17,18 @@ class CreateActivitiesTable extends Migration
             $table->increments('id');    
             $table->integer('school_id')->unsigned();
             $table->string('activitie_name',100);
-            $table->string('title',100);
-            $table->string('top_contents',250);
-            $table->integer('total_donation');
-            $table->integer('fans');
-            $table->string('activitie_img',250)->nullable();
-            $table->string('url',250)->nullable();
-            $table->timestamp('period_at');
+            $table->string('title',255)->nullable();
+            $table->text('top_contents')->nullable();
+            $table->integer('total_donation')->nullable();
+            $table->integer('fans')->nullable();
+            $table->string('activitie_img',255)->nullable();
+            $table->text('url')->nullable();
             $table->timestamps();
 
             $table->foreign('school_id')
             ->references('id')
-            ->on('schools');
+            ->on('schools')
+            ->onDelete('cascade');
 
         });
     }

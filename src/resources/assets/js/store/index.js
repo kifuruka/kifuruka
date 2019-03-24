@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import auth from "./modules/auth";
 import axios from "axios";
+import http from '../services/http'
 
 Vue.use(Vuex);
 
@@ -10,70 +11,76 @@ export default new Vuex.Store({
     modules: {
         auth: auth
     },
+
     state: {
+        schoolData: [],
         activities: [],
         card: [],
-        userId: 'aaaaa'
+        // userId: 'aaaaa'
     },
     getters: {
-        posts(state) {
-            return state.posts
-        },
-        userId(state) {
-            return state.userId
-        },
-        fetchAllData(state) {
-            return state.activities
+        schoolData(state) {
+            return state.schoolData
+
         }
+        // posts(state) {
+        //     return state.posts
+        // },
+        // userId(state) {
+        //     return state.userId
+        // },
+        // fetchAllData(state) {
+        //     return state.activities
+        // }
     },
     mutations: {
-        setPosts(state, ary) {
-            state.posts = ary.concat();
-        },
-        imgPosts(state, payload) {
-            state.posts = payload
-        },
-        setPostCards(state, payload) {
-            state.activities = payload.concat();
-            console.log(payload)
+
+        setShoolData(state, payload) {
+            console.log(payload, 'Route')
+            // state.schoolData = payload.concat()
+            state.schoolData = payload
+            // },
         }
+        // setPosts(state, ary) {
+        //     state.posts = ary.concat();
+        // },
+        // imgPosts(state, payload) {
+        //     state.posts = payload
+        // },
+        // setPostCards(state, payload) {
+        //     state.activities = payload.concat();
+        //     // console.log(payload)
+        // }
     },
     actions: {
-        fetchPosts(context) {
-            axios.get('/json/test.json')
-                .then(function (response) {
-                    // console.log(response.data)
-                    context.commit('setPosts', response.data)
-                })
+
+
+        // ＜練習１＞別ファイルのJSONから学校の情報を取ってくる
+
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/json/school.json')
+        //     commit('setShoolData', data)
+        // },
+
+
+        // ＜練習２＞そのまま、Laravelのコントローラー経由でMySQLデータをを取ってくる
+
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/school')
+        //     console.log(data);
+        //     commit('setShoolData', data)
+        // },
+
+
+        fetchSchoolData({ commit }) {
+            http.get('/school', res => {
+                commit('setShoolData', res.data)
+            }, null)
+
         },
-        fetchPostTopVisual(context) {
-            axios.get('/json/gazou.json')
-                .then(function (response) {
-                    // console.log(response.data)
-                    context.commit('setPosts', response.data)
-                })
-        },
-        fetchPostHomeCard(context) {
-            const invocation = new XMLHttpRequest();
-            const url = 'https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec';
-
-            function callOtherDomain() {
-                if (invocation) {
-                    invocation.open('GET', url, true);
-                    invocation.onreadystatechange = handler;
-                    invocation.send();
-                }
-            }
-            axios.get(url)
-                .then(function (response) {
-                    context.commit('setPostCards', response.data)
-                }
-                );
 
 
 
-
-        }
     }
 
 

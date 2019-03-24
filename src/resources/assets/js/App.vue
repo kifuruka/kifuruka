@@ -9,7 +9,7 @@
 <script>
 import TopHeader from "./components/TopHeader";
 import TopFooter from "./components/TopFooter";
-import httpinit from "./services/http";
+import http from "./services/http";
 
 export default {
   components: {
@@ -17,7 +17,7 @@ export default {
     TopFooter
   },
   created() {
-    httpinit.init();
+    http.init();
   }
 };
 </script>
