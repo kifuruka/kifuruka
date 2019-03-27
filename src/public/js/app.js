@@ -3804,7 +3804,7 @@ exports.push([module.i, "\nsection[data-v-4b8e7fc8] {\n  padding-top: 63px;\n  t
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n", ""]);
 
 
 
@@ -3848,7 +3848,7 @@ exports.push([module.i, "\n.loading__container[data-v-74afde35] {\n  display: -w
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "/* .main-color {\n  border-color: #ffe035;\n} */\nheader[data-v-799369ca] {\n  -webkit-box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n          box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n  font-weight: bold;\n  position: fixed;\n  z-index: 1000;\n  width: 100%;\n  height: 63px;\n  background-color: white;\n}\nheader nav.navbar[data-v-799369ca] {\n    max-width: 1440px;\n    margin: 0 auto;\n}\nheader nav.navbar .navbar-start p[data-v-799369ca] {\n      font-size: 16px;\n      vertical-align: middle;\n      height: 63px;\n      line-height: 71px;\n}\nheader nav.navbar .buttons[data-v-799369ca] {\n      font-size: 16px;\n      margin: 0 auto;\n}\nheader nav.navbar .buttons[data-v-799369ca]:hover {\n        opacity: 0.7;\n        background-color: #ffe035;\n}\nheader nav.navbar .custom-btn[data-v-799369ca] {\n      background-color: #ffe035;\n      color: white;\n      border-radius: 2em;\n      width: 6.3em;\n      border-color: #ffe035;\n}\n@media screen and (min-width: 600px) {\nheader .navbar-item img[data-v-799369ca] {\n      max-height: 2.75rem;\n      margin-right: 16px;\n}\n}\n@media screen and (max-width: 600px) {\nheader .navbar-start[data-v-799369ca] {\n      display: none;\n}\n}\n", ""]);
+exports.push([module.i, "/* .main-color {\r\n  border-color: #ffe035;\r\n} */\nheader[data-v-799369ca] {\n  -webkit-box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n          box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n  font-weight: bold;\n  position: fixed;\n  z-index: 1000;\n  width: 100%;\n  height: 63px;\n  background-color: white;\n}\nheader nav.navbar[data-v-799369ca] {\n    max-width: 1440px;\n    margin: 0 auto;\n}\nheader nav.navbar .navbar-start p[data-v-799369ca] {\n      font-size: 16px;\n      vertical-align: middle;\n      height: 63px;\n      line-height: 71px;\n}\nheader nav.navbar .buttons[data-v-799369ca] {\n      font-size: 16px;\n      margin: 0 auto;\n}\nheader nav.navbar .buttons[data-v-799369ca]:hover {\n        opacity: 0.7;\n        background-color: #ffe035;\n}\nheader nav.navbar .custom-btn[data-v-799369ca] {\n      background-color: #ffe035;\n      color: white;\n      border-radius: 2em;\n      width: 6.3em;\n      border-color: #ffe035;\n}\n@media screen and (min-width: 600px) {\nheader .navbar-item img[data-v-799369ca] {\n      max-height: 2.75rem;\n      margin-right: 16px;\n}\n}\n@media screen and (max-width: 600px) {\nheader .navbar-start[data-v-799369ca] {\n      display: none;\n}\n}\n", ""]);
 
 
 
@@ -4002,7 +4002,7 @@ exports.push([module.i, "\nsection[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  p
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n", ""]);
+exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecd96268] {\n    margin-bottom: 0px;\n}\n}\n", ""]);
 
 
 
@@ -36691,7 +36691,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6fa5b822", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4e7218e2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36745,7 +36745,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("a0f7ca90", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("02a1d718", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36772,7 +36772,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d68aeada", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("25f286ad", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36853,7 +36853,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("66b7af9c", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("16ea4f3c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36880,7 +36880,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0ad805b6", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("60f95a16", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36907,7 +36907,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("37c0acb6", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("373d6605", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36934,7 +36934,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("7f217d6e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("138cfda9", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -36961,7 +36961,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1e5db2b8", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("22309752", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37042,7 +37042,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("745b550b", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("248df4ab", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37069,7 +37069,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("57bbee73", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("adbf53da", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37096,7 +37096,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("246b1efb", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("c3b4b94a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37123,7 +37123,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("9addbc34", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("05aede46", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37150,7 +37150,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("37465076", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("377a9425", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37177,7 +37177,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6697ef60", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6b32216a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37204,7 +37204,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d744ae9e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0266e051", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37231,7 +37231,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d5cf2de2", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1f0168af", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37258,7 +37258,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4152b967", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("22258107", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37285,7 +37285,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("be78a16a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("183d28aa", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37312,7 +37312,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("9ecee2fc", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("60cb2e22", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37339,7 +37339,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0768d892", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("646bc357", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37366,7 +37366,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("34038744", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6fe73bfe", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37393,7 +37393,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("de7f74a4", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1aa9454e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -37420,7 +37420,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("044f2aff", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("e38faac2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -50715,7 +50715,7 @@ module.exports = function(module) {
 /***/ "./public/images/topintro/message1.png":
 /***/ (function(module, exports) {
 
-module.exports = "/images/message1.png?8381770074f504c8f2b4597c8da13cc4";
+module.exports = "/images/message1.png?626e2b7d9d0c43b174ec684160958540";
 
 /***/ }),
 
@@ -50729,105 +50729,105 @@ module.exports = "/images/message2.png?80fb7fe086edec50cadfed4190233808";
 /***/ "./public/images/topintro/message3.png":
 /***/ (function(module, exports) {
 
-module.exports = "/images/message3.png?28aafd33e449f8c95bccbbe1daee174a";
+module.exports = "/images/message3.png?74f02c6bb256efdf0c28f388451ca502";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_active01.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_active01.jpg?c87416a22c255de2b42ddbda0e508ee3";
+module.exports = "/images/aoyama_active01.jpg?554117f4c7b17c19ba9030f5bcd40342";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_campus.jpg?c13f4566bcb8a7ce5d45f1bbc002eedb";
+module.exports = "/images/aoyama_campus.jpg?e19a9228c98c97d0acb2e435b44138f5";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus1.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_campus1.jpg?b9789c9ff7dad7b3a70312d41285ebec";
+module.exports = "/images/aoyama_campus1.jpg?2759e5ef5868f74f9b2823b52994f7b8";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus2.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_campus2.jpg?1bb39e92c3a41736a793baf2fc4666dd";
+module.exports = "/images/aoyama_campus2.jpg?9d29ed023c83d59db3658b80f75d055d";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag.jpg?1255affe3eba2af44c2d2bde86e08cc3";
+module.exports = "/images/d_kin_rag.jpg?46c9d0a2e181292f243dca62282e1ec9";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag2.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag2.jpg?e36f6f9871d1d845788bed380bcbf0e7";
+module.exports = "/images/d_kin_rag2.jpg?c1aca621223486eac65b88d5eb00d370";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag3.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag3.jpg?b57b0ed4dbde071a2b68b32d57fb5dcd";
+module.exports = "/images/d_kin_rag3.jpg?7835b1098b6deef6fc00777e510443bb";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag_top.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag_top.jpg?0ae55fd32e5b3933dc8f34bde97da0f3";
+module.exports = "/images/d_kin_rag_top.jpg?30cabe92d08cb1f9172aa5065e562a7d";
 
 /***/ }),
 
 /***/ "./resources/assets/images/schoolLogo/aoyama_logo.png":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_logo.png?270ace2354eb1ae86d5064b3cef14d3d";
+module.exports = "/images/aoyama_logo.png?045b4405313636a1c40a70f3254719fe";
 
 /***/ }),
 
 /***/ "./resources/assets/images/schoolLogo/kinkiuniv.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/kinkiuniv.jpg?6a8e1ae569e88d141eb38637febd9f19";
+module.exports = "/images/kinkiuniv.jpg?2bff1969f29729d0a59f9fbf3fc7b188";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top001.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top001.jpg?df0f6869b6916c5d8d43b82566c5be2b";
+module.exports = "/images/top001.jpg?32dbc292c31bdbe6f04578f3dcf72745";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top002.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top002.jpg?8eeb7bccf82ac6ba85d9e855497ba166";
+module.exports = "/images/top002.jpg?c4751eb9c897607d91464ff08b60aeab";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top003.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top003.jpg?15525b0edbd0268120b189b6932f4511";
+module.exports = "/images/top003.jpg?15241dd31f76e7ea93fe70f31fd90ce5";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top4.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top4.jpg?acf9059010ed68a927c6c44efa703e28";
+module.exports = "/images/top4.jpg?028b6650ff0def65d8893f509b7220c0";
 
 /***/ }),
 
