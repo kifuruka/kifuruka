@@ -8,7 +8,7 @@
       </div>-->
       <!-- <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div> -->
       <!-- カード１ -->
-      <div class="card" style="width:30%">
+      <div class="card">
         <div calss="card_image_container" style="position: relative;">
           <div class="card-image item item--first">
             <figure class="image is-4by3">
@@ -49,7 +49,7 @@
         </div>
       </div>
       <!-- カード２ -->
-      <div class="card" style="width:30%">
+      <div class="card">
         <div calss="card_image_container" style="position: relative;">
           <div class="card-image item item--first">
             <figure class="image is-4by3">
@@ -90,7 +90,7 @@
         </div>
       </div>
       <!-- カード３ -->
-      <div class="card" style="width:30%">
+      <div class="card">
         <div calss="card_image_container" style="position: relative;">
           <div class="card-image item item--first">
             <figure class="image is-4by3">
@@ -178,6 +178,7 @@ section {
 
 .card {
   margin: 0 24px;
+  width: 30%;
 }
 .card_image_container {
   position: relative;
@@ -244,38 +245,29 @@ section {
 
 .detail {
   padding: -0.5rem;
+  display: flex;
 }
 
 .card-text {
   color: #707070;
 }
 
-// section {
-//   max-width: 1160px;
-//   margin: 0 auto;
-//   margin-top: 56px;
+@media screen and (max-width:768px) { 
 
-//   .has-addons {
-//     max-width: 560px;
-//     height: 56px;
-//     margin: 0 auto;
+section {
 
-//     .find-frame {
-//       width: 448px;
+  margin: 0 5%;
 
-//       input {
-//         height: 56px;
-//         font-size: 1.5rem;
-//         background-color: #f2f2f2;
-//       }
-//     }
-//     .button-frame a {
-//       width: 112px;
-//       height: 56px;
-//       background-color: #ffe035;
-//       font-size: 1.5rem;
-//       color: #222222;
-//     }
-//   }
-// }
+}
+
+.container {
+    display: block;
+}
+
+.card{
+  width: 100%;
+  margin: 10% auto;
+}
+
+}
 </style>
