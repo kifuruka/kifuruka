@@ -18,6 +18,14 @@ export default {
   },
   created() {
     http.init();
+  },
+  methods: {
+    logout() {
+      axios.get("/api/logout").then(res => {
+        state.isLogin = false;
+        this.$router.push({ path: "/" });
+      });
+    }
   }
 };
 </script>

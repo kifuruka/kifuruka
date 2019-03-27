@@ -55,9 +55,8 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapGetters, mapMutations, mapActions } from "vuex";
 export default {
-  components: {},
   data() {
     return {
       email: "",
@@ -65,13 +64,33 @@ export default {
     };
   },
   methods: {
-    ...mapActions({
-      login: "auth/login"
-    }),
-    async handleLogin() {
-      await this.login({ email: this.email, password: this.password });
-      this.$router.push("/");
+    ...mapActions(["loginAction"]),
+
+    handleLogin() {
+      this.$store.dispatch("loginAction", this.data);
     }
+    // async handleLogin() {
+    //   await this.login({ email: this.email, password: this.password });
+    //   this.$router.push("/");
+    // }
+    // async handleLogin() {
+    //   console.log("111");
+    //   await axios
+    //     .post("/auth/login", {
+    //       email: this.email,
+    //       password: this.password
+    //     })
+    //     .then(res => {
+    //       const token = res.data.access_token;
+    //       axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+    //       state.isLogin = true;
+    //       console.log(token, "222");
+    //       this.$router.push({ path: "/" });
+    //     })
+    //     .catch(error => {
+    //       this.isError = true;
+    //     });
+    // }
   }
 };
 </script>

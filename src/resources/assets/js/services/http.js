@@ -8,7 +8,6 @@ export default {
             data,
             method: method.toLowerCase()
         }).then(successCb).catch(errorCb)
-
     },
     get(url, successCb = null, errorCb = null) {
         return this.request('get', url, {}, successCb, errorCb)
