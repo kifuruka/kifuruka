@@ -15,13 +15,13 @@
             <div class="school-right-flame">
               <h1>近畿大学</h1>
               <p>公式SNS</p>
-              <div>
+              <div class="sns-link">
                 <a href>Facebook</a>
               </div>
-              <div>
+              <div class="sns-link">
                 <a href>Twitter</a>
               </div>
-              <div>
+              <div class="sns-link">
                 <a href>Instagram</a>
               </div>
             </div>
@@ -41,12 +41,12 @@
 </template>
 
 <script>
+// Vuexの読み込み
+import { mapGetters, mapMutations, mapActions } from "vuex";
 import SchoolLogo from "../../images/schoolLogo/kinkiuniv.jpg";
 export default {
   data() {
-    return {
-      SchoolLogo
-    };
+    return {};
   }
 };
 </script>
@@ -100,4 +100,27 @@ section {
 .img-flame {
   padding: 24px;
 }
+
+
+@media screen and (max-width:768px) { 
+
+.school-right-flame{
+  display: flex;
+
+    h1 {
+      display: none;
+    }
+
+    p {
+      display: none;
+    }
+    .sns-link{
+      width: 33%;
+      text-align: center;
+    }
+}
+
+}
+
+
 </style>

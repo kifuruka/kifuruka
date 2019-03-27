@@ -16,7 +16,7 @@ export default {
   },
 
   mounted() {
-    console.log(this.userId);
+    // console.log(this.userId);
   },
 
   // メソッドは関数定義ができる

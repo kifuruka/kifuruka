@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "school_name": "近畿大学",
+        "activity": "10",
+        "logo": "https://www.kindai.ac.jp/img/ogimg/ogp.jpg"
+    },
+    {
+        "id": "2",
+        "school_name": "青山学院大学",
+        "activity": "10",
+        "logo": "https://s.yimg.jp/images/hacku/portal/img/univ_logo/aoyama.png"
+    },
+    {
+        "id": "3",
+        "school_name": "関西学院大学",
+        "activity": "10",
+        "logo": "http://ist.ksc.kwansei.ac.jp/~kitamura/lecture/mmc2/notes/kwansei.gif"
+    },
+    {
+        "id": "4",
+        "school_name": "麻布学園",
+        "activity": "5",
+        "logo": "https://www.azabu-jh.ed.jp/old/kouka/kousyou-koukou.gif"
+    },
+    {
+        "id": "5",
+        "school_name": "酪農大学",
+        "activity": "8",
+        "logo": "https://up-j.shigaku.go.jp/photo/00000000006001000/0_20140722110704.jpg"
+    },
+    {
+        "id": "6",
+        "school_name": "法政大学",
+        "activity": "4",
+        "logo": "http://www.hosei.ac.jp/images/gaiyo/symbol/mark/mark_05.jpg"
+    },
+    {
+        "id": "7",
+        "school_name": "日本大学",
+        "activity": "2",
+        "logo": "http://www.nihon-u.ac.jp/nu_logo.png"
+    },
+    {
+        "id": "8",
+        "school_name": "近畿大学",
+        "activity": "10",
+        "logo": "https://www.kindai.ac.jp/img/ogimg/ogp.jpg"
+    },
+    {
+        "id": "9",
+        "school_name": "青山学院大学",
+        "activity": "10",
+        "logo": "https://s.yimg.jp/images/hacku/portal/img/univ_logo/aoyama.png"
+    },
+    {
+        "id": "10",
+        "school_name": "関西学院大学",
+        "activity": "10",
+        "logo": "http://ist.ksc.kwansei.ac.jp/~kitamura/lecture/mmc2/notes/kwansei.gif"
+    },
+    {
+        "id": "11",
+        "school_name": "麻布学園",
+        "activity": "5",
+        "logo": "https://www.azabu-jh.ed.jp/old/kouka/kousyou-koukou.gif"
+    },
+    {
+        "id": "12",
+        "school_name": "酪農大学",
+        "activity": "8",
+        "logo": "https://up-j.shigaku.go.jp/photo/00000000006001000/0_20140722110704.jpg"
+    },
+    {
+        "id": "13",
+        "school_name": "法政大学",
+        "activity": "4",
+        "logo": "http://www.hosei.ac.jp/images/gaiyo/symbol/mark/mark_05.jpg"
+    },
+    {
+        "id": "14",
+        "school_name": "日本大学",
+        "activity": "2",
+        "logo": "http://www.nihon-u.ac.jp/nu_logo.png"
+    }
+]

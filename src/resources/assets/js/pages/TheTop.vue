@@ -4,9 +4,11 @@
     <search/>
     <activity-card/>
     <button-more/>
+    <entory-school/>
     <top-message/>
     <introduction/>
     <corporate-donation/>
+    <!-- <sample-vuex/> -->
   </div>
 </template>
 
@@ -18,8 +20,27 @@ import ButtonMore from "../components/ButtonMore";
 import TopMessage from "../components/TopMessage";
 import Introduction from "../components/Introduction";
 import CorporateDonation from "../components/CorporateDonation";
+import EntorySchool from "../components/EntorySchool";
+import SampleVuex from "../components/SampleVuex";
 
 export default {
+  // head: {
+  //   link: [
+  //     {
+  //       rel: "stylesheet",
+  //       href:
+  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
+  //     }
+  //   ],
+  //   script: [
+  //     {
+  //       type: "text/javascript",
+  //       src:
+  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
+  //     }
+  //   ]
+  // },
+
   components: {
     TopVisual,
     Search,
@@ -27,7 +48,9 @@ export default {
     ActivityCard,
     ButtonMore,
     Introduction,
-    CorporateDonation
+    CorporateDonation,
+    EntorySchool,
+    SampleVuex
   }
 };
 </script>

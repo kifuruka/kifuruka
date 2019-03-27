@@ -48,23 +48,21 @@ export default {
       Homeimg3,
       Homeimg4
     };
-  },
-
-  mounted: function() {
-    // `this` は vm インスタンスを指します
-    getimages();
-  },
-
-  methods: {
-    // ...はスプレットオペレーター
-    ...mapActions(["fetchPostTopVisual"]),
-
-    getimages() {
-      this.fetchPostTopVisual();
-    }
-    // 画像を表示させる
-    // Vuexを使って写真を表示させる
   }
+
+  // mounted: function() {
+  //   // `this` は vm インスタンスを指します
+  //   getimages();
+  // },
+
+  // created() {
+  //   this.fetchPostTopVisual();
+
+  // },
+  // methods: {
+
+  //   ...mapActions(["fetchPostTopVisual"])
+  // }
 };
 </script>
 
@@ -100,5 +98,21 @@ section {
     height: 100% !important;
   }
 }
+
+@media screen and (max-width: 768px){
+  .tile:not(.is-child) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  .tile.is-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 50%;
+  }
+}
+
+
 </style>
 

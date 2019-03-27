@@ -2,6 +2,7 @@ import axios from 'axios'
 
 export default {
     request(method, url, data, successCb = null, errorCb = null) {
+        console.log(method, url, data, successCb);
         axios.request({
             url,
             data,
@@ -22,7 +23,7 @@ export default {
     },
 
     init() {
-        axios.defaults.baseURL = '/api'
+        axios.defaults.baseURL = '/api/v1'
         axios.interceptors.request.use(config => {
             config.headers['X-CSRF-TOKEN'] = window.Laravel.csrfToken
             config.headers['X-Requested-With'] = 'XMLHttpRequest'

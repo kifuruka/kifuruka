@@ -1,52 +1,113 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import auth from "./modules/auth";
+import alert from "./modules/alert";
+
 import axios from "axios";
+import http from '../services/http'
+import util from '../utils/util';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
 
     modules: {
-        auth: auth
-    },
-    state: {
-        posts: [],
-        userId: 'aaaaa'
-    },
-    getters: {
-        posts(state) {
-            return state.posts
-        },
-        userId(state) {
-            return state.userId
-        }
+        auth: auth,
+        alert: alert
     },
 
+    state: {
+        schoolData: [],
+        activities: [],
+        card: [],
+        user: {},
+        token: localStorage.getItem(util.JWT_TOKEN) || '',
+        status: '',
+
+    },
+    getters: {
+        schoolData(state) {
+            console.log(state.schoolData.data, "state")
+            return state.schoolData.data
+
+        },
+        getloginuser(state) {
+            console.log(state.user.data, ':userstate')
+        }
+        // posts(state) {
+        //     return state.posts
+        // },
+        // userId(state) {
+        //     return state.userId
+        // },
+        // fetchAllData(state) {
+        //     return state.activities
+        // }
+    },
     mutations: {
-        setPosts(state, ary) {
-            state.posts = ary;
+
+        setShoolData(state, payload) {
+            console.log(payload, 'Route')
+            // state.schoolData = payload.concat()
+            state.schoolData = payload
+            // },
+        },
+        loginMutations(state, payload) {
+            console.log(payload, 'loginMutations')
+            // state.schoolData = payload.concat()
+            state.user = payload
+            // },
         }
-        ,
-        imgPosts(state, ary) {
-            state.posts = ary
-        }
+        // setPosts(state, ary) {
+        //     state.posts = ary.concat();
+        // },
+        // imgPosts(state, payload) {
+        //     state.posts = payload
+        // },
+        // setPostCards(state, payload) {
+        //     state.activities = payload.concat();
+        //     // console.log(payload)
+        // }
     },
     actions: {
-        fetchPosts(context) {
-            axios.get('/json/test.json')
-                .then(function (response) {
-                    // console.log(response.data)
-                    context.commit('setPosts', response.data)
-                })
+
+
+        // ＜練習１＞別ファイルのJSONから学校の情報を取ってくる
+
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/json/school.json')
+        //     commit('setShoolData', data)
+        // },
+
+
+        // ＜練習２＞そのまま、Laravelのコントローラー経由でMySQLデータをを取ってくる
+
+        // async fetchSchoolData({ commit }) {
+        //     const { data } = await axios.get('/school')
+        //     console.log(data);
+        //     commit('setShoolData', data)
+        // },
+
+
+        fetchSchoolData({ commit }) {
+            http.get('/school', res => {
+                commit('setShoolData', res.data)
+            }, null)
+
         },
-        fetchPostTopVisual(context) {
-            axios.get('/json/gazou.json')
-                .then(function (response) {
-                    console.log(response.data)
-                    context.commit('setPosts', response.data)
-                })
-        }
+
+
+        async loginAction({ commit }) {
+
+            await http.post('/auth/login', res => {
+                console.log(res.data);
+                commit('loginMutations', res.data)
+            }, null)
+
+        },
+
+
+
     }
 
 

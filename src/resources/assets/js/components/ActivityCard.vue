@@ -1,8 +1,14 @@
 <template>
   <section>
     <div class="container flex-flame">
+      <!-- <div v-for="item in fetchAllData" :key="item.id" class>
+        <router-link :to="{ name : '', params : { id: item.id }}">
+          <card :data="item"/>
+        </router-link>
+      </div>-->
+      <!-- <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div> -->
       <!-- カード１ -->
-      <div class="card" style="width:30%">
+      <div class="card">
         <div calss="card_image_container" style="position: relative;">
           <div class="card-image item item--first">
             <figure class="image is-4by3">
@@ -43,7 +49,7 @@
         </div>
       </div>
       <!-- カード２ -->
-      <div class="card" style="width:30%">
+      <div class="card">
         <div calss="card_image_container" style="position: relative;">
           <div class="card-image item item--first">
             <figure class="image is-4by3">
@@ -84,7 +90,7 @@
         </div>
       </div>
       <!-- カード３ -->
-      <div class="card" style="width:30%">
+      <div class="card">
         <div calss="card_image_container" style="position: relative;">
           <div class="card-image item item--first">
             <figure class="image is-4by3">
@@ -130,7 +136,8 @@
 
 
 <script>
-import axios from "axios";
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   data() {
     return {
@@ -142,16 +149,18 @@ export default {
       supporter: 10,
       days: 5
     };
-  },
-  mounted() {
-    axios.get;
-    "https://script.google.com/macros/s/AKfycbw-8I_PLL-HPxfukQyRJZxdw_XRVrnh3ERdN_2Ryxs-39hckOjc/exec"().then(
-      response => {
-        response.data.shift(); //スプレッドシートの1行目は日本語の列名だから除く
-        this.info = response.data;
-      }
-    );
   }
+  // computed: {
+  //   ...mapGetters(["fetchAllData"])
+  // },
+
+  // created() {
+  //   this.fetchPostHomeCard();
+  // },
+
+  // methods: {
+  //   ...mapActions(["fetchPostHomeCard"])
+  // }
 };
 </script>
 
@@ -169,6 +178,7 @@ section {
 
 .card {
   margin: 0 24px;
+  width: 30%;
 }
 .card_image_container {
   position: relative;
@@ -235,38 +245,29 @@ section {
 
 .detail {
   padding: -0.5rem;
+  display: flex;
 }
 
 .card-text {
   color: #707070;
 }
 
-// section {
-//   max-width: 1160px;
-//   margin: 0 auto;
-//   margin-top: 56px;
+@media screen and (max-width:768px) { 
 
-//   .has-addons {
-//     max-width: 560px;
-//     height: 56px;
-//     margin: 0 auto;
+section {
 
-//     .find-frame {
-//       width: 448px;
+  margin: 0 5%;
 
-//       input {
-//         height: 56px;
-//         font-size: 1.5rem;
-//         background-color: #f2f2f2;
-//       }
-//     }
-//     .button-frame a {
-//       width: 112px;
-//       height: 56px;
-//       background-color: #ffe035;
-//       font-size: 1.5rem;
-//       color: #222222;
-//     }
-//   }
-// }
+}
+
+.container {
+    display: block;
+}
+
+.card{
+  width: 100%;
+  margin: 10% auto;
+}
+
+}
 </style>

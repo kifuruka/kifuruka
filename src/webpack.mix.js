@@ -14,4 +14,9 @@ const mix = require('laravel-mix');
 mix
    .js('resources/assets/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
-   .version();
+   .version()
+   .styles([
+      'swiper/dist/css/swiper.css',
+      'public/css/vendor/normalize.css',
+      'public/css/vendor/videojs.css'
+   ], 'public/css/all.css');
