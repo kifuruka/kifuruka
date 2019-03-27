@@ -25,25 +25,7 @@
             <div class="tile">
               <div class="tile is-parent">
                 <img :src="Message1" class="u-img" alt="#">
-              </div>
-
-              <div class="tile is-parent">
-                <img :src="Message2" class="u-img" alt="#">
-              </div>
-
-              <div class="tile is-parent">
-                <img :src="Message3" class="u-img" alt="#">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="story-flame">
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-12 flame">
-            <div class="tile">
-              <div class="tile is-parent">
-                <p>
+                <p class="u-img-p">
                   きふるかには、登録学校の活動ご
                   との寄付が掲載されています。
                   寄付者は、自分の卒業校の活動を
@@ -54,7 +36,8 @@
               </div>
 
               <div class="tile is-parent">
-                <p>
+                <img :src="Message2" class="u-img" alt="#">
+                <p class="u-img-p">
                   寄付者が行った寄付は、各学校を
                   経由して、学生が行う活動団体の
                   支援のために使われる寄付として
@@ -66,7 +49,50 @@
               </div>
 
               <div class="tile is-parent">
-                <p>
+                <img :src="Message3" class="u-img" alt="#">
+                <p class="u-img-p">
+                  寄付を受け取った各団体は、それ
+                  ぞれ、活動に沿ったお礼を寄付者
+                  に届けます。こうすることで、き
+                  ふるかを通して、寄付者と学生そ
+                  れぞれがつながることができます。
+                  また、寄付を行うことで、学校か
+                  らの寄付控除を受けられます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-flame">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12 flame">
+            <div class="tile">
+              <div class="tile is-parent">
+                <p class="u-img-p-pc">
+                  きふるかには、登録学校の活動ご
+                  との寄付が掲載されています。
+                  寄付者は、自分の卒業校の活動を
+                  常に検索することができ、卒業校
+                  だけでなく自分の応援したい活動
+                  を選び寄付することができます。
+                </p>
+              </div>
+
+              <div class="tile is-parent">
+                <p class="u-img-p-pc">
+                  寄付者が行った寄付は、各学校を
+                  経由して、学生が行う活動団体の
+                  支援のために使われる寄付として
+                  直接届きます。これにより寄付者
+                  が応援したい活動にダイレクトに
+                  寄付を届けることが可能となりま
+                  す。
+                </p>
+              </div>
+
+              <div class="tile is-parent">
+                <p class="u-img-p-pc">
                   寄付を受け取った各団体は、それ
                   ぞれ、活動に沿ったお礼を寄付者
                   に届けます。こうすることで、き
@@ -87,7 +113,6 @@
 import Message1 from "../../../../public/images/topintro/message1.png";
 import Message2 from "../../../../public/images/topintro/message2.png";
 import Message3 from "../../../../public/images/topintro/message3.png";
-
 export default {
   data() {
     return {
@@ -103,7 +128,6 @@ export default {
 section {
   // background-color: aqua;
   margin-bottom: 80px;
-
   .container {
     // background-color: #212121;
     max-width: 1160px;
@@ -112,12 +136,10 @@ section {
       margin: 0 auto;
       margin-top: 56px;
       font-size: 2rem;
-
       h1 {
         text-align: center;
       }
     }
-
     .info-flame {
       max-width: 1120px;
       margin: 0 auto;
@@ -129,11 +151,9 @@ section {
     // max-width: 1120px;
     margin-top: 32px;
     font-size: 1.4rem;
-
     div {
       .flame {
         margin: 0 auto;
-
         div {
           .u-img {
             width: 100%;
@@ -143,5 +163,16 @@ section {
       }
     }
   }
+.u-img-p{
+  display: none;
+}
+@media screen and (max-width:768px) { 
+  .u-img-p{
+    display: block;
+  }
+  .u-img-p-pc{
+    display: none;
+  }
+}
 }
 </style>

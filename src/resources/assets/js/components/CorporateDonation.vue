@@ -59,5 +59,27 @@ section {
       }
     }
   }
+  @media screen and (max-width:768px) { 
+    .container {
+      div {
+          text-align: center;
+        p {
+          text-align: center;
+          span {
+            display: none;
+          }
+        }
+        .custom-btn {
+          background-color: #db6b6b;
+          color: white;
+          border-radius: 2em;
+          width: 60%;
+          border-color: #db6b6b;
+          margin-top: 12px;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
 }
 </style>
