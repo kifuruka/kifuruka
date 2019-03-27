@@ -14,18 +14,12 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        //
+        $activity =  Activity::all();
+        return $activity;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    //createを削除
+
 
     /**
      * Store a newly created resource in storage.
@@ -49,16 +43,7 @@ class ActivityController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Activity  $activity
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Activity $activity)
-    {
-        //
-    }
+    //editを削除
 
     /**
      * Update the specified resource in storage.

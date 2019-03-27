@@ -89,6 +89,7 @@
 
 <script>
 import { mapActions } from "vuex";
+
 export default {
   data() {
     return {
@@ -101,13 +102,17 @@ export default {
     ...mapActions({
       register: "auth/register"
     }),
+
     async handleRegister() {
       await this.register({
+        // account_name: this.account_name,
         email: this.email,
         password: this.password,
         password_confirmation: this.password_confirmation
       });
-      this.$router.push("/register/confirmation");
+      console.log(this.register());
+      console.log("register");
+      // this.$router.push("/register/confirmation");
     }
   }
 };

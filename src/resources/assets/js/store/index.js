@@ -1,27 +1,38 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import auth from "./modules/auth";
+import alert from "./modules/alert";
+
 import axios from "axios";
 import http from '../services/http'
+import util from '../utils/util';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
 
     modules: {
-        auth: auth
+        auth: auth,
+        alert: alert
     },
 
     state: {
         schoolData: [],
         activities: [],
         card: [],
-        // userId: 'aaaaa'
+        user: {},
+        token: localStorage.getItem(util.JWT_TOKEN) || '',
+        status: '',
+
     },
     getters: {
         schoolData(state) {
-            return state.schoolData
+            console.log(state.schoolData.data, "state")
+            return state.schoolData.data
 
+        },
+        getloginuser(state) {
+            console.log(state.user.data, ':userstate')
         }
         // posts(state) {
         //     return state.posts
@@ -39,6 +50,12 @@ export default new Vuex.Store({
             console.log(payload, 'Route')
             // state.schoolData = payload.concat()
             state.schoolData = payload
+            // },
+        },
+        loginMutations(state, payload) {
+            console.log(payload, 'loginMutations')
+            // state.schoolData = payload.concat()
+            state.user = payload
             // },
         }
         // setPosts(state, ary) {
@@ -75,6 +92,16 @@ export default new Vuex.Store({
         fetchSchoolData({ commit }) {
             http.get('/school', res => {
                 commit('setShoolData', res.data)
+            }, null)
+
+        },
+
+
+        async loginAction({ commit }) {
+
+            await http.post('/auth/login', res => {
+                console.log(res.data);
+                commit('loginMutations', res.data)
             }, null)
 
         },

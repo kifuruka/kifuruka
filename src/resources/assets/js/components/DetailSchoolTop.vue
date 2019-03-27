@@ -109,4 +109,23 @@ section {
     text-align: left;
 }
 
+
+@media screen and (max-width:768px) { 
+
+section .container {
+    margin-bottom: 80px;
+}
+
+.school-right-flame {
+    padding: 5%;
+    display: none;
+}
+
+.school_name {
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+}
+
 </style>

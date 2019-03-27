@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\School;
-// use App\School as hoge; <=とすると、Schoolをhogeで使うことができる。
 use Illuminate\Http\Request;
-use DB;
+use App\Http\Resources\School as Resource;
+// use DB;
+
 class SchoolController extends Controller
+
 {
     /**
      * Display a listing of the resource.
@@ -18,17 +19,13 @@ class SchoolController extends Controller
     //  index リスト取得のための関数
     public function index()
     {
-    // DB::enableQueryLog();
-     $school =  School::all();
-    //  dd(DB::getQueryLog());
+        $school = Resource::collection(School::all());
         return $school;
     }
 
-
-
+    // ---------------------------------------------
     //createを削除
-
-
+    // ---------------------------------------------
 
     /**
      * Store a newly created resource in storage.
@@ -40,7 +37,13 @@ class SchoolController extends Controller
     //  データを新しく作るための関数
     public function store(Request $request)
     {
-        //
+        $school = new School();
+        // $fillableから渡されたデータをすべてfillに入れる
+        // $school ->$request->json()->all();
+        $school ->fill($request->json()->all());
+        $school -> save();
+        return new Resource($school);
+
     }
 
     /**
@@ -51,15 +54,19 @@ class SchoolController extends Controller
      */
 
     // 詳細表示
-    public function show(School $school)
+    public function show($id)
     {
-        return 'hello World';
+        
+        // return School::find($id);
+        return new Resource(School::find($id));
+ 
     }
 
 
-
+    // ---------------------------------------------
     //editを削除
-    
+    // ---------------------------------------------
+
 
     /**
      * Update the specified resource in storage.
@@ -89,9 +96,12 @@ class SchoolController extends Controller
         //
     }
 
-    // テスト様
-    // public function test(School $school)
-    // {
-    //     return response()->json(compact('user'));
-    // }
+    
+    public function search(Request $request)
+    {
+        $item = School::where('school_name',$request->input)->get();
+        // $item = Activity::where('activity_name',$request->input)->get();
+        $param =['input'=>$request->input,'item'=>$item];
+        return $param;
+    }
 }
