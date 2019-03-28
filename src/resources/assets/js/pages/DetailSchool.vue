@@ -1,12 +1,13 @@
 <template>
   <div>
-    <detail-school-top/>
+    <detail-school-top></detail-school-top>
     <detail-school-main-title/>
     <detail-school-main1/>
     <detail-school-main2/>
     <detail-school-main3/>
     <detail-school-active-title/>
     <activity-card/>
+    <!-- <h1 v-if="isSchoolStatus">{{school}}</h1> -->
   </div>
 </template>
 
@@ -18,6 +19,9 @@ import DetailSchoolMain2 from "../components/DetailSchoolMain2";
 import DetailSchoolMain3 from "../components/DetailSchoolMain3";
 import DetailSchoolActiveTitle from "../components/DetailSchoolActiveTitle";
 import ActivityCard from "../components/ActivityCard";
+
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   components: {
     DetailSchoolTop,
@@ -27,6 +31,33 @@ export default {
     DetailSchoolMain3,
     DetailSchoolActiveTitle,
     ActivityCard
+  },
+  data() {
+    return {
+      // currentNumber: 2,
+      id: this.$route.params.id
+    };
+  },
+  // watch: {},
+  // computed: {
+  //   ...mapGetters({
+  //     school: "schools/getSchoolData",
+  //     isSchoolStatus: "schools/isSchoolStatus"
+  //   })
+  // },
+
+  created() {
+    this.getSchool();
+  },
+
+  methods: {
+    ...mapActions({
+      getSchoolData: "schools/getSchoolData"
+    }),
+
+    getSchool() {
+      this.getSchoolData(this.$route.params.id);
+    }
   }
 };
 </script>

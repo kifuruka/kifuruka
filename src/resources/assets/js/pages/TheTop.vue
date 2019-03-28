@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="allstyle">
     <top-visual/>
     <search/>
     <activity-card/>
@@ -54,3 +54,9 @@ export default {
   }
 };
 </script>
+
+<style>
+/* .allstyle {
+  margin-left: 12px;
+} */
+</style>

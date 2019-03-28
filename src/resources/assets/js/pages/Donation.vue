@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="allstyle">
     <donation-top/>
     <donation-main/>
     <school-sub-info/>
@@ -20,4 +20,7 @@ export default {
 </script>
 
 <style>
+/* .allstyle {
+  margin-left: 12px;
+} */
 </style>

@@ -1,30 +1,35 @@
 <template>
-  <section>
+  <section v-if="isSchoolStatus">
     <div class="container">
-        <p>青山学院大学について</p>
+      <p>{{school.school_name}}について</p>
     </div>
   </section>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
+  computed: {
+    ...mapGetters({
+      school: "schools/getSchoolData",
+      isSchoolStatus: "schools/isSchoolStatus"
+    })
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 section {
- padding-top: 3%;
- padding-bottom: 3%;
- background-color: #fffdf3;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #fffdf3;
   .container {
     max-width: 1160px;
-    p{
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
   }
-
 }
-
 </style>

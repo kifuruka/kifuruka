@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="feature" id="app">
+    <div v-if="isStatus" class="feature" id="app">
       <h2>参加学校</h2>
       <!-- <carousel class="container_feature" v-bind:per-page="4"> -->
       <swiper :options="swiperOption">
@@ -26,13 +26,10 @@
   </section>
 </template>
 
-
-
-
 <script>
+import { mapGetters, mapActions } from "vuex";
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
-import { mapGetters, mapMutations, mapActions } from "vuex";
 
 export default {
   components: {
@@ -58,23 +55,25 @@ export default {
   },
   computed: {
     ...mapGetters({
-      schools: "schoolData"
+      isStatus: "schools/isStatus",
+      schools: "schools/schoolAllData"
     })
   },
   created() {
+    this.fetchSchools();
     // console.log(this.$store.getters.schoolData);
   },
-  watch: {},
+  // watch: {},
 
-  mounted() {
-    this.fetchSchool();
-  },
+  // mounted() {},
 
   methods: {
-    ...mapActions(["fetchSchoolData"]),
+    ...mapActions({
+      fetchSchoolsData: "schools/fetchSchoolsData"
+    }),
 
-    fetchSchool() {
-      this.fetchSchoolData();
+    fetchSchools() {
+      this.fetchSchoolsData();
     }
   }
 };

@@ -34,9 +34,14 @@ const routes = [
         component: Donation
     },
     {
-        path: '/detailschool',
-        component: DetailSchool
+        path: '/detailschool/:id',
+        // name: 'DetailSchool',
+        component: DetailSchool,
+        props: route => ({
+            id: Number(route.params.id)
+        })
     },
+
     {
         path: '/test',
         // path: '/user',
