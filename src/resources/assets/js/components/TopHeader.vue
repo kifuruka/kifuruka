@@ -24,20 +24,22 @@
       <div id="navbarHomeHeader" class="navbar-menu" :class="{'is-active': dropdownActive}">
         <div class="navbar-end">
           <router-link to="/mypage" class="navbar-item flex3 buttons">
-            <!-- TODO: ログイン実装 -->
             <strong>マイページ</strong>
           </router-link>
           <router-link to="/register" class="navbar-item flex3 buttons">
-            <!-- TODO: ログイン実装 -->
             <strong>新規登録</strong>
           </router-link>
           <div class="navbar-item">
             <div>
               <router-link to="/login" class="button is-medium custom-btn">
-                <!-- TODO: ログイン実装 -->
                 <strong>ログイン</strong>
               </router-link>
             </div>
+            <!-- <div v-else>
+              <router-link to="/" class="button is-medium custom-btn">
+                <strong>ログアウト</strong>
+              </router-link>
+            </div>-->
           </div>
         </div>
       </div>
@@ -46,12 +48,22 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   data() {
     return {
       dropdownActive: false
     };
   },
+  computed: {
+    ...mapGetters({
+      isLogin: "isloginstate"
+    })
+  },
+  // created() {
+  //   console.log(isLogin);
+  // },
   methods: {
     dropdownToggle() {
       this.dropdownActive = !this.dropdownActive;
@@ -71,7 +83,7 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 63px;
+  // height: 63px;
   background-color: white;
 
   nav.navbar {
