@@ -90,7 +90,9 @@ export default new Vuex.Store({
 
 
         fetchSchoolData({ commit }) {
+            // console.log("koko")
             http.get('/school', res => {
+                // console.log(res.data,"kokokoko");
                 commit('setShoolData', res.data)
             }, null)
 

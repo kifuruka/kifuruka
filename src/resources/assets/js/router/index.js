@@ -8,6 +8,7 @@ import Login from '../pages/Login';
 import Donation from '../pages/Donation';
 import DetailSchool from '../pages/DetailSchool';
 import test from '../pages/test';
+import mypage from '../pages/Mypage';
 
 Vue.use(VueRouter);
 
@@ -44,7 +45,10 @@ const routes = [
         component: test,
         // meta: { requiresAuth: true }
     },
-
+    {
+        path: '/mypage',
+        component: mypage
+    },
 
 ];
 

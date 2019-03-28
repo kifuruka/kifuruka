@@ -74,6 +74,7 @@ export default {
     ...mapActions(["fetchSchoolData"]),
 
     fetchSchool() {
+    
       this.fetchSchoolData();
     }
   }
