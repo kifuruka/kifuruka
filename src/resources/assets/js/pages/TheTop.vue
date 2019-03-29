@@ -4,7 +4,7 @@
     <search/>
     <activity-card/>
     <button-more/>
-    <entory-school/>
+    <entry-school/>
     <top-message/>
     <introduction/>
     <corporate-donation/>
@@ -20,7 +20,7 @@ import ButtonMore from "../components/ButtonMore";
 import TopMessage from "../components/TopMessage";
 import Introduction from "../components/Introduction";
 import CorporateDonation from "../components/CorporateDonation";
-import EntorySchool from "../components/EntorySchool";
+import EntrySchool from "../components/EntrySchool";
 import SampleVuex from "../components/SampleVuex";
 
 export default {
@@ -49,7 +49,7 @@ export default {
     ButtonMore,
     Introduction,
     CorporateDonation,
-    EntorySchool,
+    EntrySchool,
     SampleVuex
   }
 };

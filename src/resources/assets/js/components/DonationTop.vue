@@ -2,18 +2,18 @@
   <section>
     <div class="container">
       <div class="donation-title">
-        <h1>{{activitytitle}}</h1>
+        <h1>{{activity.title}}</h1>
       </div>
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <!-- 左側 -->
           <div class="tile is-child is-8 child-flame">
             <div class="donaition-img-flame">
-              <img :src="DonationImg" class="u-img" alt="#">
+              <img :src="activity.activitie_img" class="u-img" alt="#">
             </div>
             <div class="donaition-text-flame">
-              <h1>{{clubname}}</h1>
-              <p>{{clubcomment}}</p>
+              <h1>{{activity.activitie_name}}</h1>
+              <p>{{activity.top_contents}}</p>
             </div>
           </div>
           <!-- 右側 -->
@@ -75,15 +75,19 @@
 
 <script>
 import DonationImg from "../../images/donation/d_kin_rag_top.jpg";
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
-      DonationImg,
-      activitytitle: "インカレ総合優勝を目指して",
-      clubname: "東海大学スキー部",
-      clubcomment:
-        "私たち東海大学スキー部は、部員45名で日本一の大学スキー部を目指して日々頑張っております。本年度は、首相の〇〇を筆頭に昨年に奇しくも３位だった屈辱を晴らすべく全国制覇を目指し日々頑張っております。是非ご支援のほどよろしくお願いいたします。"
+      DonationImg
     };
+  },
+  computed: {
+    ...mapGetters({
+      isActivity: "activity/isActivity",
+      activity: "activity/getActivityData"
+    })
   }
 };
 </script>

@@ -5,7 +5,7 @@ import Top from '../pages/TheTop';
 import Register from '../pages/Register';
 import RegisterConfirmation from '../pages/RegisterConfirmation';
 import Login from '../pages/Login';
-import Donation from '../pages/Donation';
+import Activity from '../pages/Activity';
 import DetailSchool from '../pages/DetailSchool';
 import test from '../pages/test';
 
@@ -30,8 +30,11 @@ const routes = [
         component: Login
     },
     {
-        path: '/donation',
-        component: Donation
+        path: '/activity/:id',
+        component: Activity,
+        props: route => ({
+            id: Number(route.params.id)
+        })
     },
     {
         path: '/detailschool/:id',

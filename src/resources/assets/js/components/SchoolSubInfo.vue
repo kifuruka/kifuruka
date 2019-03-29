@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="isSchoolStatus">
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
@@ -13,7 +13,7 @@
           </div>
           <div class="tile is-child is-4">
             <div class="school-right-flame">
-              <h1>近畿大学</h1>
+              <h1>{{school.school_name}}</h1>
               <p>公式SNS</p>
               <div class="sns-link">
                 <a href>Facebook</a>
@@ -26,11 +26,21 @@
               </div>
             </div>
             <div class="media-content btn-flame">
-              <router-link to="/" class="button is-medium custom-btn">
+              <button
+                @click="routerPush({
+                name:'activity',
+                params:{id:school.id}
+                })"
+              >
                 <strong>
-                  <span>近畿大学</span>の詳細を見る
+                  <span>{{school.school_name}}</span>の詳細を見る
                 </strong>
-              </router-link>
+              </button>
+              <!-- <router-link to="/'/detailschool/:id" class="button is-medium custom-btn">
+                <strong>
+                  <span>{{school.school_name}}</span>の詳細を見る
+                </strong>
+              </router-link>-->
             </div>
           </div>
           <div class="tile is-child is-1"></div>
@@ -42,12 +52,27 @@
 
 <script>
 // Vuexの読み込み
-import { mapGetters, mapMutations, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 import SchoolLogo from "../../images/schoolLogo/kinkiuniv.jpg";
+import router from "../router";
 export default {
   data() {
-    return {};
+    return {
+      id: this.$route.params.id
+    };
   }
+  // computed: {
+  //   ...mapGetters({
+  //     school: "schools/getSchoolData",
+  //     isSchoolStatus: "schools/isSchoolStatus"
+  //   })
+  // }
+  // methods: {
+  //   console.log()
+  //   routerPush(router) {
+  //     this.$router.push(router);
+  //   }
+  // }
 };
 </script>
 
@@ -101,11 +126,9 @@ section {
   padding: 24px;
 }
 
-
-@media screen and (max-width:768px) { 
-
-.school-right-flame{
-  display: flex;
+@media screen and (max-width: 768px) {
+  .school-right-flame {
+    display: flex;
 
     h1 {
       display: none;
@@ -114,13 +137,10 @@ section {
     p {
       display: none;
     }
-    .sns-link{
+    .sns-link {
       width: 33%;
       text-align: center;
     }
+  }
 }
-
-}
-
-
 </style>

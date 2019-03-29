@@ -57,9 +57,9 @@ section {
     }
   }
 }
-.school_text {
-  // padding-left:5%
-}
+// .school_text {
+//   padding-left: 5%;
+// }
 
 @media screen and (max-width: 768px) {
   section .container {

@@ -23,8 +23,13 @@ const modules = {
 
 export default new Vuex.Store({
     modules: modules,
-
 })
+
+
+// ----------------------------
+// 古い書き方
+// ----------------------------
+
 
 // export default new Vuex.Store({
 
@@ -119,9 +124,6 @@ export default new Vuex.Store({
 //         //         commit('schoolViewBoolean')
 //         //     }, null)
 //         // }
-
 //     }
-
-
 // });
 

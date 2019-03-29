@@ -24,6 +24,8 @@ Route::group(['prefix'=>'v1'],function(){
         Route::post('auth/refresh','AuthController@refresh');
         Route::get('/school', 'SchoolController@index');
         Route::get('/school/{id}', 'SchoolController@show');
+        Route::get('/activity', 'ActivityController@index');
+        Route::get('/activity/{id}', 'ActivityController@show');
         
         Route::get('/search', 'SchoolController@search');
     });
