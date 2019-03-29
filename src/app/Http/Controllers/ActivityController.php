@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Activity;
 use Illuminate\Http\Request;
+use App\Http\Resources\Activity as Resource;
+
 
 class ActivityController extends Controller
 {
@@ -14,7 +16,7 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        $activity =  Activity::all();
+        $activity = Resource::collection(Activity::all());
         return $activity;
     }
 
@@ -29,7 +31,11 @@ class ActivityController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $activitiy = new Activity();
+        $activitiy -> fill($request -> json() -> all());
+        $activitiy -> save();
+        return new Resoucre($activitiy);
+
     }
 
     /**
@@ -39,10 +45,11 @@ class ActivityController extends Controller
      * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    // public function show($id)
+    public function show(Activity $activity)
     {
-        return Activity::find($id);
-        // return new Resource(Activity::find($id));
+        // return Activity::find($id);
+        return new Resource($activity);
     }
 
     //editを削除

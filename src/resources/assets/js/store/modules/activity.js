@@ -11,7 +11,7 @@ const state = {
     isStatus: false,
 
     // Activity.vue
-    getActivityData: [],
+    getActivityData: null,
     isActivity: false,
 
 }
@@ -20,7 +20,8 @@ const getters = {
 
     // Activity.vue
     getActivityData(state) {
-        return state.getActivityData
+        console.log(state.getActivityData.data)
+        return state.getActivityData.data
     },
     isActivity(state) {
         return state.isActivity
@@ -48,6 +49,7 @@ const actions = {
     // Activity.vue
     getActivityData({ commit }, payload) {
         http.get('/activity/' + payload, res => {
+            // console.log(res)
             commit('getActivityData', res.data)
             commit('isActivity', res ? true : false)
         }, null)

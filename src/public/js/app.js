@@ -1961,6 +1961,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2644,6 +2653,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
 
 
 
@@ -2949,6 +2961,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_schoolLogo_kinkiuniv_jpg__ = __webpack_require__("./resources/assets/images/schoolLogo/kinkiuniv.jpg");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_schoolLogo_kinkiuniv_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_schoolLogo_kinkiuniv_jpg__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__("./resources/assets/js/router/index.js");
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -3011,20 +3025,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       id: this.$route.params.id
     };
-  }
-  // computed: {
-  //   ...mapGetters({
-  //     school: "schools/getSchoolData",
-  //     isSchoolStatus: "schools/isSchoolStatus"
-  //   })
-  // }
-  // methods: {
-  //   console.log()
-  //   routerPush(router) {
-  //     this.$router.push(router);
-  //   }
-  // }
+  },
 
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])({
+    isActivity: "activity/isActivity",
+    activity: "activity/getActivityData"
+  })),
+  methods: {
+    routerPush: function routerPush(router) {
+      // alert(router.params.id);
+      this.$router.push(router);
+    }
+  }
 });
 
 /***/ }),
@@ -3358,7 +3370,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
 
 
 
@@ -3382,19 +3393,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
   },
   data: function data() {
     return {
-      // currentNumber: 2,
       id: this.$route.params.id
     };
   },
-
-  // watch: {},
-  // computed: {
-  //   ...mapGetters({
-  //     school: "schools/getSchoolData",
-  //     isSchoolStatus: "schools/isSchoolStatus"
-  //   })
-  // },
-
   created: function created() {
     this.getSchool();
   },
@@ -3860,7 +3861,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -3873,23 +3873,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // head: {
-  //   link: [
-  //     {
-  //       rel: "stylesheet",
-  //       href:
-  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
-  //     }
-  //   ],
-  //   script: [
-  //     {
-  //       type: "text/javascript",
-  //       src:
-  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
-  //     }
-  //   ]
-  // },
-
   components: {
     TopVisual: __WEBPACK_IMPORTED_MODULE_0__components_TopVisual___default.a,
     Search: __WEBPACK_IMPORTED_MODULE_1__components_Search___default.a,
@@ -3976,7 +3959,7 @@ exports.push([module.i, "\n.v-spinner .v-fade\n{\n    -webkit-animation: v-fadeS
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 
@@ -4229,7 +4212,7 @@ exports.push([module.i, "\nsection[data-v-c8b3a85a] {\n  padding-top: 3%;\n  pad
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .allstyle {\n  margin-left: 12px;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .allstyle {\n  margin-left: 12px;\n} */\n", ""]);
 
 
 
@@ -31479,7 +31462,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.isSchoolStatus
+  return _vm.isActivity
     ? _c("section", [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
@@ -31492,7 +31475,10 @@ var render = function() {
                     _c("router-link", { attrs: { to: "/" } }, [
                       _c("img", {
                         staticClass: "u-img",
-                        attrs: { src: _vm.SchoolLogo, alt: "#" }
+                        attrs: {
+                          src: _vm.activity.school.school_logo,
+                          alt: "#"
+                        }
                       })
                     ])
                   ],
@@ -31502,7 +31488,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "tile is-child is-4" }, [
                 _c("div", { staticClass: "school-right-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.school.school_name))]),
+                  _c("h1", [_vm._v(_vm._s(_vm.activity.school.school_name))]),
                   _vm._v(" "),
                   _c("p", [_vm._v("公式SNS")]),
                   _vm._v(" "),
@@ -31520,15 +31506,17 @@ var render = function() {
                       on: {
                         click: function($event) {
                           return _vm.routerPush({
-                            name: "activity",
-                            params: { id: _vm.school.id }
+                            name: "DetailSchool",
+                            params: { id: _vm.activity.school.id }
                           })
                         }
                       }
                     },
                     [
                       _c("strong", [
-                        _c("span", [_vm._v(_vm._s(_vm.school.school_name))]),
+                        _c("span", [
+                          _vm._v(_vm._s(_vm.activity.school.school_name))
+                        ]),
                         _vm._v("の詳細を見る\n              ")
                       ])
                     ]
@@ -32420,7 +32408,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("寄付金額\n            "),
+                _vm._v("\n            寄付金額\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
@@ -32436,7 +32424,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("応募数\n            "),
+                _vm._v("\n            応募数\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
@@ -32452,7 +32440,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("残り\n            "),
+                _vm._v("\n            残り\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
@@ -32476,7 +32464,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("寄付金額\n            "),
+                _vm._v("\n            寄付金額\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
@@ -32492,7 +32480,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("応募数\n            "),
+                _vm._v("\n            応募数\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
@@ -32508,7 +32496,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("残り\n            "),
+                _vm._v("\n            残り\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
@@ -32532,7 +32520,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("寄付金額\n            "),
+                _vm._v("\n            寄付金額\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
@@ -32548,7 +32536,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("応募数\n            "),
+                _vm._v("\n            応募数\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
@@ -32564,7 +32552,7 @@ var render = function() {
                 staticStyle: { "font-size": "0.9rem" }
               },
               [
-                _vm._v("残り\n            "),
+                _vm._v("\n            残り\n            "),
                 _c("br"),
                 _vm._v(" "),
                 _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
@@ -33693,87 +33681,102 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "donation-title" }, [
-        _c("h1", [_vm._v(_vm._s(_vm.activity.title))])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tile is-ancestor" }, [
-        _c("div", { staticClass: "tile is-parent" }, [
-          _c("div", { staticClass: "tile is-child is-8 child-flame" }, [
-            _c("div", { staticClass: "donaition-img-flame" }, [
-              _c("img", {
-                staticClass: "u-img",
-                attrs: { src: _vm.activity.activitie_img, alt: "#" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "donaition-text-flame" }, [
-              _c("h1", [_vm._v(_vm._s(_vm.activity.activitie_name))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.activity.top_contents))])
-            ])
+  return _vm.isActivity
+    ? _c("section", [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "donation-title" }, [
+            _c("h1", [_vm._v(_vm._s(_vm.activity.title))])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "tile is-child is-4 child-right-flame" }, [
-            _c("div", { staticClass: "top-right-flame" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _vm._m(2),
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent" }, [
+              _c("div", { staticClass: "tile is-child is-8 child-flame" }, [
+                _c("div", { staticClass: "donaition-img-flame" }, [
+                  _c("img", {
+                    staticClass: "u-img",
+                    attrs: { src: _vm.activity.activitie_img, alt: "#" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "donaition-text-flame" }, [
+                  _c("h1", [_vm._v(_vm._s(_vm.activity.activitie_name))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.activity.top_contents))])
+                ])
+              ]),
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "media-content btn-flame" },
+                { staticClass: "tile is-child is-4 child-right-flame" },
                 [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "button is-medium custom-btn",
-                      attrs: { to: "/" }
-                    },
-                    [_c("strong", [_vm._v("この活動を応援")])]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(3),
-              _vm._v(" "),
-              _vm._m(4)
+                  _c("div", { staticClass: "top-right-flame" }, [
+                    _c("div", [
+                      _c("p", { staticClass: "top-title" }, [
+                        _vm._v("寄付総額")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "top-contents" }, [
+                        _vm._v(
+                          "\n                " +
+                            _vm._s(_vm.activity.total_donation) +
+                            "\n                "
+                        ),
+                        _c("span", [_vm._v("円")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c("p", { staticClass: "top-title" }, [
+                        _vm._v("応援者数")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "top-subtitle" }, [
+                        _c("span", { staticClass: "top-contents-data" }, [
+                          _vm._v(_vm._s(_vm.activity.fans))
+                        ]),
+                        _vm._v(" 人\n              ")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "media-content btn-flame" },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "button is-medium custom-btn",
+                            attrs: { to: "/" }
+                          },
+                          [_c("strong", [_vm._v("この活動を応援")])]
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "web-link-flame" }, [
+                      _c("p", { staticClass: "top-title" }, [
+                        _vm._v("公式WEBサイト")
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: _vm.activity.school.url } }, [
+                        _vm._v("https://kindai-rugby.jp/")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(1)
+                  ])
+                ]
+              )
             ])
           ])
         ])
       ])
-    ])
-  ])
+    : _vm._e()
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("p", { staticClass: "top-title" }, [_vm._v("寄付総額")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "top-contents" }, [_vm._v("¥2,220,202")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("p", { staticClass: "top-title" }, [_vm._v("応援者数")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "top-subtitle" }, [
-        _c("span", { staticClass: "top-contents-data" }, [_vm._v("23")]),
-        _vm._v(" 人\n              ")
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -33785,18 +33788,6 @@ var staticRenderFns = [
         _vm._v("\n                あと\n                "),
         _c("span", { staticClass: "top-contents-data" }, [_vm._v("244")]),
         _vm._v("日\n              ")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "web-link-flame" }, [
-      _c("p", { staticClass: "top-title" }, [_vm._v("公式WEBサイト")]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://kindai-rugby.jp/" } }, [
-        _vm._v("https://kindai-rugby.jp/")
       ])
     ])
   },
@@ -52746,7 +52737,7 @@ var routes = [{
     }
 }, {
     path: '/detailschool/:id',
-    // name: 'DetailSchool',
+    name: 'DetailSchool',
     component: __WEBPACK_IMPORTED_MODULE_7__pages_DetailSchool___default.a,
     props: function props(route) {
         return {
@@ -53054,7 +53045,7 @@ var state = {
     isStatus: false,
 
     // Activity.vue
-    getActivityData: [],
+    getActivityData: null,
     isActivity: false
 
 };
@@ -53063,7 +53054,8 @@ var getters = {
 
     // Activity.vue
     getActivityData: function getActivityData(state) {
-        return state.getActivityData;
+        console.log(state.getActivityData.data);
+        return state.getActivityData.data;
     },
     isActivity: function isActivity(state) {
         return state.isActivity;
@@ -53088,6 +53080,7 @@ var actions = {
         var commit = _ref.commit;
 
         __WEBPACK_IMPORTED_MODULE_0__services_http__["a" /* default */].get('/activity/' + payload, function (res) {
+            // console.log(res)
             commit('getActivityData', res.data);
             commit('isActivity', res ? true : false);
         }, null);

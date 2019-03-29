@@ -41,4 +41,17 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
+
+    // リレーション
+    public function Schools(){
+        return $this->hasOne('\App\Models\School');
+    }
+
+    // public function UserDetailes(){
+    //     return $this->hasOne('\App\Models\');
+    // }
+
+
+
+
 }

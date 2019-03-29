@@ -1,5 +1,5 @@
 <template>
-  <section v-if="isSchoolStatus">
+  <section v-if="isActivity">
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
@@ -7,13 +7,13 @@
           <div class="tile is-child is-7">
             <div class="img-flame">
               <router-link to="/">
-                <img :src="SchoolLogo" class="u-img" alt="#">
+                <img :src="activity.school.school_logo" class="u-img" alt="#">
               </router-link>
             </div>
           </div>
           <div class="tile is-child is-4">
             <div class="school-right-flame">
-              <h1>{{school.school_name}}</h1>
+              <h1>{{activity.school.school_name}}</h1>
               <p>公式SNS</p>
               <div class="sns-link">
                 <a href>Facebook</a>
@@ -28,12 +28,12 @@
             <div class="media-content btn-flame">
               <button
                 @click="routerPush({
-                name:'activity',
-                params:{id:school.id}
+                name:'DetailSchool',
+                params:{id:activity.school.id}
                 })"
               >
                 <strong>
-                  <span>{{school.school_name}}</span>の詳細を見る
+                  <span>{{activity.school.school_name}}</span>の詳細を見る
                 </strong>
               </button>
               <!-- <router-link to="/'/detailschool/:id" class="button is-medium custom-btn">
@@ -60,19 +60,19 @@ export default {
     return {
       id: this.$route.params.id
     };
+  },
+  computed: {
+    ...mapGetters({
+      isActivity: "activity/isActivity",
+      activity: "activity/getActivityData"
+    })
+  },
+  methods: {
+    routerPush(router) {
+      // alert(router.params.id);
+      this.$router.push(router);
+    }
   }
-  // computed: {
-  //   ...mapGetters({
-  //     school: "schools/getSchoolData",
-  //     isSchoolStatus: "schools/isSchoolStatus"
-  //   })
-  // }
-  // methods: {
-  //   console.log()
-  //   routerPush(router) {
-  //     this.$router.push(router);
-  //   }
-  // }
 };
 </script>
 

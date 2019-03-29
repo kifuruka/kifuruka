@@ -1,13 +1,12 @@
 <template>
   <div>
-    <detail-school-top></detail-school-top>
+    <detail-school-top/>
     <detail-school-main-title/>
     <detail-school-main1/>
     <detail-school-main2/>
     <detail-school-main3/>
     <detail-school-active-title/>
     <activity-card/>
-    <!-- <h1 v-if="isSchoolStatus">{{school}}</h1> -->
   </div>
 </template>
 
@@ -34,18 +33,9 @@ export default {
   },
   data() {
     return {
-      // currentNumber: 2,
       id: this.$route.params.id
     };
   },
-  // watch: {},
-  // computed: {
-  //   ...mapGetters({
-  //     school: "schools/getSchoolData",
-  //     isSchoolStatus: "schools/isSchoolStatus"
-  //   })
-  // },
-
   created() {
     this.getSchool();
   },
@@ -63,3 +53,4 @@ export default {
 </script>
 
 <style>
+</style>

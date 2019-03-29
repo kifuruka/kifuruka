@@ -8,7 +8,6 @@
     <top-message/>
     <introduction/>
     <corporate-donation/>
-    <!-- <sample-vuex/> -->
   </div>
 </template>
 
@@ -24,23 +23,6 @@ import EntrySchool from "../components/EntrySchool";
 import SampleVuex from "../components/SampleVuex";
 
 export default {
-  // head: {
-  //   link: [
-  //     {
-  //       rel: "stylesheet",
-  //       href:
-  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
-  //     }
-  //   ],
-  //   script: [
-  //     {
-  //       type: "text/javascript",
-  //       src:
-  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
-  //     }
-  //   ]
-  // },
-
   components: {
     TopVisual,
     Search,

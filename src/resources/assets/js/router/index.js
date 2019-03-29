@@ -38,7 +38,7 @@ const routes = [
     },
     {
         path: '/detailschool/:id',
-        // name: 'DetailSchool',
+        name: 'DetailSchool',
         component: DetailSchool,
         props: route => ({
             id: Number(route.params.id)

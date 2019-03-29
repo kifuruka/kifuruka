@@ -29,19 +29,22 @@
         </div>
         <div class="columns detail">
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              寄付金額
               <br>
               <strong>{{ amount }}円〜</strong>
             </p>
           </div>
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              応募数
               <br>
               <strong>{{ supporter }}人</strong>
             </p>
           </div>
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              残り
               <br>
               <strong>{{ days }}日</strong>
             </p>
@@ -70,19 +73,22 @@
         </div>
         <div class="columns detail">
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              寄付金額
               <br>
               <strong>{{ amount }}円〜</strong>
             </p>
           </div>
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              応募数
               <br>
               <strong>{{ supporter }}人</strong>
             </p>
           </div>
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              残り
               <br>
               <strong>{{ days }}日</strong>
             </p>
@@ -111,19 +117,22 @@
         </div>
         <div class="columns detail">
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              寄付金額
               <br>
               <strong>{{ amount }}円〜</strong>
             </p>
           </div>
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              応募数
               <br>
               <strong>{{ supporter }}人</strong>
             </p>
           </div>
           <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              残り
               <br>
               <strong>{{ days }}日</strong>
             </p>
@@ -252,22 +261,18 @@ section {
   color: #707070;
 }
 
-@media screen and (max-width:768px) { 
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 5%;
+  }
 
-section {
-
-  margin: 0 5%;
-
-}
-
-.container {
+  .container {
     display: block;
-}
+  }
 
-.card{
-  width: 100%;
-  margin: 10% auto;
-}
-
+  .card {
+    width: 100%;
+    margin: 10% auto;
+  }
 }
 </style>

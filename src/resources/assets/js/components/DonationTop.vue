@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="isActivity">
     <div class="container">
       <div class="donation-title">
         <h1>{{activity.title}}</h1>
@@ -21,12 +21,15 @@
             <div class="top-right-flame">
               <div>
                 <p class="top-title">寄付総額</p>
-                <p class="top-contents">¥2,220,202</p>
+                <p class="top-contents">
+                  {{activity.total_donation}}
+                  <span>円</span>
+                </p>
               </div>
               <div>
                 <p class="top-title">応援者数</p>
                 <p class="top-subtitle">
-                  <span class="top-contents-data">23</span> 人
+                  <span class="top-contents-data">{{activity.fans}}</span> 人
                 </p>
               </div>
               <div>
@@ -44,7 +47,7 @@
 
               <div class="web-link-flame">
                 <p class="top-title">公式WEBサイト</p>
-                <a href="https://kindai-rugby.jp/">https://kindai-rugby.jp/</a>
+                <a v-bind:href="activity.school.url">https://kindai-rugby.jp/</a>
               </div>
               <div class="sns-link-flame">
                 <div class="media-content btn-flame">
