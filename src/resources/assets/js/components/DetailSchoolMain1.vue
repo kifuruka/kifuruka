@@ -46,12 +46,15 @@ section {
         text-align: left;
         // padding-left:2%;
         padding-bottom: 2%;
+        // margin: 0 5%;
     }
   }
 }
-.school_text{
-    // padding-left:5%
+
+img{
+  vertical-align: bottom;
 }
+
 
 
 @media screen and (max-width:768px) { 
@@ -59,7 +62,13 @@ section {
 section .container {
     margin-bottom: 0px;
 }
-
+section h2 {
+    margin: 0 5%;
+    }
+.school_text{
+    margin: 0 5% 2.5% 5%;
+    }
 }
+
 
 </style>

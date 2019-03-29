@@ -71,7 +71,7 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 63px;
+  // height: 63px;
   background-color: white;
 
   nav.navbar {

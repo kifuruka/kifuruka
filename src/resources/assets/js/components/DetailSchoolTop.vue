@@ -14,7 +14,7 @@
           </div>
           <div class="tile is-child is-1"></div>
           <div class="tile is-child is-7">
-            <div class="img-flame">
+            <div class="img-flame img-flame-sp">
               <router-link to="/">
                 <img :src="SchoolCampus" class="u-img" alt="#">
               </router-link>
@@ -98,6 +98,10 @@ section {
   padding: 24px;
 }
 
+img{
+  vertical-align: bottom;
+}
+
 .logo_img{
     padding-top:40%; 
 }
@@ -122,8 +126,17 @@ section .container {
 }
 
 .school_name {
-    padding-top: 10%;
+    padding-top: 0%;
     padding-left: 5%;
+}
+.img-flame {
+    padding: 0px;
+}
+.img-flame-sp {
+    padding-top: 5%;
+}
+.is-child p{
+  margin: 0 5%;
 }
 
 }

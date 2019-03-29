@@ -3687,6 +3687,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4321,7 +4327,7 @@ exports.push([module.i, "\n.loading__container[data-v-74afde35] {\n  display: -w
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "/* .main-color {\r\n  border-color: #ffe035;\r\n} */\nheader[data-v-799369ca] {\n  -webkit-box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n          box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n  font-weight: bold;\n  position: fixed;\n  z-index: 1000;\n  width: 100%;\n  height: 63px;\n  background-color: white;\n}\nheader nav.navbar[data-v-799369ca] {\n    max-width: 1440px;\n    margin: 0 auto;\n}\nheader nav.navbar .navbar-start p[data-v-799369ca] {\n      font-size: 16px;\n      vertical-align: middle;\n      height: 63px;\n      line-height: 71px;\n}\nheader nav.navbar .buttons[data-v-799369ca] {\n      font-size: 16px;\n      margin: 0 auto;\n}\nheader nav.navbar .buttons[data-v-799369ca]:hover {\n        opacity: 0.7;\n        background-color: #ffe035;\n}\nheader nav.navbar .custom-btn[data-v-799369ca] {\n      background-color: #ffe035;\n      color: white;\n      border-radius: 2em;\n      width: 6.3em;\n      border-color: #ffe035;\n}\n@media screen and (min-width: 600px) {\nheader .navbar-item img[data-v-799369ca] {\n      max-height: 2.75rem;\n      margin-right: 16px;\n}\n}\n@media screen and (max-width: 600px) {\nheader .navbar-start[data-v-799369ca] {\n      display: none;\n}\n}\n", ""]);
+exports.push([module.i, "/* .main-color {\r\n  border-color: #ffe035;\r\n} */\nheader[data-v-799369ca] {\n  -webkit-box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n          box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n  font-weight: bold;\n  position: fixed;\n  z-index: 1000;\n  width: 100%;\n  background-color: white;\n}\nheader nav.navbar[data-v-799369ca] {\n    max-width: 1440px;\n    margin: 0 auto;\n}\nheader nav.navbar .navbar-start p[data-v-799369ca] {\n      font-size: 16px;\n      vertical-align: middle;\n      height: 63px;\n      line-height: 71px;\n}\nheader nav.navbar .buttons[data-v-799369ca] {\n      font-size: 16px;\n      margin: 0 auto;\n}\nheader nav.navbar .buttons[data-v-799369ca]:hover {\n        opacity: 0.7;\n        background-color: #ffe035;\n}\nheader nav.navbar .custom-btn[data-v-799369ca] {\n      background-color: #ffe035;\n      color: white;\n      border-radius: 2em;\n      width: 6.3em;\n      border-color: #ffe035;\n}\n@media screen and (min-width: 600px) {\nheader .navbar-item img[data-v-799369ca] {\n      max-height: 2.75rem;\n      margin-right: 16px;\n}\n}\n@media screen and (max-width: 600px) {\nheader .navbar-start[data-v-799369ca] {\n      display: none;\n}\n}\n", ""]);
 
 
 
@@ -4332,7 +4338,7 @@ exports.push([module.i, "/* .main-color {\r\n  border-color: #ffe035;\r\n} */\nh
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-79d7a1ee] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n  padding: 5%;\n}\n.school-right-flame p[data-v-79d7a1ee] {\n    font-size: 1.8rem;\n}\n.school-right-flame div[data-v-79d7a1ee] {\n    text-align: right;\n}\n.school-right-flame div a[data-v-79d7a1ee] {\n      font-weight: bold;\n      font-size: 1.6rem;\n}\n.school_name[data-v-79d7a1ee] {\n  padding-top: 40%;\n  padding-left: 5%;\n}\n.btn-flame[data-v-79d7a1ee] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-79d7a1ee] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.img-flame[data-v-79d7a1ee] {\n  padding: 24px;\n}\n.logo_img[data-v-79d7a1ee] {\n  padding-top: 40%;\n}\n.under[data-v-79d7a1ee] {\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #ffe035));\n  background: linear-gradient(transparent 70%, #ffe035 70%);\n  font-size: 2.5rem;\n  font-weight: bold;\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-79d7a1ee] {\n    margin-bottom: 80px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n    padding: 5%;\n    display: none;\n}\n.school_name[data-v-79d7a1ee] {\n    padding-top: 10%;\n    padding-left: 5%;\n}\n}\n", ""]);
+exports.push([module.i, "\nsection .container[data-v-79d7a1ee] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 160px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n  padding: 5%;\n}\n.school-right-flame p[data-v-79d7a1ee] {\n    font-size: 1.8rem;\n}\n.school-right-flame div[data-v-79d7a1ee] {\n    text-align: right;\n}\n.school-right-flame div a[data-v-79d7a1ee] {\n      font-weight: bold;\n      font-size: 1.6rem;\n}\n.school_name[data-v-79d7a1ee] {\n  padding-top: 40%;\n  padding-left: 5%;\n}\n.btn-flame[data-v-79d7a1ee] {\n  text-align: center;\n  margin-top: 16px;\n}\n.btn-flame .custom-btn[data-v-79d7a1ee] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.img-flame[data-v-79d7a1ee] {\n  padding: 24px;\n}\nimg[data-v-79d7a1ee] {\n  vertical-align: bottom;\n}\n.logo_img[data-v-79d7a1ee] {\n  padding-top: 40%;\n}\n.under[data-v-79d7a1ee] {\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #ffe035));\n  background: linear-gradient(transparent 70%, #ffe035 70%);\n  font-size: 2.5rem;\n  font-weight: bold;\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-79d7a1ee] {\n    margin-bottom: 80px;\n}\n.school-right-flame[data-v-79d7a1ee] {\n    padding: 5%;\n    display: none;\n}\n.school_name[data-v-79d7a1ee] {\n    padding-top: 0%;\n    padding-left: 5%;\n}\n.img-flame[data-v-79d7a1ee] {\n    padding: 0px;\n}\n.img-flame-sp[data-v-79d7a1ee] {\n    padding-top: 5%;\n}\n.is-child p[data-v-79d7a1ee] {\n    margin: 0 5%;\n}\n}\n", ""]);
 
 
 
@@ -4354,7 +4360,7 @@ exports.push([module.i, "\nsection[data-v-7cdae69f] {\n  max-width: 1160px;\n  m
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n}\nsection .container[data-v-8d3e665e] {\n    max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 56px;\n      font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n        text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 32px;\n      font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n    margin-top: 32px;\n    font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n      margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n        width: 100%;\n        height: 100% !important;\n}\nsection .u-img-p[data-v-8d3e665e] {\n    display: none;\n}\n@media screen and (max-width: 768px) {\nsection .u-img-p[data-v-8d3e665e] {\n      display: block;\n}\nsection .u-img-p-pc[data-v-8d3e665e] {\n      display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n  margin: 0 5%;\n}\nsection .container[data-v-8d3e665e] {\n    max-width: 1160px;\n}\nsection .container .info-title[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 56px;\n      font-size: 2rem;\n}\nsection .container .info-title h1[data-v-8d3e665e] {\n        text-align: center;\n}\nsection .container .info-flame[data-v-8d3e665e] {\n      max-width: 1120px;\n      margin: 0 auto;\n      margin-top: 32px;\n      font-size: 1.4rem;\n}\nsection .story-flame[data-v-8d3e665e] {\n    margin-top: 32px;\n    font-size: 1.4rem;\n}\nsection .story-flame div .flame[data-v-8d3e665e] {\n      margin: 0 auto;\n}\nsection .story-flame div .flame div .u-img[data-v-8d3e665e] {\n        width: 100%;\n        height: 100% !important;\n}\nsection .u-img-p[data-v-8d3e665e] {\n    display: none;\n}\n@media screen and (max-width: 768px) {\nsection .u-img-p[data-v-8d3e665e] {\n      display: block;\n}\nsection .u-img-p-pc[data-v-8d3e665e] {\n      display: none;\n}\n}\n", ""]);
 
 
 
@@ -4365,7 +4371,7 @@ exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n}
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-8e3066bc] {\n  margin-top: 80px;\n}\nsection .container[data-v-8e3066bc] {\n    max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n      padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n        margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n    font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n    text-align: center;\n    font-size: 1.6rem;\n    margin-top: 16px;\n    color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n    margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n      background-color: #db6b6b;\n      border-color: #db6b6b;\n      color: white;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n    max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n      padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n        margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n    font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n    text-align: center;\n    font-size: 1.6rem;\n    margin-top: 16px;\n    color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n    margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n      background-color: #db6b6b;\n      border-color: #db6b6b;\n      color: white;\n}\n", ""]);
 
 
 
@@ -4453,7 +4459,7 @@ exports.push([module.i, "\nsection[data-v-c8b3a85a] {\n  padding-top: 3%;\n  pad
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-eca10464] {\n  max-width: 1160px;\n  margin: 80px auto;\n}\nsection .container h2[data-v-eca10464] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-eca10464] {\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container[data-v-eca10464] {\n    max-width: 1160px;\n}\nsection .container h2[data-v-eca10464] {\n      font-size: 1.5rem;\n      font-weight: bold;\n      text-align: left;\n      padding-bottom: 2%;\n}\nimg[data-v-eca10464] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\nsection h2[data-v-eca10464] {\n    margin: 0 5%;\n}\n.school_text[data-v-eca10464] {\n    margin: 0 5% 2.5% 5%;\n}\n}\n", ""]);
 
 
 
@@ -4464,7 +4470,7 @@ exports.push([module.i, "\nsection .container[data-v-eca10464] {\n  max-width: 1
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  padding-bottom: 0.5%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-ecbd3366] {\n    max-width: 1160px;\n    margin-top: 80px;\n    margin-bottom: 80px;\n}\nsection .container h2[data-v-ecbd3366] {\n      font-size: 1.5rem;\n      font-weight: bold;\n      text-align: left;\n      padding-bottom: 2%;\n}\n@media screen and (max-width: 768px) {\n.is-parent[data-v-ecbd3366] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.is-parent[data-v-ecbd3366] {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.order-1[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1;\n}\n.order-2[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n}\n.order-3[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3;\n}\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecbd3366] {\n    margin-bottom: 0px;\n}\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  padding-bottom: 0.5%;\n  background-color: #fffdf3;\n}\nsection .container[data-v-ecbd3366] {\n    max-width: 1160px;\n    margin-top: 80px;\n    margin-bottom: 80px;\n}\nsection .container h2[data-v-ecbd3366] {\n      font-size: 1.5rem;\n      font-weight: bold;\n      text-align: left;\n      padding-bottom: 2%;\n}\nimg[data-v-ecbd3366] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\n.is-parent[data-v-ecbd3366] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.is-parent[data-v-ecbd3366] {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.order-1[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1;\n}\n.order-2[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n}\n.order-3[data-v-ecbd3366] {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3;\n}\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecbd3366] {\n    margin-bottom: 0px;\n}\n.school_text[data-v-ecbd3366] {\n    margin: 0 5% 2.5% 5%;\n}\n}\n", ""]);
 
 
 
@@ -4475,7 +4481,7 @@ exports.push([module.i, "\nsection[data-v-ecbd3366] {\n  padding-top: 0.5%;\n  p
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecd96268] {\n    margin-bottom: 0px;\n}\n}\n", ""]);
+exports.push([module.i, "\nsection .container[data-v-ecd96268] {\n  max-width: 1160px;\n  margin-top: 80px;\n  margin-bottom: 80px;\n}\nsection .container h2[data-v-ecd96268] {\n    font-size: 1.5rem;\n    font-weight: bold;\n    text-align: left;\n    padding-bottom: 2%;\n}\nimg[data-v-ecd96268] {\n  vertical-align: bottom;\n}\n@media screen and (max-width: 768px) {\nsection .container[data-v-ecd96268] {\n    margin-bottom: 0px;\n}\nsection h2[data-v-ecd96268] {\n    margin: 0 5%;\n}\n.school_text[data-v-ecd96268] {\n    margin: 0 5% 2.5% 5%;\n}\n}\n", ""]);
 
 
 
@@ -31723,7 +31729,7 @@ var render = function() {
                   "router-link",
                   {
                     staticClass: "button is-medium custom-btn",
-                    attrs: { to: "/" }
+                    attrs: { to: "/DetailSchool" }
                   },
                   [
                     _c("strong", [
@@ -32301,28 +32307,45 @@ var render = function() {
                   staticStyle: { "margin-bottom": "0" }
                 },
                 [
-                  _c("img", {
-                    staticClass: "u-img",
-                    attrs: { src: _vm.Homeimg2, alt: "" }
-                  })
-                ]
+                  _c("router-link", { attrs: { to: "/Donation" } }, [
+                    _c("img", {
+                      staticClass: "u-img",
+                      attrs: { src: _vm.Homeimg2, alt: "" }
+                    })
+                  ])
+                ],
+                1
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "tileis-child is-6" }, [
-                _c("img", {
-                  staticClass: "u-img",
-                  attrs: { src: _vm.Homeimg3, alt: "#" }
-                })
-              ])
+              _c(
+                "div",
+                { staticClass: "tileis-child is-6" },
+                [
+                  _c("router-link", { attrs: { to: "/Donation" } }, [
+                    _c("img", {
+                      staticClass: "u-img",
+                      attrs: { src: _vm.Homeimg3, alt: "#" }
+                    })
+                  ])
+                ],
+                1
+              )
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "tile child-flame" }, [
-            _c("img", {
-              staticClass: "u-img",
-              attrs: { src: _vm.Homeimg4, alt: "#" }
-            })
-          ])
+          _c(
+            "div",
+            { staticClass: "tile child-flame" },
+            [
+              _c("router-link", { attrs: { to: "/Donation" } }, [
+                _c("img", {
+                  staticClass: "u-img",
+                  attrs: { src: _vm.Homeimg4, alt: "#" }
+                })
+              ])
+            ],
+            1
+          )
         ])
       ])
     ])
@@ -33631,7 +33654,7 @@ var render = function() {
           _c("div", { staticClass: "tile is-child is-7" }, [
             _c(
               "div",
-              { staticClass: "img-flame" },
+              { staticClass: "img-flame img-flame-sp" },
               [
                 _c("router-link", { attrs: { to: "/" } }, [
                   _c("img", {

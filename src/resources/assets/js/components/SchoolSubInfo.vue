@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="media-content btn-flame">
-              <router-link to="/" class="button is-medium custom-btn">
+              <router-link to="/DetailSchool" class="button is-medium custom-btn">
                 <strong>
                   <span>近畿大学</span>の詳細を見る
                 </strong>

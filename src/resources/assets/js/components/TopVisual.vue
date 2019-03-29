@@ -15,16 +15,22 @@
           <div class="tile is-ancestor">
             <div class="tile is-parent upper-frame">
               <div class="tile is-child is-6 grandson-frame" style="margin-bottom:0;">
+                <router-link to="/Donation">
                 <img :src="Homeimg2" class="u-img" alt>
+                </router-link>
               </div>
               <div class="tileis-child is-6">
+                <router-link to="/Donation">
                 <img :src="Homeimg3" class="u-img" alt="#">
+                </router-link>
               </div>
             </div>
           </div>
 
           <div class="tile child-flame">
+            <router-link to="/Donation">
             <img :src="Homeimg4" class="u-img" alt="#">
+            </router-link>
           </div>
         </div>
       </div>
