@@ -1961,6 +1961,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -1968,12 +1970,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       info: null,
-      image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg",
-      school_name: "近畿大学",
-      message: "車椅子バスケを広めたい",
-      amount: 100,
-      supporter: 10,
-      days: 5
+
+      values: [{ school_name: '近畿大学', message: '全国制覇したい', image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg", amount: 100, supporter: 10, days: 5 }, { school_name: '青山学院大学', message: '全国制覇したいしたい', image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg", amount: 200, supporter: 20, days: 6 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }]
     };
   }
   // computed: {
@@ -32632,320 +32630,110 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
-    _c("div", { staticClass: "container flex-flame" }, [
-      _c("div", { staticClass: "card" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns detail" }, [
-          _c("div", { staticClass: "column" }, [
+    _c(
+      "div",
+      { staticClass: "container flex-flame" },
+      _vm._l(_vm.values, function(value, index) {
+        return _c("div", { key: index }, [
+          _c("div", { staticClass: "card" }, [
             _c(
-              "p",
+              "div",
               {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
+                staticStyle: { position: "relative" },
+                attrs: { calss: "card_image_container" }
               },
               [
-                _vm._v("寄付金額\n            "),
-                _c("br"),
+                _c("div", { staticClass: "card-image item item--first" }, [
+                  _c("figure", { staticClass: "image is-4by3" }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: value.image, alt: "Placeholder image" }
+                    })
+                  ])
+                ]),
                 _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
+                _c("div", { staticClass: "school_msg has-text-centered" }, [
+                  _c(
+                    "p",
+                    { staticClass: "title is-7 is-size-7-mobile school_name" },
+                    [_vm._v(_vm._s(value.school_name))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "subtitle is-6 is-size-7-mobile school_message"
+                    },
+                    [_vm._v(_vm._s(value.message))]
+                  )
+                ])
               ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("応募数\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("残り\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
-              ]
-            )
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-content" }, [
+              _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
+                _vm._v(_vm._s(value.school_name))
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "columns detail" }, [
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass: "card-text col has-text-centered",
+                    staticStyle: { "font-size": "0.9rem" }
+                  },
+                  [
+                    _vm._v("寄付金額\n                "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass: "card-text col has-text-centered",
+                    staticStyle: { "font-size": "0.9rem" }
+                  },
+                  [
+                    _vm._v("応募数\n                "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass: "card-text col has-text-centered",
+                    staticStyle: { "font-size": "0.9rem" }
+                  },
+                  [
+                    _vm._v("残り\n                "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("strong", [_vm._v(_vm._s(value.days) + "日")])
+                  ]
+                )
+              ])
+            ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns detail" }, [
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("寄付金額\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("応募数\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("残り\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
-        _vm._m(4),
-        _vm._v(" "),
-        _vm._m(5),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns detail" }, [
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("寄付金額\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.amount) + "円〜")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("応募数\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.supporter) + "人")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "p",
-              {
-                staticClass: "card-text col has-text-centered",
-                staticStyle: { "font-size": "0.9rem" }
-              },
-              [
-                _vm._v("残り\n            "),
-                _c("br"),
-                _vm._v(" "),
-                _c("strong", [_vm._v(_vm._s(_vm.days) + "日")])
-              ]
-            )
-          ])
-        ])
-      ])
-    ])
+      }),
+      0
+    )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticStyle: { position: "relative" },
-        attrs: { calss: "card_image_container" }
-      },
-      [
-        _c("div", { staticClass: "card-image item item--first" }, [
-          _c("figure", { staticClass: "image is-4by3" }, [
-            _c("img", {
-              staticClass: "card-img-top",
-              attrs: {
-                src: "https://bulma.io/images/placeholders/1280x960.png",
-                alt: "Placeholder image"
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "school_msg has-text-centered" }, [
-          _c("p", { staticClass: "title is-7 is-size-7-mobile school_name" }, [
-            _vm._v("近畿大学")
-          ]),
-          _vm._v(" "),
-          _c(
-            "p",
-            { staticClass: "subtitle is-6 is-size-7-mobile school_message" },
-            [_vm._v("全国制覇したい")]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-        _vm._v("近畿大学")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticStyle: { position: "relative" },
-        attrs: { calss: "card_image_container" }
-      },
-      [
-        _c("div", { staticClass: "card-image item item--first" }, [
-          _c("figure", { staticClass: "image is-4by3" }, [
-            _c("img", {
-              staticClass: "card-img-top",
-              attrs: {
-                src: "https://bulma.io/images/placeholders/1280x960.png",
-                alt: "Placeholder image"
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "school_msg has-text-centered" }, [
-          _c("p", { staticClass: "title is-7 is-size-7-mobile school_name" }, [
-            _vm._v("近畿大学")
-          ]),
-          _vm._v(" "),
-          _c(
-            "p",
-            { staticClass: "subtitle is-6 is-size-7-mobile school_message" },
-            [_vm._v("全国制覇したい")]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-        _vm._v("近畿大学")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticStyle: { position: "relative" },
-        attrs: { calss: "card_image_container" }
-      },
-      [
-        _c("div", { staticClass: "card-image item item--first" }, [
-          _c("figure", { staticClass: "image is-4by3" }, [
-            _c("img", {
-              staticClass: "card-img-top",
-              attrs: {
-                src: "https://bulma.io/images/placeholders/1280x960.png",
-                alt: "Placeholder image"
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "school_msg has-text-centered" }, [
-          _c("p", { staticClass: "title is-7 is-size-7-mobile school_name" }, [
-            _vm._v("近畿大学")
-          ]),
-          _vm._v(" "),
-          _c(
-            "p",
-            { staticClass: "subtitle is-6 is-size-7-mobile school_message" },
-            [_vm._v("全国制覇したい")]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-        _vm._v("近畿大学")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
