@@ -59,12 +59,10 @@ section {
       }
     }
   }
-
-  @media screen and (max-width:768px) { 
-
+  @media screen and (max-width: 768px) {
     .container {
       div {
-          text-align: center;
+        text-align: center;
         p {
           text-align: center;
           span {

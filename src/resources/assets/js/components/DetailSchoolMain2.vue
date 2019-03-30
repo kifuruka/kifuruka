@@ -45,6 +45,7 @@ section {
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   background-color: #fffdf3;
+
   .container {
     max-width: 1160px;
     margin-top: 80px;
@@ -57,22 +58,10 @@ section {
     }
   }
 }
-// .order-1 {
-//   @include tab {
-//     order: 1;
-//   };
-//   @include sp {
-//     order: 1;
-//   };
-// }
-// .order-2 {
-//   @include tab {
-//     order: 2;
-//   };
-//   @include sp {
-//     order: 2;
-//   };
-// }
+
+img {
+  vertical-align: bottom;
+}
 
 @media screen and (max-width: 768px) {
   .is-parent {
@@ -95,6 +84,13 @@ section {
 @media screen and (max-width: 768px) {
   section .container {
     margin-bottom: 0px;
+  }
+
+  // section h2 {
+  //   margin: 0 %;
+  // }
+  .school_text {
+    margin: 0 5% 2.5% 5%;
   }
 }
 </style>

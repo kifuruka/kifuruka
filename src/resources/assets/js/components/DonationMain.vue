@@ -215,10 +215,12 @@ export default {
 <style lang="scss" scoped>
 section {
   margin-top: 80px;
+  margin: 80px 5% 0 5%;
   // background-color: #222222;
   // height: 2000px;
   .container {
     max-width: 1160px;
+    
     // background-color: rgb(121, 121, 212);
     // height: 1000px;
 

@@ -6,7 +6,6 @@ import types from '../mutation-types'
 
 const state = {
 
-
     activityAllData: null,
     isStatus: false,
 
@@ -26,8 +25,6 @@ const getters = {
     isActivity(state) {
         return state.isActivity
     },
-
-
 }
 
 const mutations = {
@@ -36,12 +33,9 @@ const mutations = {
     getActivityData(state, payload) {
         state.getActivityData = payload
     },
-
     isActivity(state, payload) {
         state.isActivity = payload
     }
-
-
 }
 
 const actions = {

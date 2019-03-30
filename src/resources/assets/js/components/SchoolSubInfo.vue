@@ -6,9 +6,15 @@
           <!-- <div class="tile is-child is-1"></div> -->
           <div class="tile is-child is-7">
             <div class="img-flame">
-              <router-link to="/">
+              <a
+                @click="routerPush({
+                name:'DetailSchool',
+                params:{id:activity.school.id}
+                })"
+              >
                 <img :src="activity.school.school_logo" class="u-img" alt="#">
-              </router-link>
+                <!-- <router-link to="/"></router-link> -->
+              </a>
             </div>
           </div>
           <div class="tile is-child is-4">
@@ -26,7 +32,7 @@
               </div>
             </div>
             <div class="media-content btn-flame">
-              <button
+              <a
                 @click="routerPush({
                 name:'DetailSchool',
                 params:{id:activity.school.id}
@@ -35,7 +41,7 @@
                 <strong>
                   <span>{{activity.school.school_name}}</span>の詳細を見る
                 </strong>
-              </button>
+              </a>
               <!-- <router-link to="/'/detailschool/:id" class="button is-medium custom-btn">
                 <strong>
                   <span>{{school.school_name}}</span>の詳細を見る
@@ -54,7 +60,7 @@
 // Vuexの読み込み
 import { mapGetters } from "vuex";
 import SchoolLogo from "../../images/schoolLogo/kinkiuniv.jpg";
-import router from "../router";
+// import router from "../router";
 export default {
   data() {
     return {
@@ -69,6 +75,8 @@ export default {
   },
   methods: {
     routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
       // alert(router.params.id);
       this.$router.push(router);
     }

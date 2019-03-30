@@ -8,6 +8,7 @@ import Login from '../pages/Login';
 import Activity from '../pages/Activity';
 import DetailSchool from '../pages/DetailSchool';
 import test from '../pages/test';
+import mypage from '../pages/Mypage';
 
 Vue.use(VueRouter);
 
@@ -52,7 +53,11 @@ const routes = [
         component: test,
         // meta: { requiresAuth: true }
     },
-
+    {
+        path: '/mypage',
+        component: mypage,
+        name: 'mypage',
+    },
 
 ];
 

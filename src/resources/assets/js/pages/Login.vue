@@ -62,7 +62,7 @@
 
 <script>
 import MessageTitle from "../components/MessageTitle";
-import { mapGetters, mapMutations, mapActions } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 // import LoginForm from "../components/LoginForm";
 export default {
   components: {
@@ -90,6 +90,7 @@ export default {
         password: this.user.password
       });
       // console.log(this.state.data);
+      // 画面丈夫へ移動するためのもの
       this.$router.push("/");
     }
     // handlelogin() {

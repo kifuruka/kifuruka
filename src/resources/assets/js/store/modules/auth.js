@@ -1,42 +1,52 @@
-// import types from '../mutation-types'
+import types from '../mutation-types'
 import http from '../../services/http'
 // import router from '../../router/router'
 import util from '../../utils/util';
+import url from '../../utils/url';
 
 
 const state = {
     user: {},
-    authenticate: false,
+    // authStatus: false,
+    authStatus: true,
     token: localStorage.getItem(util.JWT_TOKEN) || '',
     // status: '',
 }
 
 const getters = {
-    getUser: (state) => {
-        console.log(state.users)
-        return state.users
+
+    getUser(state) {
+        console.log(state.user, 'getuser')
+        return state.user
     },
-    getUserName: (state, getters) => (id) => {
-        console.log(state.users)
-        return getters.getUser.find(user => user.id == id)
+    isUserStatus(state) {
+        console.log(state.authStatus)
+        return state.authStatus
     }
+    // getUserName: (state, getters) => (id) => {
+    //     console.log(state.users)
+    //     return getters.getUser.find(user => user.id == id)
+    // }
 }
 
 
 const mutations = {
-    // [types.REGISTER_AUTH](state, payload) {
-    register_auth(state, payload) {
+    [types.AUTH_REGISTER](state, payload) {
         state.user = payload.user
-        state.authenticate = true
-        console.log('1-1')
+        console.log(payload.user, "AUTH_REGISTER")
     },
-    // [types.LOGIN_AUTH](state, payload) {
-    login_auth(state, payload) {
-        // logintest(state, payload) {
+
+    [types.AUTH_LOGIN](state, payload) {
         state.user = payload.user
-        state.authenticate = true
-        console.log('1-2')
+        console.log(payload, "AUTH_LOGIN")
     },
+
+    [types.AUTH_STATUS](state, payload) {
+        state.authStatus = payload
+        console.log(payload, "AUTH_STATUS")
+
+    },
+
     // [types.LOGOUT_AUTH](state) {
     logout_auth(state) {
         localStorage.removeItem('jwt-token')
@@ -49,41 +59,52 @@ const mutations = {
     }
 }
 
-
 const actions = {
+
     register({ commit }, payload) {
-        return new Promise(resolve => {
-            console.log(payload)
-            http.post('/auth/register', payload, res => {
-                // commit(types.REGISTER_AUTH, res.data)
-                console.log('register, koko')
-                commit("register_auth", res.data)
-                console.log('register, ok')
-                resolve()
-            }, e => {
-                console.log(e, "e")
-                alert('Emailを正しく入力してください。')
-            })
-        })
-
+        return new Promise((resolve, reject) => {
+            http.post(url.REGISTER, payload, res => {
+                commit(types.AUTH_REGISTER, res.data);
+                resolve(res.data);
+                console.log(res.data, "register:Actions")
+            }, err => {
+                localStorage.removeItem(util.JWT_TOKEN);
+                reject(err)
+            });
+        });
     },
+
     login({ commit }, payload) {
+        return new Promise((resolve, reject) => {
+            http.post(url.LOGIN, payload, res => {
+                commit(types.AUTH_LOGIN, res.data)
+                commit(types.AUTH_STATUS, res ? true : false)
+                resolve(res.data)
+                console.log(res.data, "login:Actions")
+            }, err => {
+                localStorage.removeItem(util.JWT_TOKEN);
+                reject(err)
+                console.log(err, "err:actions")
+            });
 
-        return new Promise(resolve => {
-            http.post('/auth/login', payload, res => {
-                console.log(res.data, ":testdata1")
-                // commit(types.LOGIN_AUTH, res.data)
-                commit('login_auth', res.data)
-                console.log('login, ok')
-                resolve()
-            }, e => {
-                console.log(e, "e")
-                // alert(payload)
-                // alert('Emailかpasswordが間違っています。')
-            })
-
-        })
+        });
     },
+    // login({ commit }, payload) {
+    //     return new Promise(resolve => {
+    //         http.post('/auth/login', payload, res => {
+    //             console.log(res.data, ":testdata1")
+    //             // commit(types.LOGIN_AUTH, res.data)
+    //             commit('login_auth', res.data)
+    //             console.log('login, ok')
+    //             resolve()
+    //         }, e => {
+    //             console.log(e, "e")
+    //             // alert(payload)
+    //             // alert('Emailかpasswordが間違っています。')
+    //         })
+
+    //     })
+    // },
     logout({ commit }) {
         return new Promise(resolve => {
             http.get('/logout', () => {
@@ -92,7 +113,6 @@ const actions = {
                 resolve()
             }, null)
         })
-
     },
     async getUsers({ commit }) {
         const res = await axios.get('/users')

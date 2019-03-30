@@ -17,18 +17,20 @@ use Illuminate\Http\Request;
 // phpinfo();exit;
 
 
-Route::group(['prefix'=>'v1'],function(){
-    Route::group(['middleware' => 'api'], function() {
+Route::group(['prefix'=>'v1','middleware' => 'api'],function(){
+    // Route::group(['middleware' => 'api'], function() { // });
         Route::post('auth/register','AuthController@register');
-        Route::post('auth/login','AuthController@login');
-        Route::post('auth/refresh','AuthController@refresh');
+        Route::post('/auth/login','AuthController@login');
+
         Route::get('/school', 'SchoolController@index');
         Route::get('/school/{id}', 'SchoolController@show');
         Route::get('/activity', 'ActivityController@index');
         Route::get('/activity/{activity}', 'ActivityController@show');
+
+        Route::post('auth/refresh','AuthController@refresh');
         
         Route::get('/search', 'SchoolController@search');
-    });
+   
     Route::group(['middleware' =>'auth'],function(){
 
         Route::post('auth/logout','AuthController@logout');

@@ -1,18 +1,23 @@
 <template>
-  <section>
-    <div v-if="isStatus" class="feature" id="app">
+  <section v-if="isStatus">
+    <div class="feature" id="app">
       <h2>参加学校</h2>
       <!-- <carousel class="container_feature" v-bind:per-page="4"> -->
       <swiper :options="swiperOption">
+        <!-- TODO: ランダムに表示したい -->
         <swiper-slide class="item" v-for="school in schools" :key="school.id">
-          <a v-bind:href="school.url">
+          <a
+            @click="routerPush({
+                name:'DetailSchool',
+                params:{id:school.id}
+                })"
+          >
             <section class="card">
               <div class="card-content">
                 <h3 class="card-title">{{school.school_name}}学校</h3>
                 <h4 class="card-title">活動件数：{{school.activity_count}}</h4>
               </div>
               <img class="card-img" :src="school.school_img" alt="写真">
-              <!-- <div class="card-content"></div> -->
             </section>
           </a>
         </swiper-slide>
@@ -20,22 +25,23 @@
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
-
       <!-- </carousel> -->
     </div>
   </section>
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
+import { mapGetters, mapActions } from "vuex";
+// import router from "../router";
 
 export default {
   components: {
     swiper,
     swiperSlide
   },
+
   data() {
     return {
       swiperOption: {
@@ -53,19 +59,17 @@ export default {
       }
     };
   },
+
   computed: {
     ...mapGetters({
       isStatus: "schools/isStatus",
       schools: "schools/schoolAllData"
     })
   },
+
   created() {
     this.fetchSchools();
-    // console.log(this.$store.getters.schoolData);
   },
-  // watch: {},
-
-  // mounted() {},
 
   methods: {
     ...mapActions({
@@ -74,6 +78,12 @@ export default {
 
     fetchSchools() {
       this.fetchSchoolsData();
+    },
+
+    routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
     }
   }
 };
