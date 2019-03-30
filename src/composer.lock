@@ -3623,13 +3623,8 @@
                 "php": "^7.1"
             },
             "require-dev": {
-<<<<<<< HEAD
-                "doctrine/coding-standard": "^6.0",
-                "ext-pdo": "*",
-=======
                 "athletic/athletic": "~0.1.8",
                 "ext-": "*",
->>>>>>> origin/layout_top
                 "ext-phar": "*",
                 "phpbench/phpbench": "^0.13",
                 "phpstan/phpstan-phpunit": "^0.11",

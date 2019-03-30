@@ -2,11 +2,7 @@ import axios from 'axios'
 
 export default {
     request(method, url, data, successCb = null, errorCb = null) {
-<<<<<<< HEAD
-        console.log(method, url, data, successCb,"HTTP");
-=======
         // console.log(method, url, data, successCb, 'http');
->>>>>>> origin/layout_top
         axios.request({
             url,
             data,

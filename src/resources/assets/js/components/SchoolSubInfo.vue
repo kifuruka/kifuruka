@@ -26,16 +26,12 @@
               </div>
             </div>
             <div class="media-content btn-flame">
-<<<<<<< HEAD
-              <router-link to="/DetailSchool" class="button is-medium custom-btn">
-=======
               <button
                 @click="routerPush({
                 name:'activity',
                 params:{id:school.id}
                 })"
               >
->>>>>>> origin/layout_top
                 <strong>
                   <span>{{school.school_name}}</span>の詳細を見る
                 </strong>

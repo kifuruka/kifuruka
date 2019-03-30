@@ -72,14 +72,8 @@ export default {
       fetchSchoolsData: "schools/fetchSchoolsData"
     }),
 
-<<<<<<< HEAD:src/resources/assets/js/components/EntorySchool.vue
-    fetchSchool() {
-    
-      this.fetchSchoolData();
-=======
     fetchSchools() {
       this.fetchSchoolsData();
->>>>>>> origin/layout_top:src/resources/assets/js/components/EntrySchool.vue
     }
   }
 };
