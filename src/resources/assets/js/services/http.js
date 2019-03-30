@@ -2,7 +2,11 @@ import axios from 'axios'
 
 export default {
     request(method, url, data, successCb = null, errorCb = null) {
+<<<<<<< HEAD
         console.log(method, url, data, successCb,"HTTP");
+=======
+        // console.log(method, url, data, successCb, 'http');
+>>>>>>> origin/layout_top
         axios.request({
             url,
             data,
@@ -13,6 +17,8 @@ export default {
         return this.request('get', url, {}, successCb, errorCb)
     },
     post(url, data, successCb = null, errorCb = null) {
+        // console.log(url, 'POST');
+        // console.log(data, 'POSTdata');
         return this.request('post', url, data, successCb, errorCb)
     },
     put(url, data, successCb = null, errorCb = null) {
@@ -27,7 +33,31 @@ export default {
         axios.interceptors.request.use(config => {
             config.headers['X-CSRF-TOKEN'] = window.Laravel.csrfToken
             config.headers['X-Requested-With'] = 'XMLHttpRequest'
+            // console.log(config, "init")
             return config
+        })
+        // }
+
+        // init() {
+        //     axios.defaults.baseURL = '/api'
+        //     axios.interceptors.request.use(config => {
+        //         config.headers['Authorization']    = `Bearer ${localStorage.getItem('jwt-token')}`
+        //         config.headers['X-CSRF-TOKEN']  = window.Laravel.csrfToken
+        //         config.headers['X-Requested-With']  = 'XMLHttpRequest'
+        //         return config
+        //     })
+
+        axios.interceptors.response.use(response => {
+            // const token = response.headers['Authorization'] || response.data['token']
+            const token = response.headers['Authorization'] || response.data['access_token']
+
+            if (token) {
+                localStorage.setItem('jwt-token', token)
+            }
+            return response
+        }, error => {
+            console.log(error)
+            return Promise.reject(error)
         })
     }
 }

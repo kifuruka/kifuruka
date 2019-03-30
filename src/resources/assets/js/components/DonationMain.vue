@@ -1,34 +1,34 @@
 <template>
-  <section>
+  <section v-if="isActivity">
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child is-8 child-flame">
             <div class="content-flame">
-              <h1>これはサンプルテキストです。</h1>
+              <h1>{{activity.sub_title1}}</h1>
               <div class="donaition-text-flame">
-                <p>これはサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。</p>
+                <p>{{activity.sub_contents1}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="DonationImg" class="u-img" alt="#">
+                <img :src="activity.sub_image1" class="u-img" alt="#">
               </div>
             </div>
             <div class="content-flame">
-              <h1>これはサンプルテキストです。</h1>
+              <h1>{{activity.sub_title2}}</h1>
               <div class="donaition-text-flame">
-                <p>これはサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。</p>
+                <p>{{activity.sub_contents2}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="DonationImg2" class="u-img" alt="#">
+                <img :src="activity.sub_image2" class="u-img" alt="#">
               </div>
             </div>
             <div class="content-flame">
-              <h1>これはサンプルテキストです。</h1>
+              <h1>{{activity.sub_title3}}</h1>
               <div class="donaition-text-flame">
-                <p>これはサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。青山学院大学の活動の「箱根駅伝制覇！」のサンプルテキストです。</p>
+                <p>{{activity.sub_contents3}}</p>
               </div>
               <div class="donaition-img-flame">
-                <img :src="DonationImg3" class="u-img" alt="#">
+                <img :src="activity.sub_image3" class="u-img" alt="#">
               </div>
             </div>
           </div>
@@ -170,7 +170,8 @@
                   <p>法人・企業の皆さまへ</p>
                 </div>
                 <div>
-                  <p>法人・企業の皆様の
+                  <p>
+                    法人・企業の皆様の
                     <br>寄付はこちらから
                   </p>
                 </div>
@@ -192,6 +193,8 @@
 import DonationImg from "../../images/donation/d_kin_rag.jpg";
 import DonationImg2 from "../../images/donation/d_kin_rag2.jpg";
 import DonationImg3 from "../../images/donation/d_kin_rag3.jpg";
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
@@ -199,6 +202,12 @@ export default {
       DonationImg2,
       DonationImg3
     };
+  },
+  computed: {
+    ...mapGetters({
+      isActivity: "activity/isActivity",
+      activity: "activity/getActivityData"
+    })
   }
 };
 </script>

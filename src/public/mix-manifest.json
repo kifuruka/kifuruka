@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js?id=7e225c42531f83763a9e",
+=======
+    "/js/app.js": "/js/app.js?id=49d9228bde7899b0a922",
+>>>>>>> origin/layout_top
     "/css/app.css": "/css/app.css?id=0e1a975b200fd31c731e",
     "/css/all.css": "/css/all.css?id=d41d8cd98f00b204e980"
 }

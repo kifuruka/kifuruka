@@ -1,29 +1,29 @@
 <template>
-  <section>
+  <section v-if="isSchoolStatus">
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <!-- <div class="tile is-child is-1"></div> -->
           <div class="tile is-child is-4">
             <div class="school-right-flame">
-              <img :src="SchoolLogo" class="logo_img" alt="#">
+              <img :src="school.school_logo" class="logo_img" alt="#">
             </div>
             <div class="school_name">
-              <span class="under">青山学院大学</span>
+              <span class="under">{{school.school_name}}</span>
             </div>
           </div>
           <div class="tile is-child is-1"></div>
           <div class="tile is-child is-7">
             <div class="img-flame img-flame-sp">
               <router-link to="/">
-                <img :src="SchoolCampus" class="u-img" alt="#">
+                <img :src="school.school_img" class="u-img" alt="#">
               </router-link>
             </div>
           </div>
         </div>
       </div>
       <div class="tile is-child is-12">
-            <p>青山学院大学は、「青山学院教育方針」に立脚した、 神と人とに仕え社会に貢献する 「地の塩、世の光」としての教育研究共同体である。 本学は、地球規模の視野にもとづく正しい認識をもって 自ら問題を発見し解決する知恵と力をもつ人材を育成する。 それは、人類への奉仕をめざす自由で幅広い学問研究を通してなされる。 本学のすべての教員、職員、学生は、 相互の人格を尊重し、建学以来の伝統を重んじつつ、 おのおのの立場において、 時代の要請に応えうる大学の創出に努める。</p>
+        <p>{{school.top_contents}}</p>
       </div>
     </div>
   </section>
@@ -32,12 +32,20 @@
 <script>
 import SchoolLogo from "../../images/schoolLogo/aoyama_logo.png";
 import SchoolCampus from "../../images/SchoolCampus/aoyama_campus.jpg";
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
       SchoolLogo,
       SchoolCampus
     };
+  },
+  computed: {
+    ...mapGetters({
+      school: "schools/getSchoolData",
+      isSchoolStatus: "schools/isSchoolStatus"
+    })
   }
 };
 </script>
@@ -55,13 +63,13 @@ section {
   //   background-color: aqua;
   padding: 5%;
 
-//   h1 {
-//     background: linear-gradient(transparent 90%, #ffe035 70%);
-//     font-size: 2.5rem;
-//     font-weight: bold;
-//     text-align: left;
-//     padding-bottom: 16px;
-//   }
+  //   h1 {
+  //     background: linear-gradient(transparent 90%, #ffe035 70%);
+  //     font-size: 2.5rem;
+  //     font-weight: bold;
+  //     text-align: left;
+  //     padding-bottom: 16px;
+  //   }
 
   p {
     font-size: 1.8rem;
@@ -74,9 +82,9 @@ section {
     }
   }
 }
-.school_name{
-    padding-top:40%; 
-    padding-left:5%
+.school_name {
+  padding-top: 40%;
+  padding-left: 5%;
 }
 
 .btn-flame {
@@ -106,29 +114,28 @@ img{
     padding-top:40%; 
 }
 
-.under{
-    background: linear-gradient(transparent 70%, #ffe035 70%);
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: left;
+.under {
+  background: linear-gradient(transparent 70%, #ffe035 70%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
 }
 
-
-@media screen and (max-width:768px) { 
-
-section .container {
+@media screen and (max-width: 768px) {
+  section .container {
     margin-bottom: 80px;
-}
+  }
 
-.school-right-flame {
+  .school-right-flame {
     padding: 5%;
     display: none;
-}
+  }
 
 .school_name {
     padding-top: 0%;
     padding-left: 5%;
-}
+  }
+
 .img-flame {
     padding: 0px;
 }

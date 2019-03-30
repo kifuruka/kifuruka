@@ -33,14 +33,16 @@ class ActivityController extends Controller
     }
 
     /**
+     * 
      * Display the specified resource.
      *
      * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function show(Activity $activity)
+    public function show($id)
     {
-        //
+        return Activity::find($id);
+        // return new Resource(Activity::find($id));
     }
 
     //editを削除

@@ -14,17 +14,20 @@ class AuthController extends Controller
 
     public function register(Request $request){
 
-        return User::create([
-            'account_name' => $request->input('account_name'),
-            'email' => $request->input('email'),
-            'password' => bcrypt($request->input('password'))
+        $user = new User;
+        // $user->account_name = 'aaa';
+        $user->account_name = $request->account_name;
+        $user->email     = $request->email;
+        $user->password  = bcrypt($request->password);
+        $user->save();
 
+        return $user;
             // bcrypt(ビークリプト)とは？
             // もともと入れたパスワードをハッシュ化しているが、単純にハッシュかするだけではすぐに解読されてしまう。
             // そのため、毎回違う文字列を追加してハッシュを繰り返してあげれば問題なよね？ということで、それを行う便利関数のこと。
-        ]);
-
     }
+
+    
 
     public function login(Request $request) {
         $credentials = request(['email', 'password']);

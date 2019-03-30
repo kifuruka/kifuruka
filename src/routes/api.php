@@ -16,15 +16,19 @@ use Illuminate\Http\Request;
 // 設定情報をWEBで確認できる
 // phpinfo();exit;
 
+
 Route::group(['prefix'=>'v1'],function(){
-
-    Route::post('auth/register','AuthController@register');
-    Route::post('auth/login','AuthController@login');
-    Route::post('auth/refresh','AuthController@refresh');
-    Route::get('/school', 'SchoolController@index');
-    Route::get('/school/{id}', 'SchoolController@show');
-    Route::get('/search', 'SchoolController@search');
-
+    Route::group(['middleware' => 'api'], function() {
+        Route::post('auth/register','AuthController@register');
+        Route::post('auth/login','AuthController@login');
+        Route::post('auth/refresh','AuthController@refresh');
+        Route::get('/school', 'SchoolController@index');
+        Route::get('/school/{id}', 'SchoolController@show');
+        Route::get('/activity', 'ActivityController@index');
+        Route::get('/activity/{id}', 'ActivityController@show');
+        
+        Route::get('/search', 'SchoolController@search');
+    });
     Route::group(['middleware' =>'auth'],function(){
 
         Route::post('auth/logout','AuthController@logout');
@@ -34,6 +38,11 @@ Route::group(['prefix'=>'v1'],function(){
     });
 
 });
+
+
+// Route::get('/Donation,')
+// Route::get()
+// Route::get()
 
 
 

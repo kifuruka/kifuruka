@@ -19,6 +19,17 @@ class CreateActivitiesTable extends Migration
             $table->string('activitie_name',100);
             $table->string('title',255)->nullable();
             $table->text('top_contents')->nullable();
+            
+            $table->string('sub_title1',255);
+            $table->text('sub_contents1');
+            $table->string('sub_image1',255)->nullable();
+            $table->string('sub_title2',255);
+            $table->text('sub_contents2');
+            $table->string('sub_image2',255)->nullable();
+            $table->string('sub_title3',255);
+            $table->text('sub_contents3');
+            $table->string('sub_image3',255)->nullable();
+
             $table->integer('total_donation')->nullable();
             $table->integer('fans')->nullable();
             $table->string('activitie_img',255)->nullable();

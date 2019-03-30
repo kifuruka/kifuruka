@@ -17,7 +17,7 @@ RUN apk --update add wget \
   libgsasl-dev \
   postgresql-dev \
   supervisor && \
-  docker-php-ext-install mbstring pdo pdo_mysql pdo_pgsql tokenizer xml && \
+  docker-php-ext-install mbstring  _mysql _pgsql tokenizer xml && \
   apk del --no-cache \
     libmcrypt-dev \
     libxml2-dev \
@@ -36,7 +36,7 @@ RUN curl -s http://getcomposer.org/installer | php && \
 RUN . ~/.bashrc
 
 RUN php -v | head -n 1 | grep -q "PHP ${PHP_VERSION}."
-# RUN docker-php-ext-install pdo_mysql
+# RUN docker-php-ext-install _mysql
 #--------------------------------------------------------------------------
 # Final Touch
 #--------------------------------------------------------------------------

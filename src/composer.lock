@@ -677,7 +677,7 @@
                 "symfony/routing": "^4.1",
                 "symfony/var-dumper": "^4.1",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
-                "vlucas/phpdotenv": "^2.2"
+                "vlucas/phtenv": "^2.2"
             },
             "conflict": {
                 "tightenco/collect": "<5.5.33"
@@ -1897,7 +1897,7 @@
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
-                "ext-pdo-sqlite": "The doc command requires SQLite to work.",
+                "ext--sqlite": "The doc command requires SQLite to work.",
                 "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
                 "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
                 "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
@@ -3428,16 +3428,16 @@
             "time": "2018-09-04T19:48:02+00:00"
         },
         {
-            "name": "vlucas/phpdotenv",
+            "name": "vlucas/phtenv",
             "version": "v2.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
+                "url": "https://github.com/vlucas/phtenv.git",
                 "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "url": "https://api.github.com/repos/vlucas/phtenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
                 "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
                 "shasum": ""
             },
@@ -3623,8 +3623,13 @@
                 "php": "^7.1"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "doctrine/coding-standard": "^6.0",
                 "ext-pdo": "*",
+=======
+                "athletic/athletic": "~0.1.8",
+                "ext-": "*",
+>>>>>>> origin/layout_top
                 "ext-phar": "*",
                 "phpbench/phpbench": "^0.13",
                 "phpstan/phpstan-phpunit": "^0.11",
@@ -4100,16 +4105,16 @@
             "time": "2018-07-08T19:19:57+00:00"
         },
         {
-            "name": "phpdocumentor/reflection-common",
+            "name": "phcumentor/reflection-common",
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+                "url": "https://github.com/phcumentor/ReflectionCommon.git",
                 "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+                "url": "https://api.github.com/repos/phcumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "shasum": ""
             },
@@ -4127,7 +4132,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
+                    "phcumentor\\Reflection\\": [
                         "src"
                     ]
                 }
@@ -4142,35 +4147,35 @@
                     "email": "opensource@ijaap.nl"
                 }
             ],
-            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
-            "homepage": "http://www.phpdoc.org",
+            "description": "Common reflection classes used by phcumentor to reflect the code structure",
+            "homepage": "http://www.phc.org",
             "keywords": [
                 "FQSEN",
-                "phpDocumentor",
-                "phpdoc",
+                "phcumentor",
+                "phc",
                 "reflection",
                 "static analysis"
             ],
             "time": "2017-09-11T18:02:19+00:00"
         },
         {
-            "name": "phpdocumentor/reflection-docblock",
+            "name": "phcumentor/reflection-docblock",
             "version": "4.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "url": "https://github.com/phcumentor/ReflectionDocBlock.git",
                 "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
+                "url": "https://api.github.com/repos/phcumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
                 "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0",
-                "phpdocumentor/type-resolver": "^0.4.0",
+                "phcumentor/reflection-common": "^1.0.0",
+                "phcumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -4186,7 +4191,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
+                    "phcumentor\\Reflection\\": [
                         "src/"
                     ]
                 }
@@ -4205,22 +4210,22 @@
             "time": "2017-11-30T07:14:17+00:00"
         },
         {
-            "name": "phpdocumentor/type-resolver",
+            "name": "phcumentor/type-resolver",
             "version": "0.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "url": "https://github.com/phcumentor/TypeResolver.git",
                 "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "url": "https://api.github.com/repos/phcumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5 || ^7.0",
-                "phpdocumentor/reflection-common": "^1.0"
+                "phcumentor/reflection-common": "^1.0"
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.4",
@@ -4234,7 +4239,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
+                    "phcumentor\\Reflection\\": [
                         "src/"
                     ]
                 }
@@ -4268,7 +4273,7 @@
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
-                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
+                "phcumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
                 "sebastian/comparator": "^1.1|^2.0|^3.0",
                 "sebastian/recursion-context": "^1.0|^2.0|^3.0"
             },
@@ -4609,7 +4614,7 @@
                 "phpunit/phpunit-mock-objects": "*"
             },
             "require-dev": {
-                "ext-pdo": "*"
+                "ext-": "*"
             },
             "suggest": {
                 "ext-soap": "*",
