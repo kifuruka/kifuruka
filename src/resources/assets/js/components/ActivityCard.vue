@@ -8,7 +8,7 @@
       </div>-->
       <!-- <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div> -->
       <!-- カード１ -->
-      <div v-for='(value, index) in values' :key='index'>
+      <div v-for='(value, index) in values' :key='index' class="card-box">
           <div class="card">
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
@@ -178,9 +178,13 @@ section {
   max-width: 1160px;
 }
 
+.card-box{
+  width: 80%;
+}
+
 .card {
   margin: 0 24px;
-  width: 30%;
+  // width: 30%;
 }
 .card_image_container {
   position: relative;
