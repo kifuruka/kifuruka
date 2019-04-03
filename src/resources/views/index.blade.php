@@ -6,7 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>{{ config('app.name') }}</title>
    <!-- Scripts -->
-   <script src="{{ mix('js/app.js') }}" defer></script>
+   <script>
+     window.Laravel = { csrfToken: '{{ csrf_token() }}'}
+   </script>
+  
  
    <!-- Fonts -->
    <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,8 +22,6 @@
  </head>
  <body>
    <div id="app"></div>
-   <script>
-       window.Laravel = { csrfToken: '{{ csrf_token() }}' }
-   </script>
+   <script src="{{ mix('js/app.js') }}" defer></script>
  </body>
  </html>

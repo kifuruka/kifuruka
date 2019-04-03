@@ -30,11 +30,16 @@
             <strong>新規登録</strong>
           </router-link>
           <div class="navbar-item">
-            <div class>
+            <div>
               <router-link to="/login" class="button is-medium custom-btn">
                 <strong>ログイン</strong>
               </router-link>
             </div>
+            <!-- <div v-else>
+              <router-link to="/" class="button is-medium custom-btn">
+                <strong>ログアウト</strong>
+              </router-link>
+            </div>-->
           </div>
         </div>
       </div>
@@ -43,12 +48,22 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   data() {
     return {
       dropdownActive: false
     };
   },
+  computed: {
+    ...mapGetters({
+      isLogin: "isloginstate"
+    })
+  },
+  // created() {
+  //   console.log(isLogin);
+  // },
   methods: {
     dropdownToggle() {
       this.dropdownActive = !this.dropdownActive;
@@ -68,18 +83,12 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 63px;
+  // height: 63px;
   background-color: white;
 
   nav.navbar {
     max-width: 1440px;
     margin: 0 auto;
-
-    // .navbar__item--logo {
-    //   font-size: 27px;
-    //   letter-spacing: 5px;
-    //   color: #03a1eb;
-    // }
 
     .navbar-start p {
       font-size: 16px;

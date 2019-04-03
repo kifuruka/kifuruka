@@ -13,8 +13,15 @@ return [
     |
     */
 
+    //初期値
+    // 'defaults' => [
+    //     'guard' => 'web',
+    //     'passwords' => 'users',
+    // ],
+
+    // 修正
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'api',
         'passwords' => 'users',
     ],
 
@@ -36,13 +43,22 @@ return [
     */
 
     'guards' => [
+       
+      
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
 
+        //初期値
+        // 'api' => [
+        //     'driver' => 'token',
+        //     'provider' => 'users',
+        // ],
+
+        // 修正
         'api' => [
-            'driver' => 'token',
+            'driver' => 'jwt',
             'provider' => 'users',
         ],
     ],
