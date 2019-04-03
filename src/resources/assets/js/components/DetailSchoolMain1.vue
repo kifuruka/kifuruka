@@ -64,11 +64,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  @media screen and (max-width: 768px) {
-    section .container {
-      margin-bottom: 0px;
-    }
+  section .container {
+    margin-bottom: 0px;
   }
+
   section h2 {
     margin: 0 5%;
   }

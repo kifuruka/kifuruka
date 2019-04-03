@@ -47,9 +47,9 @@
 
               <div class="reset__password">
                 <router-link to="/register">新規登録の方はこちら</router-link>
-                <span class="is-hidden-mobile">/</span>
+                <!-- <span class="is-hidden-mobile">/</span>
                 <br class="is-hidden-desktop">
-                <a>パスワードを忘れた方はこちら</a>
+                <a>パスワードを忘れた方はこちら</a>-->
               </div>
             </form>
           </div>
@@ -90,7 +90,6 @@ export default {
         password: this.user.password
       });
       // console.log(this.state.data);
-      // 画面丈夫へ移動するためのもの
       this.$router.push("/");
     }
     // handlelogin() {

@@ -3,7 +3,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      count: 3
+    };
+  },
+  methods: {
+    getdata() {
+      count = count + 3;
+    }
+  }
+};
 </script>
 
 <style>

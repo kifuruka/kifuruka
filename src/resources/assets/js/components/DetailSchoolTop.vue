@@ -146,5 +146,9 @@ img {
   .is-child p {
     margin: 0 5%;
   }
+
+  .is-child p {
+    margin: 0 5%;
+  }
 }
 </style>

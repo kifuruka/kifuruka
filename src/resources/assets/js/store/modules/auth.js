@@ -6,23 +6,22 @@ import url from '../../utils/url';
 
 
 const state = {
-    user: {},
-    // authStatus: false,
-    authStatus: true,
+    currentuser: null,
+    authStatus: false,
     token: localStorage.getItem(util.JWT_TOKEN) || '',
     // status: '',
 }
 
 const getters = {
-
-    getUser(state) {
-        console.log(state.user, 'getuser')
-        return state.user
-    },
     isUserStatus(state) {
-        console.log(state.authStatus)
+        console.log(state.authStatus, "isstate")
         return state.authStatus
+    },
+    getCurrentUser(state) {
+        console.log(state.currentuser, "ogo")
+        return state.currentuser
     }
+
     // getUserName: (state, getters) => (id) => {
     //     console.log(state.users)
     //     return getters.getUser.find(user => user.id == id)
@@ -32,18 +31,19 @@ const getters = {
 
 const mutations = {
     [types.AUTH_REGISTER](state, payload) {
-        state.user = payload.user
-        console.log(payload.user, "AUTH_REGISTER")
+        state.user = payload
+        // console.log(payload, "AUTH_REGISTER:mutations")
     },
 
     [types.AUTH_LOGIN](state, payload) {
-        state.user = payload.user
-        console.log(payload, "AUTH_LOGIN")
+        state.currentuser = payload.user
+        // state.token = payload.token.access_token
+        // console.log(payload, "AUTH_LOGIN")
     },
 
     [types.AUTH_STATUS](state, payload) {
         state.authStatus = payload
-        console.log(payload, "AUTH_STATUS")
+        // console.log(payload, "AUTH_STATUS")
 
     },
 
@@ -64,9 +64,10 @@ const actions = {
     register({ commit }, payload) {
         return new Promise((resolve, reject) => {
             http.post(url.REGISTER, payload, res => {
-                commit(types.AUTH_REGISTER, res.data);
-                resolve(res.data);
-                console.log(res.data, "register:Actions")
+                // console.log(res.user.data, "register:res")
+                commit(types.AUTH_REGISTER, res.data.data);
+                resolve(res.data.data);
+                // console.log(res.JWT.data, "register:Actions")
             }, err => {
                 localStorage.removeItem(util.JWT_TOKEN);
                 reject(err)
@@ -76,15 +77,17 @@ const actions = {
 
     login({ commit }, payload) {
         return new Promise((resolve, reject) => {
+            // console.log(payload, 'login:actions');
             http.post(url.LOGIN, payload, res => {
+                // console.log(res.data, "login:res.Actions")
                 commit(types.AUTH_LOGIN, res.data)
-                commit(types.AUTH_STATUS, res ? true : false)
+                commit(types.AUTH_STATUS, res.data ? true : false)
                 resolve(res.data)
-                console.log(res.data, "login:Actions")
+                // console.log(res, "login:Actions")
             }, err => {
                 localStorage.removeItem(util.JWT_TOKEN);
                 reject(err)
-                console.log(err, "err:actions")
+                // console.log(err, "err:actions")
             });
 
         });

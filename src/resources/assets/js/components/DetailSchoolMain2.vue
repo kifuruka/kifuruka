@@ -86,6 +86,10 @@ img {
     margin-bottom: 0px;
   }
 
+  .school_text {
+    margin: 0 5% 2.5% 5%;
+  }
+
   // section h2 {
   //   margin: 0 %;
   // }

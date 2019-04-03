@@ -21,6 +21,7 @@ import Introduction from "../components/Introduction";
 import CorporateDonation from "../components/CorporateDonation";
 import EntrySchool from "../components/EntrySchool";
 import SampleVuex from "../components/SampleVuex";
+import { mapActions } from "vuex";
 
 export default {
   components: {
@@ -31,8 +32,18 @@ export default {
     ButtonMore,
     Introduction,
     CorporateDonation,
-    EntrySchool,
-    SampleVuex
+    EntrySchool
+  },
+  created() {
+    this.getAll();
+  },
+  methods: {
+    ...mapActions({
+      getAllActivities: "activity/getAllActivities"
+    }),
+    getAll() {
+      this.getAllActivities();
+    }
   }
 };
 </script>

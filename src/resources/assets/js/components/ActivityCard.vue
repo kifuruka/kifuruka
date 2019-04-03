@@ -8,7 +8,7 @@
       </div>-->
       <!-- <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div> -->
       <!-- カード１ -->
-      <div v-for="(value, index) in values" :key="index">
+      <div v-for="(value, index) in values" :key="index" class="card-box">
         <div class="card">
           <div calss="card_image_container" style="position: relative;">
             <div class="card-image item item--first">
@@ -162,6 +162,7 @@ export default {
           supporter: 20,
           days: 6
         },
+
         {
           school_name: "関西学院大学",
           message: "全国制覇したいしたいしたい",
@@ -199,9 +200,13 @@ section {
   max-width: 1160px;
 }
 
+.card-box {
+  width: 80%;
+}
+
 .card {
   margin: 0 24px;
-  width: 30%;
+  // width: 30%;
 }
 .card_image_container {
   position: relative;

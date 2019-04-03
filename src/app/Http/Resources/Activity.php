@@ -16,14 +16,14 @@ class Activity extends JsonResource
     {
         // return parent::toArray($request);
         return [
-            'id' => $this->id,
-            'activitie_name'=> $this->activitie_name,
-            'activitie_img' => $this->activitie_img,
+            'id'            => $this->id,
+            'activity_name' => $this->activity_name,
+            'activity_img'  => $this->activity_img,
             'url'           => $this->url,
             'top_contents'  => $this->top_contents,
             'total_donation'=> $this->total_donation,
             'fans'          => $this->fans,
-            'school_logo'   => $this->school_logo,
+            'title'         => $this->title,
             'top_contents'  => $this->top_contents,
             'sub_title1'    => $this->sub_title1,
             'sub_contents1' => $this->sub_contents1,

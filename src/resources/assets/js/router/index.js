@@ -7,7 +7,7 @@ import RegisterConfirmation from '../pages/RegisterConfirmation';
 import Login from '../pages/Login';
 import Activity from '../pages/Activity';
 import DetailSchool from '../pages/DetailSchool';
-import test from '../pages/test';
+import updata from '../pages/Updata';
 import mypage from '../pages/Mypage';
 
 Vue.use(VueRouter);
@@ -47,11 +47,9 @@ const routes = [
     },
 
     {
-        path: '/test',
-        // path: '/user',
-        // component: user, meta: { requiresAuth: true }
-        component: test,
-        // meta: { requiresAuth: true }
+        path: '/updata',
+        component: updata,
+        name: 'updata'
     },
     {
         path: '/mypage',
