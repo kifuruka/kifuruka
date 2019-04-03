@@ -1,9 +1,10 @@
 <template>
   <section>
-    <div class="container">
-      <router-link to="/" class="button is-medium custom-btn">
-        <strong>{{btn_name}}</strong>
-      </router-link>
+    <!-- <div class="container" > -->
+    <div class="container" v-on:click="fireParentEvent">
+      <!-- <router-link to="/" class="button is-medium custom-btn"> -->
+        <strong><span class="button is-medium custom-btn">{{btn_name}}</span></strong>
+      <!-- </router-link> -->
     </div>
   </section>
 </template>
@@ -14,6 +15,12 @@ export default {
     return {
       btn_name: "もっと見る"
     };
+  },
+  methods: {
+    fireParentEvent() {
+      console.log("console_fireParentEvent");
+      this.$emit('click');
+    }
   }
 };
 </script>

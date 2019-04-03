@@ -1,6 +1,7 @@
 <template>
   <section>
-    <div class="container flex-flame">
+    <div class="container columns is-multiline">
+    <!-- <div class="container flex-flame columns"> -->
       <!-- <div v-for="item in fetchAllData" :key="item.id" class>
         <router-link :to="{ name : '', params : { id: item.id }}">
           <card :data="item"/>
@@ -8,7 +9,7 @@
       </div>-->
       <!-- <div v-for="item in fetchAllData" :key="item.id" class="column is-one-quarter"></div> -->
       <!-- カード１ -->
-      <div v-for='(value, index) in values' :key='index' class="card-box">
+      <div v-for='(value, index) in sliceValues' :key='index' class="card-box column is-one-third">
           <div class="card">
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
@@ -133,25 +134,55 @@
             </div>
           </div> -->
     </div>
+    <!-- <div class="btn-box">
+      <button  class="btn-add btn-add1">もっと見る</button>
+    </div> -->
+    <button-more v-on:click="addvalues"/>
   </section>
 </template>
 
 
 <script>
 import { mapGetters, mapMutations, mapActions } from "vuex";
+import ButtonMore from "./ButtonMore";
 
 export default {
   data() {
     return {
       info: null,
-      
+      count:3,
+    
       values: [
       { school_name: '近畿大学' , message: '全国制覇したい' , image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg", amount: 100, supporter: 10 , days: 5},
       { school_name: '青山学院大学' ,message: '全国制覇したいしたい' , image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg", amount: 200, supporter: 20 , days: 6},
       { school_name: '関西学院大学' ,message: '全国制覇したいしたいしたい' , image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30 , days: 7},
-      ]
+      { school_name: '関西学院大学' ,message: '全国制覇したいしたいしたい' , image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30 , days: 7},
+      { school_name: '関西学院大学' ,message: '全国制覇したいしたいしたい' , image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30 , days: 7},
+      { school_name: '関西学院大学' ,message: '全国制覇したいしたいしたい' , image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30 , days: 7},
+      ],
     };
-  }
+  },
+    //   mounted(){
+    //     $on('click', this.addvalues)
+    // },
+     methods: {
+        addvalues() {
+          console.log(this.count);
+          this.count+=3;
+          console.log(this.count);
+          sliceValues();
+
+        }
+      },
+      computed: {
+        // 配列の個数を決定する
+        sliceValues() {
+            return this.values.slice(0,this.count);
+        },
+      },
+      components: {
+        ButtonMore
+      }
   // computed: {
   //   ...mapGetters(["fetchAllData"])
   // },
@@ -173,13 +204,17 @@ section {
   padding-top: 81px;
 }
 .container {
-  display: flex;
+  // display: flex;
   margin: 0 auto;
   max-width: 1160px;
 }
 
+.is-multiline{
+  flex-wrap: wrap;
+}
+
 .card-box{
-  width: 80%;
+  // width: 80%;
 }
 
 .card {
@@ -256,6 +291,31 @@ section {
 
 .card-text {
   color: #707070;
+}
+
+.btn-box{
+    margin: 3% auto;
+    text-align: center;
+}
+
+.btn-add{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+.btn-add1{
+  background-color: #ffe035;
+  color: white;
+  border-radius: 1em;
+  width: 6.3em;
+  border-color: #ffe035;
+  box-shadow: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0.3%;
 }
 
 @media screen and (max-width:768px) { 

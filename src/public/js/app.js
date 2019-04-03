@@ -1824,6 +1824,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ButtonMore__ = __webpack_require__("./resources/assets/js/components/ButtonMore.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ButtonMore___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ButtonMore__);
 //
 //
 //
@@ -1963,6 +1965,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+
 
 
 
@@ -1970,23 +1978,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       info: null,
+      count: 3,
 
-      values: [{ school_name: '近畿大学', message: '全国制覇したい', image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg", amount: 100, supporter: 10, days: 5 }, { school_name: '青山学院大学', message: '全国制覇したいしたい', image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg", amount: 200, supporter: 20, days: 6 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }]
+      values: [{ school_name: '近畿大学', message: '全国制覇したい', image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg", amount: 100, supporter: 10, days: 5 }, { school_name: '青山学院大学', message: '全国制覇したいしたい', image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg", amount: 200, supporter: 20, days: 6 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }]
     };
-  }
-  // computed: {
-  //   ...mapGetters(["fetchAllData"])
+  },
+
+  //   mounted(){
+  //     $on('click', this.addvalues)
   // },
+  methods: {
+    addvalues: function addvalues() {
+      console.log(this.count);
+      this.count += 3;
+      console.log(this.count);
+      sliceValues();
+    }
+  },
+  computed: {
+    // 配列の個数を決定する
+    sliceValues: function sliceValues() {
+      return this.values.slice(0, this.count);
+    }
+  },
+  components: {
+    ButtonMore: __WEBPACK_IMPORTED_MODULE_1__ButtonMore___default.a
+    // computed: {
+    //   ...mapGetters(["fetchAllData"])
+    // },
 
-  // created() {
-  //   this.fetchPostHomeCard();
-  // },
+    // created() {
+    //   this.fetchPostHomeCard();
+    // },
 
-  // methods: {
-  //   ...mapActions(["fetchPostHomeCard"])
-  // }
-
-});
+    // methods: {
+    //   ...mapActions(["fetchPostHomeCard"])
+    // }
+  } });
 
 /***/ }),
 
@@ -2005,12 +2033,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       btn_name: "もっと見る"
     };
+  },
+
+  methods: {
+    fireParentEvent: function fireParentEvent() {
+      console.log("console_fireParentEvent");
+      this.$emit('click');
+    }
   }
 });
 
@@ -4518,7 +4554,7 @@ exports.push([module.i, "\n.section[data-v-5b96cafc] {\n  padding: 128px 24px;\n
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5e0b4614] {\n  width: 80%;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
 
 
 
@@ -32653,15 +32689,14 @@ var render = function() {
   return _c("section", [
     _c(
       "div",
-      { staticClass: "container" },
+      { staticClass: "container", on: { click: _vm.fireParentEvent } },
       [
-        _c(
-          "router-link",
-          { staticClass: "button is-medium custom-btn", attrs: { to: "/" } },
-          [_c("strong", [_vm._v(_vm._s(_vm.btn_name))])]
-        )
-      ],
-      1
+        _c("strong", [
+          _c("span", { staticClass: "button is-medium custom-btn" }, [
+            _vm._v(_vm._s(_vm.btn_name))
+          ])
+        ])
+      ]
     )
   ])
 }
@@ -32948,109 +32983,121 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [
-    _c(
-      "div",
-      { staticClass: "container flex-flame" },
-      _vm._l(_vm.values, function(value, index) {
-        return _c("div", { key: index, staticClass: "card-box" }, [
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              {
-                staticStyle: { position: "relative" },
-                attrs: { calss: "card_image_container" }
-              },
-              [
-                _c("div", { staticClass: "card-image item item--first" }, [
-                  _c("figure", { staticClass: "image is-4by3" }, [
-                    _c("img", {
-                      staticClass: "card-img-top",
-                      attrs: { src: value.image, alt: "Placeholder image" }
-                    })
+  return _c(
+    "section",
+    [
+      _c(
+        "div",
+        { staticClass: "container columns is-multiline" },
+        _vm._l(_vm.sliceValues, function(value, index) {
+          return _c(
+            "div",
+            { key: index, staticClass: "card-box column is-one-third" },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticStyle: { position: "relative" },
+                    attrs: { calss: "card_image_container" }
+                  },
+                  [
+                    _c("div", { staticClass: "card-image item item--first" }, [
+                      _c("figure", { staticClass: "image is-4by3" }, [
+                        _c("img", {
+                          staticClass: "card-img-top",
+                          attrs: { src: value.image, alt: "Placeholder image" }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "school_msg has-text-centered" }, [
+                      _c(
+                        "p",
+                        {
+                          staticClass: "title is-7 is-size-7-mobile school_name"
+                        },
+                        [_vm._v(_vm._s(value.school_name))]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "p",
+                        {
+                          staticClass:
+                            "subtitle is-6 is-size-7-mobile school_message"
+                        },
+                        [_vm._v(_vm._s(value.message))]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-content" }, [
+                  _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
+                    _vm._v(_vm._s(value.school_name))
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "school_msg has-text-centered" }, [
-                  _c(
-                    "p",
-                    { staticClass: "title is-7 is-size-7-mobile school_name" },
-                    [_vm._v(_vm._s(value.school_name))]
-                  ),
+                _c("div", { staticClass: "columns detail" }, [
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "p",
+                      {
+                        staticClass: "card-text col has-text-centered",
+                        staticStyle: { "font-size": "0.9rem" }
+                      },
+                      [
+                        _vm._v("寄付金額\n                "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
+                      ]
+                    )
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "subtitle is-6 is-size-7-mobile school_message"
-                    },
-                    [_vm._v(_vm._s(value.message))]
-                  )
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "p",
+                      {
+                        staticClass: "card-text col has-text-centered",
+                        staticStyle: { "font-size": "0.9rem" }
+                      },
+                      [
+                        _vm._v("応募数\n                "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "p",
+                      {
+                        staticClass: "card-text col has-text-centered",
+                        staticStyle: { "font-size": "0.9rem" }
+                      },
+                      [
+                        _vm._v("残り\n                "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("strong", [_vm._v(_vm._s(value.days) + "日")])
+                      ]
+                    )
+                  ])
                 ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-content" }, [
-              _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-                _vm._v(_vm._s(value.school_name))
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "columns detail" }, [
-              _c("div", { staticClass: "column" }, [
-                _c(
-                  "p",
-                  {
-                    staticClass: "card-text col has-text-centered",
-                    staticStyle: { "font-size": "0.9rem" }
-                  },
-                  [
-                    _vm._v("寄付金額\n                "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
-                _c(
-                  "p",
-                  {
-                    staticClass: "card-text col has-text-centered",
-                    staticStyle: { "font-size": "0.9rem" }
-                  },
-                  [
-                    _vm._v("応募数\n                "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
-                _c(
-                  "p",
-                  {
-                    staticClass: "card-text col has-text-centered",
-                    staticStyle: { "font-size": "0.9rem" }
-                  },
-                  [
-                    _vm._v("残り\n                "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v(_vm._s(value.days) + "日")])
-                  ]
-                )
-              ])
-            ])
-          ])
-        ])
-      }),
-      0
-    )
-  ])
+            ]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c("button-more", { on: { click: _vm.addvalues } })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -53941,7 +53988,6 @@ module.exports = "/images/kifuruka_logo.png?4a04380ce77386a27a872ffbefee5e22";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_http__ = __webpack_require__("./resources/assets/js/services/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_http___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__services_http__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__("./node_modules/axios/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mutation_types__ = __webpack_require__("./resources/assets/js/store/mutation-types.js");
