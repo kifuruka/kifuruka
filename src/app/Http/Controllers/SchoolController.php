@@ -40,7 +40,7 @@ class SchoolController extends Controller
         $school = new School();
         // $fillableから渡されたデータをすべてfillに入れる
         // $school ->$request->json()->all();
-        $school ->fill($request->json()->all());
+        $school -> fill($request -> json() ->all());
         $school -> save();
         return new Resource($school);
 
@@ -60,7 +60,7 @@ class SchoolController extends Controller
         // return School::find($id);
         return new Resource(School::find($id));
  
-    }
+    } 
 
 
     // ---------------------------------------------

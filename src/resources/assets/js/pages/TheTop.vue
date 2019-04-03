@@ -8,7 +8,6 @@
     <top-message/>
     <introduction/>
     <corporate-donation/>
-    <!-- <sample-vuex/> -->
   </div>
 </template>
 
@@ -22,25 +21,9 @@ import Introduction from "../components/Introduction";
 import CorporateDonation from "../components/CorporateDonation";
 import EntrySchool from "../components/EntrySchool";
 import SampleVuex from "../components/SampleVuex";
+import { mapActions } from "vuex";
 
 export default {
-  // head: {
-  //   link: [
-  //     {
-  //       rel: "stylesheet",
-  //       href:
-  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css"
-  //     }
-  //   ],
-  //   script: [
-  //     {
-  //       type: "text/javascript",
-  //       src:
-  //         "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"
-  //     }
-  //   ]
-  // },
-
   components: {
     TopVisual,
     Search,
@@ -49,8 +32,18 @@ export default {
     ButtonMore,
     Introduction,
     CorporateDonation,
-    EntrySchool,
-    SampleVuex
+    EntrySchool
+  },
+  created() {
+    this.getAll();
+  },
+  methods: {
+    ...mapActions({
+      getAllActivities: "activity/getAllActivities"
+    }),
+    getAll() {
+      this.getAllActivities();
+    }
   }
 };
 </script>

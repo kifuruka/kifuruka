@@ -82,6 +82,7 @@ section {
     }
   }
 }
+
 .school_name {
   padding-top: 40%;
   padding-left: 5%;
@@ -106,12 +107,12 @@ section {
   padding: 24px;
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
-.logo_img{
-    padding-top:40%; 
+.logo_img {
+  padding-top: 40%;
 }
 
 .under {
@@ -131,21 +132,23 @@ img{
     display: none;
   }
 
-.school_name {
+  .school_name {
     padding-top: 0%;
     padding-left: 5%;
   }
 
-.img-flame {
+  .img-flame {
     padding: 0px;
-}
-.img-flame-sp {
+  }
+  .img-flame-sp {
     padding-top: 5%;
-}
-.is-child p{
-  margin: 0 5%;
-}
+  }
+  .is-child p {
+    margin: 0 5%;
+  }
 
+  .is-child p {
+    margin: 0 5%;
+  }
 }
-
 </style>

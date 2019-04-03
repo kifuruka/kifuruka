@@ -49,35 +49,30 @@ section {
     margin-top: 80px;
     margin-bottom: 80px;
     h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: left;
-        // padding-left:2%;
-        padding-bottom: 2%;
-        // margin: 0 5%;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left;
+      // padding-left:2%;
+      padding-bottom: 2%;
+      // margin: 0 5%;
     }
   }
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
-
-
-@media screen and (max-width:768px) { 
-
+@media screen and (max-width: 768px) {
   section .container {
     margin-bottom: 0px;
   }
 
-section h2 {
+  section h2 {
     margin: 0 5%;
-    }
-.school_text{
+  }
+  .school_text {
     margin: 0 5% 2.5% 5%;
-    }
+  }
 }
-
-
 </style>

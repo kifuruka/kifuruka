@@ -42,9 +42,9 @@ export default {
 
 <style lang="scss" scoped>
 section {
- padding-top: 0.5%;
- padding-bottom: 0.5%;
- background-color: #fffdf3;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: #fffdf3;
 
   .container {
     max-width: 1160px;
@@ -59,7 +59,7 @@ section {
   }
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
@@ -86,11 +86,15 @@ img{
     margin-bottom: 0px;
   }
 
-.school_text{
+  .school_text {
     margin: 0 5% 2.5% 5%;
-    }
+  }
 
-
+  // section h2 {
+  //   margin: 0 %;
+  // }
+  .school_text {
+    margin: 0 5% 2.5% 5%;
+  }
 }
-
 </style>

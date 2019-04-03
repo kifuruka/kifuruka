@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mypage-top/>
+    <!-- <mypage-top/> -->
     <mypage-form/>
   </div>
 </template>

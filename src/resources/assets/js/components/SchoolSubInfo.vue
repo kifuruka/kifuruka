@@ -1,19 +1,25 @@
 <template>
-  <section v-if="isSchoolStatus">
+  <section v-if="isActivity">
     <div class="container">
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <!-- <div class="tile is-child is-1"></div> -->
           <div class="tile is-child is-7">
             <div class="img-flame">
-              <router-link to="/">
-                <img :src="SchoolLogo" class="u-img" alt="#">
-              </router-link>
+              <a
+                @click="routerPush({
+                name:'DetailSchool',
+                params:{id:activity.school.id}
+                })"
+              >
+                <img :src="activity.school.school_logo" class="u-img" alt="#">
+                <!-- <router-link to="/"></router-link> -->
+              </a>
             </div>
           </div>
           <div class="tile is-child is-4">
             <div class="school-right-flame">
-              <h1>{{school.school_name}}</h1>
+              <h1>{{activity.school.school_name}}</h1>
               <p>公式SNS</p>
               <div class="sns-link">
                 <a href>Facebook</a>
@@ -26,16 +32,16 @@
               </div>
             </div>
             <div class="media-content btn-flame">
-              <button
+              <a
                 @click="routerPush({
-                name:'activity',
-                params:{id:school.id}
+                name:'DetailSchool',
+                params:{id:activity.school.id}
                 })"
               >
                 <strong>
-                  <span>{{school.school_name}}</span>の詳細を見る
+                  <span>{{activity.school.school_name}}</span>の詳細を見る
                 </strong>
-              </button>
+              </a>
               <!-- <router-link to="/'/detailschool/:id" class="button is-medium custom-btn">
                 <strong>
                   <span>{{school.school_name}}</span>の詳細を見る
@@ -54,25 +60,27 @@
 // Vuexの読み込み
 import { mapGetters } from "vuex";
 import SchoolLogo from "../../images/schoolLogo/kinkiuniv.jpg";
-import router from "../router";
+// import router from "../router";
 export default {
   data() {
     return {
       id: this.$route.params.id
     };
+  },
+  computed: {
+    ...mapGetters({
+      isActivity: "activity/isActivity",
+      activity: "activity/getActivityData"
+    })
+  },
+  methods: {
+    routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      // alert(router.params.id);
+      this.$router.push(router);
+    }
   }
-  // computed: {
-  //   ...mapGetters({
-  //     school: "schools/getSchoolData",
-  //     isSchoolStatus: "schools/isSchoolStatus"
-  //   })
-  // }
-  // methods: {
-  //   console.log()
-  //   routerPush(router) {
-  //     this.$router.push(router);
-  //   }
-  // }
 };
 </script>
 

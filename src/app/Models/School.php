@@ -6,6 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class School extends Model
 {
+    // テーブル名の指定
+    protected $table = "schools";
+
+    // Activity_tableとの紐付け
+    public function activities()
+    {
+        return $this -> hasMany('\App\Models\Activity');
+    }
+
+
+
     // fill()に入れるデータをここで指定している
     protected $fillable = [
         
@@ -22,8 +33,4 @@ class School extends Model
         'school_type'
     ];
 
-    // public function Activity()
-    // {
-    //     return $this-hasOne(App\Models\Activity);
-    // }
 }

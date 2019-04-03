@@ -1,71 +1,134 @@
 <?php
 
 namespace App\Http\Controllers;
-// 名前空間でファイルの位置を特定している
-
-use App\User;
+use Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 // use Illuminate\Support\Facades\Auth;
-// vendor/laravel/framework/src/Illuminateにある
+
+use App\Http\Resources\User as Resource;
 use App\Http\Controllers\Controller;
+use App\User;
+use App\Models\UserDetail as UserDetail;
+
+// vendor/laravel/framework/src/Illuminateにある
 
 class AuthController extends Controller
 {
 
+// |--------------------------------------------------------------------------
+// | 新規登録
+// |--------------------------------------------------------------------------
+    
     public function register(Request $request){
 
+        $validator = Validator::make($request->all(), [
+            'account_name'          => 'required|string|max:100',
+            'email'                 => 'required|email|max:255|unique:users',
+            'password'              => 'required|string|min:8|max:255|confirmed',
+            'password_confirmation' => 'required|string|min:8|max:255',
+        ]);
+
+        if($validator->fails()) {
+            return response()->json([
+                'status'   => 'error',
+                'messages' => $validator->messages()
+            ], 200);
+        }
+
         $user = new User;
-        // $user->account_name = 'aaa';
         $user->account_name = $request->account_name;
-        $user->email     = $request->email;
-        $user->password  = bcrypt($request->password);
+        $user->email        = $request->email;
+        // TODO:fillがうまくいかない
+        // $user = fill($request->all());
+        $user->password = bcrypt($request->password);
         $user->save();
 
-        return $user;
+        return response()->json(['status' => 'success','data' => $user], 200);
+
+        // return $user;
             // bcrypt(ビークリプト)とは？
             // もともと入れたパスワードをハッシュ化しているが、単純にハッシュかするだけではすぐに解読されてしまう。
             // そのため、毎回違う文字列を追加してハッシュを繰り返してあげれば問題なよね？ということで、それを行う便利関数のこと。
     }
 
-    
+// |--------------------------------------------------------------------------
+// | ログイン
+// |--------------------------------------------------------------------------
 
     public function login(Request $request) {
-        $credentials = request(['email', 'password']);
-        if (! $token = auth()->attempt($credentials)) {
-            return response()->json(['error' => '認証失敗'], 401);
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email|max:255',
+            'password' => 'required|string|min:8|max:255',
+        ]);
+
+        if($validator->fails()) {
+            return response()->json([
+                'status' => 'error',
+                'messages' => $validator->messages()
+            ], 200);
         }
-        return $this->respondWithToken($token);
+        
+        if (!$token = Auth::guard('api')->attempt(['email' => $request->email, 'password' => $request->password])) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
+        // return $user = new Resource($user);
+        $user = User::with('userdetail')->get()->where('email',$request->email)->first();
+        return $this->respondWithToken($token,$user);     
     }
 
-    public function logout()
-    {
-        auth()->logout();
-        return response()->json(['message' => 'ログアウトしました。']);
+    protected function respondWithToken($token,$user){   
+        return response()->json([
+            'access_token' => $token,
+            'token_type' => 'bearer',
+            'expires_in' => Auth::guard('api')->factory()->getTTL() * 60,
+            'user' => $user
+        ]);
     }
- 
+
+//     $user =User::where('email',$request->email)->first();    
+//     return response()->json([
+//         'user' => $user, 
+//         'token' => $this->respondWithToken($token)->original
+//     ]);     
+// }
+
+
+// |--------------------------------------------------------------------------
+// | ユーザー情報の取得
+// |--------------------------------------------------------------------------
+
+    // public function user(){
+    //     return response()->json(Auth::guard('api')->user());
+    // }
+
     public function me()
     {
         return response()->json(auth()->user());
     }
 
-    public function refresh()
-    {
-        return $this->respondWithToken(auth()->refresh());
+
+// |--------------------------------------------------------------------------
+// | トークンの更新
+// |--------------------------------------------------------------------------
+
+    public function refresh(){
+        return $this->respondWithToken(Auth::guard('api')->refresh());
     }
 
+// |--------------------------------------------------------------------------
+// | ログアウト
+// |--------------------------------------------------------------------------
 
-    // ここで帰ってきた内容をjsonにしてくれている
-    protected function respondWithToken($token)
-    {
+    public function logout(){
+        Auth::guard('api')->logout();
         return response()->json([
-            'access_token' => $token,
-            'token_type' => 'bearer',
-            'expires_in' => auth()->factory()->getTTL() * 60
-        ]);
+            'status' => 'success',
+            'message' => 'ログアウトしました。'
+        ], 200);
     }
-  
-
-
+ 
   
 }
 

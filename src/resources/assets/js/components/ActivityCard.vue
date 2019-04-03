@@ -26,33 +26,41 @@
                 <p class="subtitle is-6 is-size-7-mobile school_message">{{value.message}}</p>
               </div>
             </div>
-            <div class="card-content">
-              <p class="subtitle is-6 has-text-centered">{{value.school_name}}</p>
-            </div>
-            <div class="columns detail">
-              <div class="column">
-                <p class="card-text col has-text-centered" style="font-size:0.9rem">寄付金額
-                  <br>
-                  <strong>{{ value.amount }}円〜</strong>
-                </p>
-              </div>
-              <div class="column">
-                <p class="card-text col has-text-centered" style="font-size:0.9rem">応募数
-                  <br>
-                  <strong>{{ value.supporter }}人</strong>
-                </p>
-              </div>
-              <div class="column">
-                <p class="card-text col has-text-centered" style="font-size:0.9rem">残り
-                  <br>
-                  <strong>{{ value.days }}日</strong>
-                </p>
-              </div>
+            <div class="school_msg has-text-centered">
+              <p class="title is-7 is-size-7-mobile school_name">{{value.school_name}}</p>
+              <p class="subtitle is-6 is-size-7-mobile school_message">{{value.message}}</p>
             </div>
           </div>
+          <div class="card-content">
+            <p class="subtitle is-6 has-text-centered">{{value.school_name}}</p>
+          </div>
+          <div class="columns detail">
+            <div class="column">
+              <p class="card-text col has-text-centered" style="font-size:0.9rem">
+                寄付金額
+                <br>
+                <strong>{{ value.amount }}円〜</strong>
+              </p>
+            </div>
+            <div class="column">
+              <p class="card-text col has-text-centered" style="font-size:0.9rem">
+                応募数
+                <br>
+                <strong>{{ value.supporter }}人</strong>
+              </p>
+            </div>
+            <div class="column">
+              <p class="card-text col has-text-centered" style="font-size:0.9rem">
+                残り
+                <br>
+                <strong>{{ value.days }}日</strong>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-          <!-- カード２ -->
-          <!-- <div class="card">
+      <!-- カード２ -->
+      <!-- <div class="card">
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
                 <figure class="image is-4by3">
@@ -91,9 +99,9 @@
                 </p>
               </div>
             </div>
-          </div> -->
-          <!-- カード３ -->
-          <!-- <div class="card">
+      </div>-->
+      <!-- カード３ -->
+      <!-- <div class="card">
             <div calss="card_image_container" style="position: relative;">
               <div class="card-image item item--first">
                 <figure class="image is-4by3">
@@ -132,8 +140,8 @@
                 </p>
               </div>
             </div>
-          </div> -->
-    </div>
+      </div>-->
+    <!-- </div> -->
     <!-- <div class="btn-box">
       <button  class="btn-add btn-add1">もっと見る</button>
     </div> -->
@@ -326,14 +334,13 @@ section {
 
 }
 
-.container {
+  .container {
     display: block;
-}
+  }
 
-.card{
-  width: 100%;
-  margin: 10% auto;
-}
-
+  .card {
+    width: 100%;
+    margin: 10% auto;
+  }
 }
 </style>

@@ -47,9 +47,9 @@
 
               <div class="reset__password">
                 <router-link to="/register">新規登録の方はこちら</router-link>
-                <span class="is-hidden-mobile">/</span>
+                <!-- <span class="is-hidden-mobile">/</span>
                 <br class="is-hidden-desktop">
-                <a>パスワードを忘れた方はこちら</a>
+                <a>パスワードを忘れた方はこちら</a>-->
               </div>
             </form>
           </div>
@@ -62,7 +62,7 @@
 
 <script>
 import MessageTitle from "../components/MessageTitle";
-import { mapGetters, mapMutations, mapActions } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 // import LoginForm from "../components/LoginForm";
 export default {
   components: {

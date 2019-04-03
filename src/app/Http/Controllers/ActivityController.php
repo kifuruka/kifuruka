@@ -4,48 +4,62 @@ namespace App\Http\Controllers;
 
 use App\Models\Activity;
 use Illuminate\Http\Request;
+use App\Http\Resources\Activity as Resource;
+// use App\Http\Resources\Activity as Resource;
+
 
 class ActivityController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+// |--------------------------------------------------------------------------
+// | 全データの取得
+// |--------------------------------------------------------------------------
+
     public function index()
     {
-        $activity =  Activity::all();
+        $activity = Resource::collection(Activity::all());
         return $activity;
     }
 
     //createを削除
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+// |--------------------------------------------------------------------------
+// | データの作成
+// |--------------------------------------------------------------------------
+
     public function store(Request $request)
     {
-        //
+        $activitiy = new Activity();
+        $activitiy -> fill($request -> json() -> all());
+        $activitiy -> save();
+        return new Resoucre($activitiy);
+
     }
 
-    /**
-     * 
-     * Display the specified resource.
-     *
-     * @param  \App\Activity  $activity
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+
+// |--------------------------------------------------------------------------
+// | 詳細データの取得
+// |--------------------------------------------------------------------------
+
+
+    // public function show($id)
+    public function show(Activity $activity)
     {
-        return Activity::find($id);
-        // return new Resource(Activity::find($id));
+        // return Activity::find($id);
+        return new Resource($activity);
     }
 
     //editを削除
+
+// |--------------------------------------------------------------------------
+// | 検索機能
+// |--------------------------------------------------------------------------
+
+    // public function like(Like $like)
+    // {
+    //     return new Resource($like);
+    // }
 
     /**
      * Update the specified resource in storage.
