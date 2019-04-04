@@ -8,15 +8,22 @@
         <a class="button" @click="setSearchWord(searchWord)">検索</a>
       </div>
     </div>
-    <table>
-      <div class="container flex-flame">
-        <!-- <div>{{activities.Data}}</div> -->
-        <div v-show="isLength">
+    <table class="test2">
+      <!-- <div class="thiscontainer flex-flame"> -->
+      <div v-show="isLength">
+        <div class="columns mobile-container topspace">
+          <!-- <div>{{activities.Data}}</div> -->
+          <!-- <search-card
+              class="card-box column is-one-third"
+              v-for="activity in activities"
+              :activity="activity"
+              :key="activity.id"
+          />-->
           <search-card
+            class="column column-custom"
             v-for="activity in activities"
             :activity="activity"
             :key="activity.id"
-            class="card-box"
           />
         </div>
       </div>
@@ -93,5 +100,30 @@ section {
 }
 .card-box {
   width: 80%;
+}
+
+.test1 {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 81px;
+}
+.thiscontainer {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+// 優馬
+
+.mobile-container {
+  margin: auto;
+}
+
+.topspace {
+  margin-top: 30px;
+}
+
+.test2 {
+  margin: auto;
 }
 </style>

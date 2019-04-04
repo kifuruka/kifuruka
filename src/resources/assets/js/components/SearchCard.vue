@@ -1,49 +1,43 @@
 <template>
-  <section>
-    <div class="container flex-flame">
-      <div class="card">
-        <!-- {{activity.activity_img}} -->
-        <!-- {{activity[0].total_donation}} -->
-        <div calss="card_image_container" style="position: relative;">
-          <div class="card-image item item--first">
-            <figure class="image is-4by3">
-              <img :src="activity.activity_img" class="card-img-top" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="school_msg has-text-centered">
-            <p class="title is-7 is-size-7-mobile school_name">{{activity.activity_name}}</p>
-            <p class="subtitle is-6 is-size-7-mobile school_message">{{activity.title}}</p>
-          </div>
-        </div>
-        <div class="card-content">
-          <p class="subtitle is-6 has-text-centered">{{activity.school_name}}</p>
-        </div>
-        <div class="columns detail">
-          <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">
-              寄付金額
-              <br>
-              <strong>{{ activity.total_donation }}円</strong>
-            </p>
-          </div>
-          <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">
-              応募数
-              <br>
-              <strong>{{ activity.fans }}人</strong>
-            </p>
-          </div>
-          <div class="column">
-            <p class="card-text col has-text-centered" style="font-size:0.9rem">
-              残り
-              <br>
-              <strong>1日</strong>
-            </p>
-          </div>
-        </div>
+  <div class="top">
+    <div calss="card_image_container" style="position: relative;">
+      <div class="card-image item item--first">
+        <figure class="image is-4by3">
+          <img :src="activity.activity_img" class="card-img-top" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="school_msg has-text-centered">
+        <p class="title is-7 is-size-7-mobile school_name">{{activity.activity_name}}</p>
+        <p class="subtitle is-6 is-size-7-mobile school_message">{{activity.title}}</p>
       </div>
     </div>
-  </section>
+    <div class="card-content">
+      <p class="subtitle is-6 has-text-centered">{{activity.school_name}}</p>
+    </div>
+    <div class="columns detail">
+      <div class="column">
+        <p class="card-text col has-text-centered" style="font-size:0.9rem">
+          寄付金額
+          <br>
+          <strong>{{ activity.total_donation }}円</strong>
+        </p>
+      </div>
+      <div class="column">
+        <p class="card-text col has-text-centered" style="font-size:0.9rem">
+          応募数
+          <br>
+          <strong>{{ activity.fans }}人</strong>
+        </p>
+      </div>
+      <div class="column">
+        <p class="card-text col has-text-centered" style="font-size:0.9rem">
+          残り
+          <br>
+          <strong>1日</strong>
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 
@@ -164,5 +158,15 @@ section {
     width: 100%;
     margin: 10% auto;
   }
+}
+
+.top {
+  // display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin: 0 8px;
+  // width: 60%;
+  width: 300px;
 }
 </style>
