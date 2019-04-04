@@ -1978,6 +1978,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -4683,7 +4685,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n.top[data-v-5b38624f] {\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 1rem;\n  margin: 0 8px;\n  width: 300px;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n.top[data-v-5b38624f] {\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 1rem;\n  padding: 2% 1.5%;\n  margin: 0 0px;\n}\n", ""]);
 
 
 
@@ -4705,7 +4707,7 @@ exports.push([module.i, "\n.section[data-v-5b96cafc] {\n  padding: 128px 24px;\n
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 8px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 8px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
 
 
 
@@ -4815,7 +4817,7 @@ exports.push([module.i, "\nsection .container[data-v-79d7a1ee] {\n  max-width: 1
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-7cdae69f] {\n    max-width: 560px;\n    height: 56px;\n    margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-7cdae69f] {\n      width: 448px;\n}\nsection .has-addons .find-frame input[data-v-7cdae69f] {\n        height: 56px;\n        font-size: 1.5rem;\n        background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-7cdae69f] {\n      width: 112px;\n      height: 56px;\n      background-color: #ffe035;\n      font-size: 1.5rem;\n      color: #222222;\n}\n.container[data-v-7cdae69f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-7cdae69f] {\n  width: 80%;\n}\n.test1[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-7cdae69f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-7cdae69f] {\n  margin: auto;\n}\n.topspace[data-v-7cdae69f] {\n  margin-top: 30px;\n}\n.test2[data-v-7cdae69f] {\n  margin: auto;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 56px;\n}\nsection .has-addons[data-v-7cdae69f] {\n    max-width: 560px;\n    height: 56px;\n    margin: 0 auto;\n}\nsection .has-addons .find-frame[data-v-7cdae69f] {\n      width: 448px;\n}\nsection .has-addons .find-frame input[data-v-7cdae69f] {\n        height: 56px;\n        font-size: 1.5rem;\n        background-color: #f2f2f2;\n}\nsection .has-addons .button-frame a[data-v-7cdae69f] {\n      width: 112px;\n      height: 56px;\n      background-color: #ffe035;\n      font-size: 1.5rem;\n      color: #222222;\n}\n.container[data-v-7cdae69f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-7cdae69f] {\n  width: 80%;\n}\n.test1[data-v-7cdae69f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.thiscontainer[data-v-7cdae69f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.mobile-container[data-v-7cdae69f] {\n  margin: auto;\n}\n.topspace[data-v-7cdae69f] {\n  margin-top: 30px;\n}\n.test2[data-v-7cdae69f] {\n  width: 100%;\n  margin: auto;\n}\n.is-multiline[data-v-7cdae69f] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n", ""]);
 
 
 
@@ -32818,7 +32820,7 @@ var render = function() {
           "div",
           { staticClass: "tile is-child" },
           [
-            _c("router-link", { attrs: { to: "/Donation" } }, [
+            _c("router-link", { attrs: { to: "/activity/1" } }, [
               _c("img", {
                 staticClass: "u-img",
                 attrs: { src: _vm.Homeimg1, alt: "#" }
@@ -32840,7 +32842,7 @@ var render = function() {
                   staticStyle: { "margin-bottom": "0" }
                 },
                 [
-                  _c("router-link", { attrs: { to: "/Donation" } }, [
+                  _c("router-link", { attrs: { to: "/activity/2" } }, [
                     _c("img", {
                       staticClass: "u-img",
                       attrs: { src: _vm.Homeimg2, alt: "" }
@@ -32854,7 +32856,7 @@ var render = function() {
                 "div",
                 { staticClass: "tileis-child is-6" },
                 [
-                  _c("router-link", { attrs: { to: "/Donation" } }, [
+                  _c("router-link", { attrs: { to: "/activity/3" } }, [
                     _c("img", {
                       staticClass: "u-img",
                       attrs: { src: _vm.Homeimg3, alt: "#" }
@@ -32870,7 +32872,7 @@ var render = function() {
             "div",
             { staticClass: "tile child-flame" },
             [
-              _c("router-link", { attrs: { to: "/Donation" } }, [
+              _c("router-link", { attrs: { to: "/activity/4" } }, [
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Homeimg4, alt: "#" }
@@ -34354,11 +34356,11 @@ var render = function() {
         [
           _c(
             "div",
-            { staticClass: "columns mobile-container topspace" },
+            { staticClass: "columns mobile-container topspace is-multiline" },
             _vm._l(_vm.activities, function(activity) {
               return _c("search-card", {
                 key: activity.id,
-                staticClass: "column column-custom",
+                staticClass: "column column-custom is-one-third",
                 attrs: { activity: activity }
               })
             }),

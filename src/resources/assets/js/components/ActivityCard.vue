@@ -142,6 +142,12 @@
       <button  class="btn-add btn-add1">もっと見る</button>
     </div>-->
     <button-more v-on:click="addvalues"/>
+    
+
+  
+ 
+
+
   </section>
 </template>
 

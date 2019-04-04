@@ -60,7 +60,7 @@ section {
   padding-top: 81px;
 }
 .container {
-  display: flex;
+  // display: flex;
   margin: 0 auto;
   max-width: 1160px;
 }
@@ -165,8 +165,7 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  margin: 0 8px;
-  // width: 60%;
-  width: 300px;
+  padding: 2% 1.5%;
+  margin: 0 0px;
 }
 </style>
