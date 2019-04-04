@@ -1969,6 +1969,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1979,32 +1988,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       info: null,
       count: 3,
 
-<<<<<<< HEAD
       values: [{ school_name: '近畿大学', message: '全国制覇したい', image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg", amount: 100, supporter: 10, days: 5 }, { school_name: '青山学院大学', message: '全国制覇したいしたい', image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg", amount: 200, supporter: 20, days: 6 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }, { school_name: '関西学院大学', message: '全国制覇したいしたいしたい', image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg", amount: 300, supporter: 30, days: 7 }]
-=======
-      values: [{
-        school_name: "近畿大学",
-        message: "全国制覇したい",
-        image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg",
-        amount: 100,
-        supporter: 10,
-        days: 5
-      }, {
-        school_name: "青山学院大学",
-        message: "全国制覇したいしたい",
-        image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg",
-        amount: 200,
-        supporter: 20,
-        days: 6
-      }, {
-        school_name: "関西学院大学",
-        message: "全国制覇したいしたいしたい",
-        image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg",
-        amount: 300,
-        supporter: 30,
-        days: 7
-      }]
->>>>>>> origin/layout_top
     };
   },
 
@@ -4647,7 +4631,7 @@ exports.push([module.i, "\nsection[data-v-4b8e7fc8] {\n  padding-top: 63px;\n  t
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .allstyle {\n  margin-left: 12px;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .allstyle {\r\n  margin-left: 12px;\r\n} */\r\n", ""]);
 
 
 
@@ -4658,7 +4642,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
 
 
 
@@ -4680,11 +4664,7 @@ exports.push([module.i, "\n.section[data-v-5b96cafc] {\n  padding: 128px 24px;\n
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-<<<<<<< HEAD
 exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
-=======
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5e0b4614] {\n  width: 80%;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
->>>>>>> origin/layout_top
 
 
 
@@ -4695,7 +4675,7 @@ exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  ma
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-5f0c731f] {\n    text-align: center;\n    background-color: #333333;\n}\nsection div h1[data-v-5f0c731f] {\n      font-size: 2rem;\n      font-weight: bolder;\n}\nsection div h2[data-v-5f0c731f] {\n      font-size: 1.7rem;\n      font-weight: bolder;\n}\nsection div .feature[data-v-5f0c731f] {\n      margin: 5% 0%;\n      padding: 5%;\n      background-color: #333333;\n}\nsection div .container_feature[data-v-5f0c731f] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\nsection div .container h2[data-v-5f0c731f] {\n      /* webcreatorbox.com\n    Webクリエイターボックス\n    WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。 */\n      position: relative;\n      display: inline-block;\n      margin-bottom: 2em;\n      color: white;\n}\nsection div .container h2[data-v-5f0c731f]:before {\n      content: \"\";\n      position: absolute;\n      bottom: -15px;\n      display: inline-block;\n      width: 2.5rem;\n      height: 0.2rem;\n      left: 50%;\n      -webkit-transform: translateX(-50%);\n      transform: translateX(-50%);\n      background-color: #ffe65d;\n      border-radius: 2px;\n}\nsection div .container h3[data-v-5f0c731f] {\n      font-size: 1rem;\n}\nsection div .container h4[data-v-5f0c731f] {\n      font-size: 0.8rem;\n}\nsection div .item[data-v-5f0c731f] {\n      margin-bottom: 1%;\n}\nsection div .item a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card[data-v-5f0c731f] {\n      width: 200px;\n      margin-right: 10px;\n      -webkit-box-shadow: none;\n      box-shadow: none;\n      background-color: #333333;\n}\nsection div .card-img[data-v-5f0c731f] {\n      border-radius: 0 0 0 0;\n      max-width: 100%;\n      height: auto;\n}\nsection div .card-content[data-v-5f0c731f] {\n      padding: 1px;\n}\nsection div h2 a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card-title[data-v-5f0c731f] {\n      text-decoration: none;\n      color: #ffffff;\n      font-size: 1rem;\n      text-align: left;\n}\nsection div .card-title a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card-text[data-v-5f0c731f] {\n      color: #777;\n      font-size: 14px;\n      line-height: 1.5;\n}\nsection div .card-link[data-v-5f0c731f] {\n      text-align: center;\n      border-top: 1px solid #eee;\n      padding: 20px;\n}\nsection div .card-link a[data-v-5f0c731f] {\n      text-decoration: none;\n      color: #ffffff;\n      margin: 0 10px;\n}\nsection div .card-link a[data-v-5f0c731f]:hover {\n      color: #0090aa;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-5f0c731f] {\n    text-align: center;\n    background-color: #333333;\n}\nsection div h1[data-v-5f0c731f] {\n      font-size: 2rem;\n      font-weight: bolder;\n}\nsection div h2[data-v-5f0c731f] {\n      font-size: 1.7rem;\n      font-weight: bolder;\n}\nsection div .feature[data-v-5f0c731f] {\n      margin: 5% 0%;\n      padding: 5%;\n      background-color: #333333;\n}\nsection div .container_feature[data-v-5f0c731f] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\nsection div .container h2[data-v-5f0c731f] {\n      /* webcreatorbox.com\r\n    Webクリエイターボックス\r\n    WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。 */\n      position: relative;\n      display: inline-block;\n      margin-bottom: 2em;\n      color: white;\n}\nsection div .container h2[data-v-5f0c731f]:before {\n      content: \"\";\n      position: absolute;\n      bottom: -15px;\n      display: inline-block;\n      width: 2.5rem;\n      height: 0.2rem;\n      left: 50%;\n      -webkit-transform: translateX(-50%);\n      transform: translateX(-50%);\n      background-color: #ffe65d;\n      border-radius: 2px;\n}\nsection div .container h3[data-v-5f0c731f] {\n      font-size: 1rem;\n}\nsection div .container h4[data-v-5f0c731f] {\n      font-size: 0.8rem;\n}\nsection div .item[data-v-5f0c731f] {\n      margin-bottom: 1%;\n}\nsection div .item a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card[data-v-5f0c731f] {\n      width: 200px;\n      margin-right: 10px;\n      -webkit-box-shadow: none;\n      box-shadow: none;\n      background-color: #333333;\n}\nsection div .card-img[data-v-5f0c731f] {\n      border-radius: 0 0 0 0;\n      max-width: 100%;\n      height: auto;\n}\nsection div .card-content[data-v-5f0c731f] {\n      padding: 1px;\n}\nsection div h2 a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card-title[data-v-5f0c731f] {\n      text-decoration: none;\n      color: #ffffff;\n      font-size: 1rem;\n      text-align: left;\n}\nsection div .card-title a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card-text[data-v-5f0c731f] {\n      color: #777;\n      font-size: 14px;\n      line-height: 1.5;\n}\nsection div .card-link[data-v-5f0c731f] {\n      text-align: center;\n      border-top: 1px solid #eee;\n      padding: 20px;\n}\nsection div .card-link a[data-v-5f0c731f] {\n      text-decoration: none;\n      color: #ffffff;\n      margin: 0 10px;\n}\nsection div .card-link a[data-v-5f0c731f]:hover {\n      color: #0090aa;\n}\n", ""]);
 
 
 
@@ -4739,7 +4719,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection {\n  margin-top: 200px;\n}\n", ""]);
+exports.push([module.i, "\nsection {\r\n  margin-top: 200px;\n}\r\n", ""]);
 
 
 
@@ -4772,7 +4752,7 @@ exports.push([module.i, "\n.loading__container[data-v-74afde35] {\n  display: -w
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "/* .main-color {\n  border-color: #ffe035;\n} */\nheader[data-v-799369ca] {\n  -webkit-box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n          box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n  font-weight: bold;\n  position: fixed;\n  z-index: 1000;\n  width: 100%;\n  background-color: white;\n}\nheader nav.navbar[data-v-799369ca] {\n    max-width: 1440px;\n    margin: 0 auto;\n}\nheader nav.navbar .navbar-start p[data-v-799369ca] {\n      font-size: 16px;\n      vertical-align: middle;\n      height: 63px;\n      line-height: 71px;\n}\nheader nav.navbar .buttons[data-v-799369ca] {\n      font-size: 16px;\n      margin: 0 auto;\n}\nheader nav.navbar .buttons[data-v-799369ca]:hover {\n        opacity: 0.7;\n        background-color: #ffe035;\n}\nheader nav.navbar .custom-btn[data-v-799369ca] {\n      background-color: #ffe035;\n      color: white;\n      border-radius: 2em;\n      width: 6.3em;\n      border-color: #ffe035;\n}\n@media screen and (min-width: 600px) {\nheader .navbar-item img[data-v-799369ca] {\n      max-height: 2.75rem;\n      margin-right: 16px;\n}\n}\n@media screen and (max-width: 600px) {\nheader .navbar-start[data-v-799369ca] {\n      display: none;\n}\n}\n", ""]);
+exports.push([module.i, "/* .main-color {\r\n  border-color: #ffe035;\r\n} */\nheader[data-v-799369ca] {\n  -webkit-box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n          box-shadow: 0px 3px 25px rgba(77, 77, 99, 0.1);\n  font-weight: bold;\n  position: fixed;\n  z-index: 1000;\n  width: 100%;\n  background-color: white;\n}\nheader nav.navbar[data-v-799369ca] {\n    max-width: 1440px;\n    margin: 0 auto;\n}\nheader nav.navbar .navbar-start p[data-v-799369ca] {\n      font-size: 16px;\n      vertical-align: middle;\n      height: 63px;\n      line-height: 71px;\n}\nheader nav.navbar .buttons[data-v-799369ca] {\n      font-size: 16px;\n      margin: 0 auto;\n}\nheader nav.navbar .buttons[data-v-799369ca]:hover {\n        opacity: 0.7;\n        background-color: #ffe035;\n}\nheader nav.navbar .custom-btn[data-v-799369ca] {\n      background-color: #ffe035;\n      color: white;\n      border-radius: 2em;\n      width: 6.3em;\n      border-color: #ffe035;\n}\n@media screen and (min-width: 600px) {\nheader .navbar-item img[data-v-799369ca] {\n      max-height: 2.75rem;\n      margin-right: 16px;\n}\n}\n@media screen and (max-width: 600px) {\nheader .navbar-start[data-v-799369ca] {\n      display: none;\n}\n}\n", ""]);
 
 
 
@@ -4882,7 +4862,7 @@ exports.push([module.i, "\nsection[data-v-c8b3a85a] {\n  padding-top: 3%;\n  pad
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .allstyle {\n  margin-left: 12px;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .allstyle {\r\n  margin-left: 12px;\r\n} */\r\n", ""]);
 
 
 
@@ -33298,7 +33278,6 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-<<<<<<< HEAD
   return _c(
     "section",
     [
@@ -33311,90 +33290,6 @@ var render = function() {
             { key: index, staticClass: "card-box column is-one-third" },
             [
               _c("div", { staticClass: "card" }, [
-=======
-  return _c("section", [
-    _c(
-      "div",
-      { staticClass: "container flex-flame" },
-      _vm._l(_vm.values, function(value, index) {
-        return _c("div", { key: index, staticClass: "card-box" }, [
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              {
-                staticStyle: { position: "relative" },
-                attrs: { calss: "card_image_container" }
-              },
-              [
-                _c("div", { staticClass: "card-image item item--first" }, [
-                  _c("figure", { staticClass: "image is-4by3" }, [
-                    _c("img", {
-                      staticClass: "card-img-top",
-                      attrs: { src: value.image, alt: "Placeholder image" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "school_msg has-text-centered" }, [
-                  _c(
-                    "p",
-                    { staticClass: "title is-7 is-size-7-mobile school_name" },
-                    [_vm._v(_vm._s(value.school_name))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "subtitle is-6 is-size-7-mobile school_message"
-                    },
-                    [_vm._v(_vm._s(value.message))]
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-content" }, [
-              _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-                _vm._v(_vm._s(value.school_name))
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "columns detail" }, [
-              _c("div", { staticClass: "column" }, [
-                _c(
-                  "p",
-                  {
-                    staticClass: "card-text col has-text-centered",
-                    staticStyle: { "font-size": "0.9rem" }
-                  },
-                  [
-                    _vm._v("\n              寄付金額\n              "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
-                _c(
-                  "p",
-                  {
-                    staticClass: "card-text col has-text-centered",
-                    staticStyle: { "font-size": "0.9rem" }
-                  },
-                  [
-                    _vm._v("\n              応募数\n              "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
->>>>>>> origin/layout_top
                 _c(
                   "div",
                   {
@@ -33402,7 +33297,6 @@ var render = function() {
                     attrs: { calss: "card_image_container" }
                   },
                   [
-<<<<<<< HEAD
                     _c("div", { staticClass: "card-image item item--first" }, [
                       _c("figure", { staticClass: "image is-4by3" }, [
                         _c("img", {
@@ -33411,10 +33305,6 @@ var render = function() {
                         })
                       ])
                     ]),
-=======
-                    _vm._v("\n              残り\n              "),
-                    _c("br"),
->>>>>>> origin/layout_top
                     _vm._v(" "),
                     _c("div", { staticClass: "school_msg has-text-centered" }, [
                       _c(
@@ -33437,60 +33327,77 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "card-content" }, [
-                  _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
-                    _vm._v(_vm._s(value.school_name))
-                  ])
+                _c("div", { staticClass: "school_msg has-text-centered" }, [
+                  _c(
+                    "p",
+                    { staticClass: "title is-7 is-size-7-mobile school_name" },
+                    [_vm._v(_vm._s(value.school_name))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "subtitle is-6 is-size-7-mobile school_message"
+                    },
+                    [_vm._v(_vm._s(value.message))]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-content" }, [
+                _c("p", { staticClass: "subtitle is-6 has-text-centered" }, [
+                  _vm._v(_vm._s(value.school_name))
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "columns detail" }, [
+                _c("div", { staticClass: "column" }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass: "card-text col has-text-centered",
+                      staticStyle: { "font-size": "0.9rem" }
+                    },
+                    [
+                      _vm._v("\n              寄付金額\n              "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "columns detail" }, [
-                  _c("div", { staticClass: "column" }, [
-                    _c(
-                      "p",
-                      {
-                        staticClass: "card-text col has-text-centered",
-                        staticStyle: { "font-size": "0.9rem" }
-                      },
-                      [
-                        _vm._v("寄付金額\n                "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "column" }, [
-                    _c(
-                      "p",
-                      {
-                        staticClass: "card-text col has-text-centered",
-                        staticStyle: { "font-size": "0.9rem" }
-                      },
-                      [
-                        _vm._v("応募数\n                "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "column" }, [
-                    _c(
-                      "p",
-                      {
-                        staticClass: "card-text col has-text-centered",
-                        staticStyle: { "font-size": "0.9rem" }
-                      },
-                      [
-                        _vm._v("残り\n                "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v(_vm._s(value.days) + "日")])
-                      ]
-                    )
-                  ])
+                _c("div", { staticClass: "column" }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass: "card-text col has-text-centered",
+                      staticStyle: { "font-size": "0.9rem" }
+                    },
+                    [
+                      _vm._v("\n              応募数\n              "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "column" }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass: "card-text col has-text-centered",
+                      staticStyle: { "font-size": "0.9rem" }
+                    },
+                    [
+                      _vm._v("\n              残り\n              "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("strong", [_vm._v(_vm._s(value.days) + "日")])
+                    ]
+                  )
                 ])
               ])
             ]
@@ -38199,7 +38106,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6fa5b822", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4e7218e2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38226,7 +38133,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("32b3935a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("5d9ca718", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38253,7 +38160,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("62b8b245", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0228c20c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38280,7 +38187,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d68aeada", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("25f286ad", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38307,7 +38214,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("b1525010", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("57897798", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38334,7 +38241,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("178c65d5", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6dadba35", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38361,7 +38268,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("66b7af9c", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("16ea4f3c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38388,7 +38295,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0ad805b6", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("60f95a16", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38415,7 +38322,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("37c0acb6", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("373d6605", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38442,7 +38349,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("198c4bf5", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("8feb35e2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38469,7 +38376,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("253c2e34", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("7b5d8294", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38496,7 +38403,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("3436e2ea", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("883ec89e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38523,7 +38430,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("7f217d6e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("138cfda9", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38550,7 +38457,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("89d0be3a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("2920d883", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38577,7 +38484,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("06245ea4", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("33192f70", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38604,7 +38511,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1e5db2b8", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("22309752", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38631,7 +38538,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("2c6cf75e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("3fead8b1", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38658,7 +38565,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("27ef999e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("11753138", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38685,7 +38592,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4caeb539", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("ba5fecce", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38712,7 +38619,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("765a202a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("c97b9bf6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38739,7 +38646,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("745b550b", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("248df4ab", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38766,7 +38673,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("57bbee73", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("adbf53da", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38793,7 +38700,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("246b1efb", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("c3b4b94a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38820,7 +38727,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("9addbc34", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("05aede46", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38847,7 +38754,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("37465076", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("377a9425", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38874,7 +38781,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d744ae9e", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0266e051", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38901,7 +38808,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("d5cf2de2", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1f0168af", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38928,7 +38835,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("4152b967", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("22258107", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38955,7 +38862,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("9ecee2fc", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("60cb2e22", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -38982,7 +38889,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0768d892", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("646bc357", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -39009,7 +38916,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("13dd2d96", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("053a75a0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -39036,7 +38943,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("34038744", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("6fe73bfe", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -39063,7 +38970,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("de7f74a4", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1aa9454e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -39090,7 +38997,7 @@ var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("044f2aff", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("e38faac2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -52385,7 +52292,7 @@ module.exports = function(module) {
 /***/ "./public/images/topintro/message1.png":
 /***/ (function(module, exports) {
 
-module.exports = "/images/message1.png?8381770074f504c8f2b4597c8da13cc4";
+module.exports = "/images/message1.png?626e2b7d9d0c43b174ec684160958540";
 
 /***/ }),
 
@@ -52399,112 +52306,112 @@ module.exports = "/images/message2.png?80fb7fe086edec50cadfed4190233808";
 /***/ "./public/images/topintro/message3.png":
 /***/ (function(module, exports) {
 
-module.exports = "/images/message3.png?28aafd33e449f8c95bccbbe1daee174a";
+module.exports = "/images/message3.png?74f02c6bb256efdf0c28f388451ca502";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_active01.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_active01.jpg?c87416a22c255de2b42ddbda0e508ee3";
+module.exports = "/images/aoyama_active01.jpg?554117f4c7b17c19ba9030f5bcd40342";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_campus.jpg?c13f4566bcb8a7ce5d45f1bbc002eedb";
+module.exports = "/images/aoyama_campus.jpg?e19a9228c98c97d0acb2e435b44138f5";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus1.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_campus1.jpg?b9789c9ff7dad7b3a70312d41285ebec";
+module.exports = "/images/aoyama_campus1.jpg?2759e5ef5868f74f9b2823b52994f7b8";
 
 /***/ }),
 
 /***/ "./resources/assets/images/SchoolCampus/aoyama_campus2.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_campus2.jpg?1bb39e92c3a41736a793baf2fc4666dd";
+module.exports = "/images/aoyama_campus2.jpg?9d29ed023c83d59db3658b80f75d055d";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag.jpg?1255affe3eba2af44c2d2bde86e08cc3";
+module.exports = "/images/d_kin_rag.jpg?46c9d0a2e181292f243dca62282e1ec9";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag2.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag2.jpg?e36f6f9871d1d845788bed380bcbf0e7";
+module.exports = "/images/d_kin_rag2.jpg?c1aca621223486eac65b88d5eb00d370";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag3.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag3.jpg?b57b0ed4dbde071a2b68b32d57fb5dcd";
+module.exports = "/images/d_kin_rag3.jpg?7835b1098b6deef6fc00777e510443bb";
 
 /***/ }),
 
 /***/ "./resources/assets/images/donation/d_kin_rag_top.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/d_kin_rag_top.jpg?0ae55fd32e5b3933dc8f34bde97da0f3";
+module.exports = "/images/d_kin_rag_top.jpg?30cabe92d08cb1f9172aa5065e562a7d";
 
 /***/ }),
 
 /***/ "./resources/assets/images/mypage/account.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/account.jpg?0e62aabe767d0ac2f6137828e20eafd5";
+module.exports = "/images/account.jpg?4fe0a04361a180c0a5fd5ca2dc15767a";
 
 /***/ }),
 
 /***/ "./resources/assets/images/schoolLogo/aoyama_logo.png":
 /***/ (function(module, exports) {
 
-module.exports = "/images/aoyama_logo.png?270ace2354eb1ae86d5064b3cef14d3d";
+module.exports = "/images/aoyama_logo.png?045b4405313636a1c40a70f3254719fe";
 
 /***/ }),
 
 /***/ "./resources/assets/images/schoolLogo/kinkiuniv.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/kinkiuniv.jpg?6a8e1ae569e88d141eb38637febd9f19";
+module.exports = "/images/kinkiuniv.jpg?2bff1969f29729d0a59f9fbf3fc7b188";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top001.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top001.jpg?df0f6869b6916c5d8d43b82566c5be2b";
+module.exports = "/images/top001.jpg?32dbc292c31bdbe6f04578f3dcf72745";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top002.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top002.jpg?8eeb7bccf82ac6ba85d9e855497ba166";
+module.exports = "/images/top002.jpg?c4751eb9c897607d91464ff08b60aeab";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top003.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top003.jpg?15525b0edbd0268120b189b6932f4511";
+module.exports = "/images/top003.jpg?15241dd31f76e7ea93fe70f31fd90ce5";
 
 /***/ }),
 
 /***/ "./resources/assets/images/topvisual/top4.jpg":
 /***/ (function(module, exports) {
 
-module.exports = "/images/top4.jpg?acf9059010ed68a927c6c44efa703e28";
+module.exports = "/images/top4.jpg?028b6650ff0def65d8893f509b7220c0";
 
 /***/ }),
 
