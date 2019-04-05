@@ -21,7 +21,7 @@ const getters = {
 
     // Activity.vue
     getActivityData(state) {
-        // console.log(state.getActivityData.data)
+        console.log(state.getActivityData, "getter")
         return state.getActivityData.data
     },
     isActivity(state) {
@@ -73,14 +73,14 @@ const mutations = {
 
     // Search.vue
     getAllActivities(state, payload) {
-        // console.log(payload.data)
+        console.log(payload.data, "mutesyon")
         state.getAllActivities = payload.data
     },
     isActivities(state, payload) {
         state.isAllStatus = payload
     },
     setSearchWord(state, payload) {
-        console.log(payload)
+        // console.log(payload)
         setTimeout(() => {
             state.search = payload
         }, 500)
@@ -92,19 +92,20 @@ const actions = {
     // Activity.vue
     getActivityData({ commit }, payload) {
         http.get('/activity/' + payload, res => {
-            // console.log(res)
+            console.log(res.data)
             commit('getActivityData', res.data)
             commit('isActivity', res ? true : false)
         }, null)
     },
 
     // Search.vue
-    getAllActivities({ commit }, payload) {
+    getAllActivities({ commit }) {
         http.get('/activity', res => {
             commit('getAllActivities', res.data)
             commit('isActivities', res ? true : false)
         }, null)
     },
+
 }
 
 export default {

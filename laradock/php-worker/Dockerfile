@@ -17,7 +17,7 @@ RUN apk --update add wget \
   libgsasl-dev \
   postgresql-dev \
   supervisor && \
-  docker-php-ext-install mbstring  _mysql _pgsql tokenizer xml && \
+  docker-php-ext-install mbstring pdo pdo_mysql tokenizer xml && \
   apk del --no-cache \
     libmcrypt-dev \
     libxml2-dev \
