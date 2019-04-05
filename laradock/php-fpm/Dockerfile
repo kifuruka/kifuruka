@@ -19,7 +19,7 @@ RUN apk --update add --no-cache \
   freetype-dev \
   libpng-dev \
   libjpeg-turbo-dev && \
-  docker-php-ext-install mbstring  _pgsql _mysql tokenizer xml opcache && \
+  docker-php-ext-install mbstring pdo pdo_mysql tokenizer xml opcache && \
   docker-php-ext-configure gd \
     --with-gd \
     --with-freetype-dir=/usr/include/ \

@@ -1826,241 +1826,99 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ButtonMore__ = __webpack_require__("./resources/assets/js/components/ButtonMore.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ButtonMore___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ButtonMore__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ButtonMore: __WEBPACK_IMPORTED_MODULE_1__ButtonMore___default.a
+  },
   data: function data() {
     return {
       info: null,
-      count: 3,
-
-      values: [{
-        school_name: "近畿大学",
-        message: "全国制覇したい",
-        image: "https://rugby-rp.com/wp-content/uploads/MOVED/tabuchi.jpg",
-        amount: 100,
-        supporter: 10,
-        days: 5
-      }, {
-        school_name: "青山学院大学",
-        message: "全国制覇したいしたい",
-        image: "https://iwiz-spo.c.yimg.jp/im_siggStqzZpRoVC9IRsasQFRhkg---x600-y600-q90-pril/c/sports/text/images/2018/0103/201801030001-spnavi_2018010300003_view.jpg",
-        amount: 200,
-        supporter: 20,
-        days: 6
-      }, {
-        school_name: "関西学院大学",
-        message: "全国制覇したいしたいしたい",
-        image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg",
-        amount: 300,
-        supporter: 30,
-        days: 7
-      }, {
-        school_name: "関西学院大学",
-        message: "全国制覇したいしたいしたい",
-        image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg",
-        amount: 300,
-        supporter: 30,
-        days: 7
-      }, {
-        school_name: "関西学院大学",
-        message: "全国制覇したいしたいしたい",
-        image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg",
-        amount: 300,
-        supporter: 30,
-        days: 7
-      }, {
-        school_name: "関西学院大学",
-        message: "全国制覇したいしたいしたい",
-        image: "https://www.kwansei.ac.jp/news/2018/images/0000224427_ex.jpg",
-        amount: 300,
-        supporter: 30,
-        days: 7
-      }]
+      count: 3
     };
   },
 
-  //   mounted(){
-  //     $on('click', this.addvalues)
-  // },
-  methods: {
-    addvalues: function addvalues() {
-      console.log(this.count);
-      this.count += 3;
-      console.log(this.count);
-      sliceValues();
-    }
-  },
-  computed: {
+
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])({
+    fetchActivity: "activity/getAllActivities"
+  }), {
     // 配列の個数を決定する
     sliceValues: function sliceValues() {
-      return this.values.slice(0, this.count);
+      // return this.values.slice(0, this.count);
+      return this.fetchActivity.slice(0, this.count);
     }
+  }),
+  created: function created() {
+    this.getActivities();
   },
-  components: {
-    ButtonMore: __WEBPACK_IMPORTED_MODULE_1__ButtonMore___default.a
-    // computed: {
-    //   ...mapGetters(["fetchAllData"])
-    // },
 
-    // created() {
-    //   this.fetchPostHomeCard();
-    // },
 
-    // methods: {
-    //   ...mapActions(["fetchPostHomeCard"])
-    // }
-  } });
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])({
+    getAllActivities: "activity/getAllActivities"
+  }), {
+    getActivities: function getActivities() {
+      this.getAllActivities;
+    },
+    addvalues: function addvalues() {
+      this.count += 3;
+    }
+  })
+});
 
 /***/ }),
 
@@ -33311,10 +33169,10 @@ var render = function() {
       _c(
         "div",
         { staticClass: "container columns is-multiline" },
-        _vm._l(_vm.sliceValues, function(value, index) {
+        _vm._l(_vm.sliceValues, function(value) {
           return _c(
             "div",
-            { key: index, staticClass: "card-box column is-one-third" },
+            { key: value.id, staticClass: "card-box column is-one-third" },
             [
               _c("div", { staticClass: "card" }, [
                 _c(
@@ -33328,7 +33186,10 @@ var render = function() {
                       _c("figure", { staticClass: "image is-4by3" }, [
                         _c("img", {
                           staticClass: "card-img-top",
-                          attrs: { src: value.image, alt: "Placeholder image" }
+                          attrs: {
+                            src: value.activity_img,
+                            alt: "Placeholder image"
+                          }
                         })
                       ])
                     ]),
@@ -33339,7 +33200,7 @@ var render = function() {
                         {
                           staticClass: "title is-7 is-size-7-mobile school_name"
                         },
-                        [_vm._v(_vm._s(value.school_name))]
+                        [_vm._v(_vm._s(value.school.school_name))]
                       ),
                       _vm._v(" "),
                       _c(
@@ -33348,28 +33209,11 @@ var render = function() {
                           staticClass:
                             "subtitle is-6 is-size-7-mobile school_message"
                         },
-                        [_vm._v(_vm._s(value.message))]
+                        [_vm._v(_vm._s(value.activity_name))]
                       )
                     ])
                   ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "school_msg has-text-centered" }, [
-                  _c(
-                    "p",
-                    { staticClass: "title is-7 is-size-7-mobile school_name" },
-                    [_vm._v(_vm._s(value.school_name))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "subtitle is-6 is-size-7-mobile school_message"
-                    },
-                    [_vm._v(_vm._s(value.message))]
-                  )
-                ])
+                )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "card-content" }, [
@@ -33390,7 +33234,9 @@ var render = function() {
                       _vm._v("\n            寄付金額\n            "),
                       _c("br"),
                       _vm._v(" "),
-                      _c("strong", [_vm._v(_vm._s(value.amount) + "円〜")])
+                      _c("strong", [
+                        _vm._v(_vm._s(value.total_donation) + "円")
+                      ])
                     ]
                   )
                 ]),
@@ -33406,26 +33252,12 @@ var render = function() {
                       _vm._v("\n            応募数\n            "),
                       _c("br"),
                       _vm._v(" "),
-                      _c("strong", [_vm._v(_vm._s(value.supporter) + "人")])
+                      _c("strong", [_vm._v(_vm._s(value.fans) + "人")])
                     ]
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "column" }, [
-                  _c(
-                    "p",
-                    {
-                      staticClass: "card-text col has-text-centered",
-                      staticStyle: { "font-size": "0.9rem" }
-                    },
-                    [
-                      _vm._v("\n            残り\n            "),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("strong", [_vm._v(_vm._s(value.days) + "日")])
-                    ]
-                  )
-                ])
+                _vm._m(0, true)
               ])
             ]
           )
@@ -33438,7 +33270,28 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column" }, [
+      _c(
+        "p",
+        {
+          staticClass: "card-text col has-text-centered",
+          staticStyle: { "font-size": "0.9rem" }
+        },
+        [
+          _vm._v("\n            残り\n            "),
+          _c("br"),
+          _vm._v(" "),
+          _c("strong", [_vm._v("10日")])
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -54635,7 +54488,7 @@ var getters = {
 
     // Activity.vue
     getActivityData: function getActivityData(state) {
-        // console.log(state.getActivityData.data)
+        console.log(state.getActivityData, "getter");
         return state.getActivityData.data;
     },
     isActivity: function isActivity(state) {
@@ -54689,14 +54542,14 @@ var mutations = {
 
     // Search.vue
     getAllActivities: function getAllActivities(state, payload) {
-        // console.log(payload.data)
+        console.log(payload.data, "mutesyon");
         state.getAllActivities = payload.data;
     },
     isActivities: function isActivities(state, payload) {
         state.isAllStatus = payload;
     },
     setSearchWord: function setSearchWord(state, payload) {
-        console.log(payload);
+        // console.log(payload)
         setTimeout(function () {
             state.search = payload;
         }, 500);
@@ -54710,7 +54563,7 @@ var actions = {
         var commit = _ref.commit;
 
         __WEBPACK_IMPORTED_MODULE_0__services_http__["a" /* default */].get('/activity/' + payload, function (res) {
-            // console.log(res)
+            console.log(res.data);
             commit('getActivityData', res.data);
             commit('isActivity', res ? true : false);
         }, null);
@@ -54718,7 +54571,7 @@ var actions = {
 
 
     // Search.vue
-    getAllActivities: function getAllActivities(_ref2, payload) {
+    getAllActivities: function getAllActivities(_ref2) {
         var commit = _ref2.commit;
 
         __WEBPACK_IMPORTED_MODULE_0__services_http__["a" /* default */].get('/activity', function (res) {
