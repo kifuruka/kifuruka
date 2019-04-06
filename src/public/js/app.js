@@ -3801,6 +3801,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top4.jpg");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3857,7 +3881,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       Homeimg3: __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg___default.a,
       Homeimg4: __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg___default.a
     };
-  }
+  },
+
 
   // mounted: function() {
   //   // `this` は vm インスタンスを指します
@@ -3872,7 +3897,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   //   ...mapActions(["fetchPostTopVisual"])
   // }
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])({
+    isStatus: "schools/isStatus",
+    schools: "schools/schoolAllData"
+  })),
 
+  created: function created() {
+    this.fetchSchools();
+  },
+
+
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])({
+    fetchSchoolsData: "schools/fetchSchoolsData"
+  }), {
+    fetchSchools: function fetchSchools() {
+      this.fetchSchoolsData();
+    },
+    routerPush: function routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
+    }
+  })
 });
 
 /***/ }),
@@ -32816,19 +32862,27 @@ var render = function() {
   return _c("section", [
     _c("div", { staticClass: "tile is-ancestor" }, [
       _c("div", { staticClass: "tile is-parent parent-frame" }, [
-        _c(
-          "div",
-          { staticClass: "tile is-child" },
-          [
-            _c("router-link", { attrs: { to: "/activity/1" } }, [
+        _c("div", { staticClass: "tile is-child" }, [
+          _c(
+            "a",
+            {
+              on: {
+                click: function($event) {
+                  return _vm.routerPush({
+                    name: "DetailSchool",
+                    params: { id: _vm.schools[0].id }
+                  })
+                }
+              }
+            },
+            [
               _c("img", {
                 staticClass: "u-img",
                 attrs: { src: _vm.Homeimg1, alt: "#" }
               })
-            ])
-          ],
-          1
-        )
+            ]
+          )
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "tile is-parent parent-frame" }, [
@@ -32842,45 +32896,73 @@ var render = function() {
                   staticStyle: { "margin-bottom": "0" }
                 },
                 [
-                  _c("router-link", { attrs: { to: "/activity/2" } }, [
-                    _c("img", {
-                      staticClass: "u-img",
-                      attrs: { src: _vm.Homeimg2, alt: "" }
-                    })
-                  ])
-                ],
-                1
+                  _c(
+                    "a",
+                    {
+                      on: {
+                        click: function($event) {
+                          return _vm.routerPush({
+                            name: "DetailSchool",
+                            params: { id: _vm.schools[1].id }
+                          })
+                        }
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "u-img",
+                        attrs: { src: _vm.Homeimg2, alt: "" }
+                      })
+                    ]
+                  )
+                ]
               ),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "tileis-child is-6" },
-                [
-                  _c("router-link", { attrs: { to: "/activity/3" } }, [
+              _c("div", { staticClass: "tileis-child is-6" }, [
+                _c(
+                  "a",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.routerPush({
+                          name: "DetailSchool",
+                          params: { id: _vm.schools[2].id }
+                        })
+                      }
+                    }
+                  },
+                  [
                     _c("img", {
                       staticClass: "u-img",
                       attrs: { src: _vm.Homeimg3, alt: "#" }
                     })
-                  ])
-                ],
-                1
-              )
+                  ]
+                )
+              ])
             ])
           ]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "tile child-flame" },
-            [
-              _c("router-link", { attrs: { to: "/activity/4" } }, [
+          _c("div", { staticClass: "tile child-flame" }, [
+            _c(
+              "a",
+              {
+                on: {
+                  click: function($event) {
+                    return _vm.routerPush({
+                      name: "DetailSchool",
+                      params: { id: _vm.schools[3].id }
+                    })
+                  }
+                }
+              },
+              [
                 _c("img", {
                   staticClass: "u-img",
                   attrs: { src: _vm.Homeimg4, alt: "#" }
                 })
-              ])
-            ],
-            1
-          )
+              ]
+            )
+          ])
         ])
       ])
     ])

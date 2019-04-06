@@ -4,9 +4,16 @@
       <!-- 左 -->
       <div class="tile is-parent parent-frame">
         <div class="tile is-child">
-          <router-link to="/activity/1">
+          <!-- <router-link to="/activity/1"> -->
+          <a
+              @click="routerPush({
+                  name:'DetailSchool',
+                  params:{id:schools[0].id}
+                  })"
+            >
             <img :src="Homeimg1" class="u-img" alt="#">
-          </router-link>
+            </a>
+          <!-- </router-link> -->
         </div>
       </div>
       <!-- 右 -->
@@ -15,22 +22,37 @@
           <div class="tile is-ancestor">
             <div class="tile is-parent upper-frame">
               <div class="tile is-child is-6 grandson-frame" style="margin-bottom:0;">
-                <router-link to="/activity/2">
-                <img :src="Homeimg2" class="u-img" alt>
-                </router-link>
+                <a
+                    @click="routerPush({
+                        name:'DetailSchool',
+                        params:{id:schools[1].id}
+                        })"
+                  >
+                  <img :src="Homeimg2" class="u-img" alt>
+                </a>
               </div>
               <div class="tileis-child is-6">
-                <router-link to="/activity/3">
-                <img :src="Homeimg3" class="u-img" alt="#">
-                </router-link>
+                <a
+                    @click="routerPush({
+                        name:'DetailSchool',
+                        params:{id:schools[2].id}
+                        })"
+                  >
+                  <img :src="Homeimg3" class="u-img" alt="#">
+                </a>
               </div>
             </div>
           </div>
 
           <div class="tile child-flame">
-            <router-link to="/activity/4">
-            <img :src="Homeimg4" class="u-img" alt="#">
-            </router-link>
+            <a
+                @click="routerPush({
+                    name:'DetailSchool',
+                    params:{id:schools[3].id}
+                    })"
+              >
+              <img :src="Homeimg4" class="u-img" alt="#">
+            </a>
           </div>
         </div>
       </div>
@@ -45,6 +67,7 @@ import Homeimg2 from "../../images/topvisual/top002.jpg";
 import Homeimg3 from "../../images/topvisual/top003.jpg";
 import Homeimg4 from "../../images/topvisual/top4.jpg";
 
+
 export default {
   // あとでデータを引っ張ってくるまで載せておく
   data() {
@@ -54,7 +77,7 @@ export default {
       Homeimg3,
       Homeimg4
     };
-  }
+  },
 
   // mounted: function() {
   //   // `this` は vm インスタンスを指します
@@ -69,6 +92,32 @@ export default {
 
   //   ...mapActions(["fetchPostTopVisual"])
   // }
+  computed: {
+    ...mapGetters({
+      isStatus: "schools/isStatus",
+      schools: "schools/schoolAllData"
+    })
+  },
+
+  created() {
+    this.fetchSchools();
+  },
+
+  methods: {
+    ...mapActions({
+      fetchSchoolsData: "schools/fetchSchoolsData"
+    }),
+
+    fetchSchools() {
+      this.fetchSchoolsData();
+    },
+
+    routerPush(router) {
+      // 画面丈夫へ移動するためのもの
+      window.scrollTo(0, 0);
+      this.$router.push(router);
+    }
+  }
 };
 </script>
 
