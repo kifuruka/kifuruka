@@ -1980,6 +1980,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -2813,6 +2816,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
       swiperOption: {
         slidesPerView: 4,
         spaceBetween: 30,
+        // centeredSlides: true,
         freeMode: true,
         pagination: {
           el: ".swiper-pagination",
@@ -3792,15 +3796,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top001.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top002.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top003.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top4.jpg");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css__ = __webpack_require__("./node_modules/swiper/dist/css/swiper.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_swiper_dist_css_swiper_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__ = __webpack_require__("./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuex__ = __webpack_require__("./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top001_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top001.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top001_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_topvisual_top001_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top002_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top002.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top002_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_topvisual_top002_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_topvisual_top003_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top003.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_topvisual_top003_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_topvisual_top003_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_topvisual_top4_jpg__ = __webpack_require__("./resources/assets/images/topvisual/top4.jpg");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_topvisual_top4_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_topvisual_top4_jpg__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 //
@@ -3846,25 +3854,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
 
 
@@ -3873,16 +3864,39 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // あとでデータを引っ張ってくるまで載せておく
+  components: {
+    swiper: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiper"],
+    swiperSlide: __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__["swiperSlide"]
+  },
+
   data: function data() {
     return {
-      Homeimg1: __WEBPACK_IMPORTED_MODULE_1__images_topvisual_top001_jpg___default.a,
-      Homeimg2: __WEBPACK_IMPORTED_MODULE_2__images_topvisual_top002_jpg___default.a,
-      Homeimg3: __WEBPACK_IMPORTED_MODULE_3__images_topvisual_top003_jpg___default.a,
-      Homeimg4: __WEBPACK_IMPORTED_MODULE_4__images_topvisual_top4_jpg___default.a
+      swiperOption: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        // centeredSlides: true,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      }
     };
   },
 
+  // あとでデータを引っ張ってくるまで載せておく
+  // data() {
+  //   return {
+  //     Homeimg1,
+  //     Homeimg2,
+  //     Homeimg3,
+  //     Homeimg4
+  //   };
+  // },
 
   // mounted: function() {
   //   // `this` は vm インスタンスを指します
@@ -3897,7 +3911,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
   //   ...mapActions(["fetchPostTopVisual"])
   // }
-  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])({
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_2_vuex__["c" /* mapGetters */])({
     isStatus: "schools/isStatus",
     schools: "schools/schoolAllData"
   })),
@@ -3907,7 +3921,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
   },
 
 
-  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])({
+  methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_2_vuex__["b" /* mapActions */])({
     fetchSchoolsData: "schools/fetchSchoolsData"
   }), {
     fetchSchools: function fetchSchools() {
@@ -4687,7 +4701,7 @@ exports.push([module.i, "\nsection[data-v-2b942169] {\n  max-width: 1160px;\n  m
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-3a435e4e] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\nsection .parent-frame[data-v-3a435e4e] {\n    padding: 6px !important;\n    max-width: 752px;\n    max-height: 642px;\n}\nsection .parent-frame .upper-frame[data-v-3a435e4e] {\n      padding-bottom: 0px;\n}\nsection .parent-frame .upper-frame .grandson-frame[data-v-3a435e4e] {\n        margin-right: 12px !important;\n        max-width: 370px;\n        max-height: 250px;\n}\nsection .child-flame[data-v-3a435e4e] {\n    padding-top: 0 !important;\n    max-width: 752px !important;\n    height: 250px !important;\n}\nsection .u-img[data-v-3a435e4e] {\n    width: 100%;\n    height: 100% !important;\n}\n@media screen and (max-width: 768px) {\n.tile[data-v-3a435e4e]:not(.is-child) {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.tile.is-6[data-v-3a435e4e] {\n    -webkit-box-flex: 0;\n    -ms-flex: none;\n    flex: none;\n    width: 50%;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-3a435e4e] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 7%;\n}\nsection .parent-frame[data-v-3a435e4e] {\n    padding: 6px !important;\n    max-width: 752px;\n    max-height: 642px;\n}\nsection .parent-frame .upper-frame[data-v-3a435e4e] {\n      padding-bottom: 0px;\n}\nsection .parent-frame .upper-frame .grandson-frame[data-v-3a435e4e] {\n        margin-right: 12px !important;\n        max-width: 370px;\n        max-height: 250px;\n}\nsection .card_image_container[data-v-3a435e4e] {\n    position: relative;\n}\nsection .item[data-v-3a435e4e] {\n    position: relative;\n    overflow: hidden;\n    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);\n            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);\n}\nsection .item[data-v-3a435e4e]:after {\n    /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    opacity: 0.5;\n    /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\nsection .item--first[data-v-3a435e4e]:after {\n    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n    background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\nsection .school_msg[data-v-3a435e4e] {\n    position: absolute;\n    color: white;\n    top: 80%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    margin: 0;\n    padding: 0;\n}\nsection .school_name[data-v-3a435e4e] {\n    position: relative;\n    display: inline-block;\n    color: white;\n    border-bottom-style: solid;\n    border-bottom-color: #ffe035;\n    padding-bottom: 2%;\n    margin-bottom: 3em;\n    font-size: 0.5rem;\n}\nsection .school_message[data-v-3a435e4e] {\n    color: white;\n}\nsection .card[data-v-3a435e4e] {\n    background-color: white;\n    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);\n    box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0px rgba(0, 0, 0, 0);\n}\nsection .child-flame[data-v-3a435e4e] {\n    padding-top: 0 !important;\n    max-width: 752px !important;\n    height: 250px !important;\n}\nsection .u-img[data-v-3a435e4e] {\n    width: 100%;\n    height: 100% !important;\n}\n@media screen and (max-width: 768px) {\n.tile[data-v-3a435e4e]:not(.is-child) {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.tile.is-6[data-v-3a435e4e] {\n    -webkit-box-flex: 0;\n    -ms-flex: none;\n    flex: none;\n    width: 50%;\n}\n}\n", ""]);
 
 
 
@@ -4731,7 +4745,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n.top[data-v-5b38624f] {\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 1rem;\n  padding: 2% 1.5%;\n  margin: 0 0px;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5b38624f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5b38624f] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.column.is-one-third[data-v-5b38624f], .column.is-one-third-tablet[data-v-5b38624f] {\n  -webkit-box-flex: 0;\n  -ms-flex: none;\n  flex: none;\n  width: 31.3333%;\n}\n.column[data-v-5b38624f] {\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1%;\n  border-radius: 1%;\n}\n.top[data-v-5b38624f] {\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1% 1%;\n  background-color: #fff;\n  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n}\n.card-box[data-v-5b38624f] {\n  width: 80%;\n}\n.card[data-v-5b38624f] {\n  margin: 0 24px;\n}\n.card_image_container[data-v-5b38624f] {\n  position: relative;\n}\n.item[data-v-5b38624f] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5b38624f]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5b38624f]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5b38624f] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5b38624f] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5b38624f] {\n  color: white;\n}\n.card-body-school_name[data-v-5b38624f] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5b38624f] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5b38624f] {\n  color: #707070;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5b38624f] {\n    margin: 0 5%;\n}\n.container[data-v-5b38624f] {\n    display: block;\n}\n.column.is-one-third[data-v-5b38624f], .column.is-one-third-tablet[data-v-5b38624f] {\n    -webkit-box-flex: 0;\n    -ms-flex: none;\n    flex: none;\n    width: 100%;\n}\n.card[data-v-5b38624f] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
 
 
 
@@ -4753,7 +4767,7 @@ exports.push([module.i, "\n.section[data-v-5b96cafc] {\n  padding: 128px 24px;\n
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.container[data-v-5e0b4614] {\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.card[data-v-5e0b4614] {\n  margin: 0 8px;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  max-width: 1160px;\n  margin: 0 auto;\n  padding-top: 81px;\n}\n.title[data-v-5e0b4614] {\n  text-align: center;\n}\n.title h2[data-v-5e0b4614] {\n  font-size: 1.7rem;\n  font-weight: bolder;\n}\n.title span[data-v-5e0b4614] {\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(70%, #ffe035));\n  background: linear-gradient(transparent 80%, #ffe035 70%);\n}\n.container[data-v-5e0b4614] {\n  width: 100%;\n  margin: 0 auto;\n  max-width: 1160px;\n}\n.is-multiline[data-v-5e0b4614] {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n}\n.card-box[data-v-5e0b4614] {\n  background-color: #fff;\n  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);\n}\n.column[data-v-5e0b4614] {\n  padding: 0;\n  padding-bottom: 0.75rem;\n  margin: 1%;\n  border-radius: 1%;\n}\n.column.is-one-third[data-v-5e0b4614], .column.is-one-third-tablet[data-v-5e0b4614] {\n  -webkit-box-flex: 0;\n  -ms-flex: none;\n  flex: none;\n  width: 31.3333%;\n}\n.card_image_container[data-v-5e0b4614] {\n  position: relative;\n}\n.item[data-v-5e0b4614] {\n  position: relative;\n  overflow: hidden;\n  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);\n}\n.item[data-v-5e0b4614]:after {\n  /*基本的に画像に疑似要素は付けられないので包括するボックスに加える。*/\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  opacity: 0.5;\n  /*下に配置する画像が見えるよう、疑似要素は透過しておく*/\n}\n.item--first[data-v-5e0b4614]:after {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent), to(#212529));\n  background-image: linear-gradient(to bottom, transparent 0%, transparent 10%, #212529);\n}\n.school_msg[data-v-5e0b4614] {\n  position: absolute;\n  color: white;\n  top: 80%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  margin: 0;\n  padding: 0;\n}\n.school_name[data-v-5e0b4614] {\n  position: relative;\n  display: inline-block;\n  color: white;\n  border-bottom-style: solid;\n  border-bottom-color: #ffe035;\n  padding-bottom: 2%;\n  margin-bottom: 3em;\n  font-size: 0.5rem;\n}\n.school_message[data-v-5e0b4614] {\n  color: white;\n}\n.card-body-school_name[data-v-5e0b4614] {\n  margin: -5%;\n  /* border-bottom:dotted; \r\n    border-bottom-width: 10%; */\n}\n.detail[data-v-5e0b4614] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.card-text[data-v-5e0b4614] {\n  color: #707070;\n}\n.btn-box[data-v-5e0b4614] {\n  margin: 3% auto;\n  text-align: center;\n}\n.btn-add[data-v-5e0b4614] {\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  padding: 0;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.btn-add1[data-v-5e0b4614] {\n  background-color: #ffe035;\n  color: white;\n  border-radius: 1em;\n  width: 6.3em;\n  border-color: #ffe035;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  font-size: 1.3em;\n  font-weight: bold;\n  padding: 0.3%;\n}\n@media screen and (max-width: 768px) {\nsection[data-v-5e0b4614] {\n    margin: 0 5%;\n}\n.container[data-v-5e0b4614] {\n    display: block;\n}\n.column.is-one-third[data-v-5e0b4614], .column.is-one-third-tablet[data-v-5e0b4614] {\n    -webkit-box-flex: 0;\n    -ms-flex: none;\n    flex: none;\n    width: 100%;\n}\n.card[data-v-5e0b4614] {\n    width: 100%;\n    margin: 10% auto;\n}\n}\n", ""]);
 
 
 
@@ -4764,7 +4778,7 @@ exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5e0b4614] {\n  ma
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-5f0c731f] {\n    text-align: center;\n    background-color: #333333;\n}\nsection div h1[data-v-5f0c731f] {\n      font-size: 2rem;\n      font-weight: bolder;\n}\nsection div h2[data-v-5f0c731f] {\n      font-size: 1.7rem;\n      font-weight: bolder;\n}\nsection div .feature[data-v-5f0c731f] {\n      margin: 5% 0%;\n      padding: 5%;\n      background-color: #333333;\n}\nsection div .container_feature[data-v-5f0c731f] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\nsection div .container h2[data-v-5f0c731f] {\n      /* webcreatorbox.com\r\n    Webクリエイターボックス\r\n    WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。 */\n      position: relative;\n      display: inline-block;\n      margin-bottom: 2em;\n      color: white;\n}\nsection div .container h2[data-v-5f0c731f]:before {\n      content: \"\";\n      position: absolute;\n      bottom: -15px;\n      display: inline-block;\n      width: 2.5rem;\n      height: 0.2rem;\n      left: 50%;\n      -webkit-transform: translateX(-50%);\n      transform: translateX(-50%);\n      background-color: #ffe65d;\n      border-radius: 2px;\n}\nsection div .container h3[data-v-5f0c731f] {\n      font-size: 1rem;\n}\nsection div .container h4[data-v-5f0c731f] {\n      font-size: 0.8rem;\n}\nsection div .item[data-v-5f0c731f] {\n      margin-bottom: 1%;\n}\nsection div .item a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card[data-v-5f0c731f] {\n      width: 200px;\n      margin-right: 10px;\n      -webkit-box-shadow: none;\n      box-shadow: none;\n      background-color: #333333;\n}\nsection div .card-img[data-v-5f0c731f] {\n      border-radius: 0 0 0 0;\n      max-width: 100%;\n      height: auto;\n}\nsection div .card-content[data-v-5f0c731f] {\n      padding: 1px;\n}\nsection div h2 a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card-title[data-v-5f0c731f] {\n      text-decoration: none;\n      color: #ffffff;\n      font-size: 1rem;\n      text-align: left;\n}\nsection div .card-title a[data-v-5f0c731f] {\n      text-decoration: none;\n}\nsection div .card-text[data-v-5f0c731f] {\n      color: #777;\n      font-size: 14px;\n      line-height: 1.5;\n}\nsection div .card-link[data-v-5f0c731f] {\n      text-align: center;\n      border-top: 1px solid #eee;\n      padding: 20px;\n}\nsection div .card-link a[data-v-5f0c731f] {\n      text-decoration: none;\n      color: #ffffff;\n      margin: 0 10px;\n}\nsection div .card-link a[data-v-5f0c731f]:hover {\n      color: #0090aa;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\nsection[data-v-5f0c731f] {\n  max-width: 1160px;\n  margin: 0 auto;\n  margin-top: 40px;\n}\nsection div[data-v-5f0c731f] {\n    text-align: center;\n}\nsection div h1[data-v-5f0c731f] {\n      font-size: 2rem;\n      font-weight: bolder;\n}\nsection div h2[data-v-5f0c731f] {\n      font-size: 1.7rem;\n      font-weight: bolder;\n}\nsection .feature[data-v-5f0c731f] {\n    margin: 5% 0%;\n    padding: 5%;\n}\nsection .container_feature[data-v-5f0c731f] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\nsection .container h2[data-v-5f0c731f] {\n    /* webcreatorbox.com\r\n    Webクリエイターボックス\r\n    WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。 */\n    position: relative;\n    display: inline-block;\n    margin-bottom: 2em;\n    color: #333333;\n}\nsection .container h2[data-v-5f0c731f]:before {\n    content: \"\";\n    position: absolute;\n    bottom: -15px;\n    display: inline-block;\n    width: 2.5rem;\n    height: 0.2rem;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    transform: translateX(-50%);\n    background-color: #ffe65d;\n    border-radius: 2px;\n}\nsection .container h3[data-v-5f0c731f] {\n    font-size: 1rem;\n}\nsection .container h4[data-v-5f0c731f] {\n    font-size: 0.8rem;\n}\nsection .item[data-v-5f0c731f] {\n    margin-bottom: 1%;\n}\nsection .item a[data-v-5f0c731f] {\n    text-decoration: none;\n}\nsection .card[data-v-5f0c731f] {\n    width: 200px;\n    margin-right: 10px;\n    -webkit-box-shadow: none;\n    box-shadow: none;\n}\nsection .card-img[data-v-5f0c731f] {\n    border-radius: 0 0 0 0;\n    max-width: 100%;\n    height: auto;\n}\nsection .card-content[data-v-5f0c731f] {\n    padding: 1px;\n}\nsection h2 a[data-v-5f0c731f] {\n    text-decoration: none;\n}\nsection h2 span[data-v-5f0c731f] {\n    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(70%, #ffe035));\n    background: linear-gradient(transparent 80%, #ffe035 70%);\n}\nsection .card-title[data-v-5f0c731f] {\n    text-decoration: none;\n    color: #333333;\n    font-size: 1rem;\n    text-align: left;\n}\nsection .card-title a[data-v-5f0c731f] {\n    text-decoration: none;\n}\nsection .card-text[data-v-5f0c731f] {\n    color: #777;\n    font-size: 14px;\n    line-height: 1.5;\n}\nsection .card-link[data-v-5f0c731f] {\n    text-align: center;\n    border-top: 1px solid #eee;\n    padding: 20px;\n}\nsection .card-link a[data-v-5f0c731f] {\n    text-decoration: none;\n    color: #ffffff;\n    margin: 0 10px;\n}\nsection .card-link a[data-v-5f0c731f]:hover {\n    color: #0090aa;\n}\n", ""]);
 
 
 
@@ -32859,114 +32873,116 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [
-    _c("div", { staticClass: "tile is-ancestor" }, [
-      _c("div", { staticClass: "tile is-parent parent-frame" }, [
-        _c("div", { staticClass: "tile is-child" }, [
+  return _vm.isStatus
+    ? _c(
+        "section",
+        [
           _c(
-            "a",
-            {
-              on: {
-                click: function($event) {
-                  return _vm.routerPush({
-                    name: "DetailSchool",
-                    params: { id: _vm.schools[0].id }
-                  })
-                }
-              }
-            },
+            "swiper",
+            { attrs: { options: _vm.swiperOption } },
             [
-              _c("img", {
-                staticClass: "u-img",
-                attrs: { src: _vm.Homeimg1, alt: "#" }
-              })
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tile is-parent parent-frame" }, [
-        _c("div", { staticClass: "tile is-child is-vertical" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent upper-frame" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "tile is-child is-6 grandson-frame",
-                  staticStyle: { "margin-bottom": "0" }
-                },
-                [
-                  _c(
-                    "a",
-                    {
-                      on: {
-                        click: function($event) {
-                          return _vm.routerPush({
-                            name: "DetailSchool",
-                            params: { id: _vm.schools[1].id }
-                          })
-                        }
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "u-img",
-                        attrs: { src: _vm.Homeimg2, alt: "" }
-                      })
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "tileis-child is-6" }, [
-                _c(
-                  "a",
-                  {
-                    on: {
-                      click: function($event) {
-                        return _vm.routerPush({
-                          name: "DetailSchool",
-                          params: { id: _vm.schools[2].id }
-                        })
-                      }
-                    }
-                  },
+              _vm._l(_vm.schools, function(school) {
+                return _c(
+                  "swiper-slide",
+                  { key: school.id, staticClass: "item" },
                   [
-                    _c("img", {
-                      staticClass: "u-img",
-                      attrs: { src: _vm.Homeimg3, alt: "#" }
-                    })
+                    _c(
+                      "a",
+                      {
+                        on: {
+                          click: function($event) {
+                            return _vm.routerPush({
+                              name: "DetailSchool",
+                              params: { id: school.id }
+                            })
+                          }
+                        }
+                      },
+                      [
+                        _c("section", { staticClass: "card" }, [
+                          _c(
+                            "div",
+                            {
+                              staticStyle: { position: "relative" },
+                              attrs: { calss: "card_image_container" }
+                            },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "card-image item item--first" },
+                                [
+                                  _c(
+                                    "figure",
+                                    { staticClass: "image is-4by3" },
+                                    [
+                                      _c("img", {
+                                        staticClass: "card-img-top",
+                                        attrs: {
+                                          src: school.school_img,
+                                          alt: "Placeholder image"
+                                        }
+                                      })
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "school_msg has-text-centered" },
+                                [
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass:
+                                        "title is-7 is-size-7-mobile school_name"
+                                    },
+                                    [_vm._v(_vm._s(school.school_name))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass:
+                                        "subtitle is-6 is-size-7-mobile school_message"
+                                    },
+                                    [_vm._v(_vm._s(school.sub_title1))]
+                                  )
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      ]
+                    )
                   ]
                 )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "tile child-flame" }, [
-            _c(
-              "a",
-              {
-                on: {
-                  click: function($event) {
-                    return _vm.routerPush({
-                      name: "DetailSchool",
-                      params: { id: _vm.schools[3].id }
-                    })
-                  }
-                }
-              },
-              [
-                _c("img", {
-                  staticClass: "u-img",
-                  attrs: { src: _vm.Homeimg4, alt: "#" }
-                })
-              ]
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "swiper-pagination",
+                attrs: { slot: "pagination" },
+                slot: "pagination"
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "swiper-button-prev",
+                attrs: { slot: "button-prev" },
+                slot: "button-prev"
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "swiper-button-next",
+                attrs: { slot: "button-next" },
+                slot: "button-next"
+              })
+            ],
+            2
+          )
+        ],
+        1
+      )
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -33396,6 +33412,8 @@ var render = function() {
   return _c(
     "section",
     [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "container columns is-multiline" },
@@ -33526,7 +33544,16 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "title" }, [
+      _c("h2", [_c("span", [_vm._v("活動内容")])])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -33551,7 +33578,7 @@ var render = function() {
           "div",
           { staticClass: "feature", attrs: { id: "app" } },
           [
-            _c("h2", [_vm._v("参加学校")]),
+            _vm._m(0),
             _vm._v(" "),
             _c(
               "swiper",
@@ -33625,7 +33652,14 @@ var render = function() {
       ])
     : _vm._e()
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", [_c("span", [_vm._v("参加学校")])])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

@@ -1,5 +1,8 @@
 <template>
   <section>
+    <div class="title">      
+      <h2><span>活動内容</span></h2>
+    </div>
     <div class="container columns is-multiline">
       <!-- <div class="container flex-flame columns"> -->
       <!-- <div v-for="item in fetchAllData" :key="item.id" class>
@@ -254,9 +257,28 @@ section {
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 81px;
+  
 }
+// section:hover {
+//   background: rgba(250, 250, 250, 0.5);
+//   cursor: pointer;
+//   transition: 0.3s;
+// }
+.title{
+  text-align: center;
+}
+.title h2 {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  }
+.title span {
+  background: linear-gradient(transparent 80%, #ffe035 70%);
+  }
+
+
 .container {
   // display: flex;
+  width: 100%;
   margin: 0 auto;
   max-width: 1160px;
 }
@@ -265,13 +287,29 @@ section {
   flex-wrap: wrap;
 }
 
+
 .card-box {
-  // width: 80%;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+}
+
+.column{
+  padding: 0;
+  padding-bottom: 0.75rem;
+  margin: 1%;
+  border-radius: 1%;
+}
+
+.column.is-one-third, .column.is-one-third-tablet {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 31.3333%;
 }
 
 .card {
   // margin: 0 24px;
-  margin: 0 8px;
+  // margin: 0 8px;
   // width: 30%;
 }
 .card_image_container {
@@ -378,6 +416,13 @@ section {
 
   .container {
     display: block;
+  }
+
+  .column.is-one-third, .column.is-one-third-tablet {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: 100%;
   }
 
   .card {

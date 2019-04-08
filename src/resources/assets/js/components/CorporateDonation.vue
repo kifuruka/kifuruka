@@ -58,7 +58,9 @@ section {
         margin-left: 16px;
       }
     }
+
   }
+
   @media screen and (max-width: 768px) {
     .container {
       div {

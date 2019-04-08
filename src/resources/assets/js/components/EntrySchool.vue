@@ -1,7 +1,7 @@
 <template>
   <section v-if="isStatus">
     <div class="feature" id="app">
-      <h2>参加学校</h2>
+      <h2><span>参加学校</span></h2>
       <!-- <carousel class="container_feature" v-bind:per-page="4"> -->
       <swiper :options="swiperOption">
         <!-- TODO: ランダムに表示したい -->
@@ -47,6 +47,7 @@ export default {
       swiperOption: {
         slidesPerView: 4,
         spaceBetween: 30,
+        // centeredSlides: true,
         freeMode: true,
         pagination: {
           el: ".swiper-pagination",
@@ -97,7 +98,7 @@ section {
 
   div {
     text-align: center;
-    background-color: #333333;
+    // background-color: #333333;
 
     h1 {
       font-size: 2rem;
@@ -107,10 +108,12 @@ section {
       font-size: 1.7rem;
       font-weight: bolder;
     }
+  }
+
     .feature {
       margin: 5% 0%;
       padding: 5%;
-      background-color: #333333;
+      // background-color: #333333;
     }
     .container_feature {
       display: flex;
@@ -125,7 +128,7 @@ section {
       position: relative;
       display: inline-block;
       margin-bottom: 2em;
-      color: white;
+      color: #333333;
     }
 
     .container h2:before {
@@ -162,7 +165,7 @@ section {
       margin-right: 10px;
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #333333;
+      // background-color: #333333;
     }
     .card-img {
       border-radius: 0 0 0 0;
@@ -176,9 +179,12 @@ section {
     h2 a {
       text-decoration: none;
     }
+    h2 span {
+      background: linear-gradient(transparent 80%, #ffe035 70%);
+    }
     .card-title {
       text-decoration: none;
-      color: #ffffff;
+      color: #333333;
       font-size: 1rem;
       text-align: left;
     }
@@ -204,5 +210,5 @@ section {
       color: #0090aa;
     }
   }
-}
+
 </style>
