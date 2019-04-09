@@ -226,6 +226,7 @@ section {
 
     div {
       .child-right-flame {
+        display: none;
         padding: 32px;
 
         .card-margin {

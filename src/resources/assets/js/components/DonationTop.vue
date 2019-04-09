@@ -9,13 +9,14 @@
           <!-- 左側 -->
           <div class="tile is-child is-8 child-flame">
             <div class="donaition-img-flame">
-              <img :src="activity.activitie_img" class="u-img" alt="#">
+              <img :src="activity.activity_img" class="u-img" alt="#">
             </div>
             <div class="donaition-text-flame">
-              <h1>{{activity.activitie_name}}</h1>
+              <h1>{{activity.activity_name}}</h1>
               <p>{{activity.top_contents}}</p>
             </div>
           </div>
+
           <!-- 右側 -->
           <div class="tile is-child is-4 child-right-flame">
             <div class="top-right-flame">
@@ -47,9 +48,9 @@
 
               <div class="web-link-flame">
                 <p class="top-title">公式WEBサイト</p>
-                <a v-bind:href="activity.school.url">https://kindai-rugby.jp/</a>
+                <a v-bind:href="activity.school.url"></a>
               </div>
-              <div class="sns-link-flame">
+              <!-- <div class="sns-link-flame">
                 <div class="media-content btn-flame">
                   <a class="button is-medium fb-btn">
                     <strong>Facebookでシェア</strong>
@@ -67,7 +68,7 @@
                     <strong>LINEでシェア</strong>
                   </a>
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -133,6 +134,17 @@ section {
       margin-top: 32px;
     }
   }
+
+  .tile.is-4 {
+      flex: none;
+      width: 33.3333333333%;
+      position: fixed;
+      top: 10%;
+      right: 1%;
+      /* margin: 0; */
+  }
+
+
   .top-right-flame {
     margin-top: 32px;
     // background-color: aqua;

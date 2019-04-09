@@ -2736,6 +2736,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
 
 
 
@@ -3876,6 +3877,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         spaceBetween: 0,
         // centeredSlides: true,
         freeMode: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true
@@ -4899,7 +4904,7 @@ exports.push([module.i, "\nsection[data-v-8d3e665e] {\n  margin-bottom: 80px;\n 
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n    max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n      padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n        margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n    font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n    text-align: center;\n    font-size: 1.6rem;\n    margin-top: 16px;\n    color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n    margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n      background-color: #db6b6b;\n      border-color: #db6b6b;\n      color: white;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-8e3066bc] {\n  margin-top: 80px;\n  margin: 80px 5% 0 5%;\n}\nsection .container[data-v-8e3066bc] {\n    max-width: 1160px;\n}\nsection .container div .child-right-flame[data-v-8e3066bc] {\n      display: none;\n      padding: 32px;\n}\nsection .container div .child-right-flame .card-margin[data-v-8e3066bc] {\n        margin-bottom: 32px;\n}\n.u-img[data-v-8e3066bc] {\n  width: 100%;\n  height: 100% !important;\n}\n.custom-btn[data-v-8e3066bc] {\n  background-color: #ffe035;\n  color: #333333;\n  border-radius: 0;\n  width: 100%;\n  border-color: #ffe035;\n}\n.card-flame[data-v-8e3066bc] {\n  margin-top: 16px;\n}\n.child-flame .content-flame[data-v-8e3066bc] {\n  margin-bottom: 100px;\n}\n.child-flame .content-flame h1[data-v-8e3066bc] {\n    font-size: 2rem;\n}\n.child-flame .content-flame .donaition-text-flame[data-v-8e3066bc] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\n.child-flame .content-flame .donaition-img-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n}\n.company-card[data-v-8e3066bc] {\n  background-color: #828282;\n}\n.company-card p[data-v-8e3066bc] {\n    text-align: center;\n    font-size: 1.6rem;\n    margin-top: 16px;\n    color: white;\n}\n.company-card .company-btn-flame[data-v-8e3066bc] {\n    margin-top: 32px;\n    margin-bottom: 32px;\n}\n.company-card .company-btn-flame .custom-btn[data-v-8e3066bc] {\n      background-color: #db6b6b;\n      border-color: #db6b6b;\n      color: white;\n}\n", ""]);
 
 
 
@@ -4910,7 +4915,7 @@ exports.push([module.i, "\nsection[data-v-8e3066bc] {\n  margin-top: 80px;\n  ma
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-9d156b08] {\n  padding-top: 63px;\n  background-color: #fffdf3;\n}\nsection .container[data-v-9d156b08] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-9d156b08] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-9d156b08] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-9d156b08] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame p[data-v-9d156b08] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-9d156b08] {\n    margin-top: 32px;\n}\nsection .top-right-flame[data-v-9d156b08] {\n    margin-top: 32px;\n    padding: 16px;\n}\nsection .top-right-flame .top-title[data-v-9d156b08] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.btn-flame[data-v-9d156b08] {\n  text-align: center;\n  margin-top: 24px;\n}\n.btn-flame .custom-btn[data-v-9d156b08] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.web-link-flame[data-v-9d156b08] {\n  margin-top: 16px;\n}\n.web-link-flame a[data-v-9d156b08] {\n    font-size: 1.2rem;\n    padding: 8px;\n}\n.sns-link-flame[data-v-9d156b08] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08],\n  .sns-link-flame .tw-btn[data-v-9d156b08],\n  .sns-link-flame .li-btn[data-v-9d156b08] {\n    color: white;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1rem;\n    width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08] {\n    border-color: #3b5998;\n    background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-9d156b08] {\n    border-color: #55acee;\n    background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-9d156b08] {\n    border-color: #00b900;\n    background-color: #00b900;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-9d156b08] {\n  padding-top: 63px;\n  background-color: #fffdf3;\n}\nsection .container[data-v-9d156b08] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-9d156b08] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-9d156b08] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-9d156b08] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame p[data-v-9d156b08] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-9d156b08] {\n    margin-top: 32px;\n}\nsection .tile.is-4[data-v-9d156b08] {\n    -webkit-box-flex: 0;\n        -ms-flex: none;\n            flex: none;\n    width: 33.3333333333%;\n    position: fixed;\n    top: 10%;\n    right: 1%;\n    /* margin: 0; */\n}\nsection .top-right-flame[data-v-9d156b08] {\n    margin-top: 32px;\n    padding: 16px;\n}\nsection .top-right-flame .top-title[data-v-9d156b08] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.btn-flame[data-v-9d156b08] {\n  text-align: center;\n  margin-top: 24px;\n}\n.btn-flame .custom-btn[data-v-9d156b08] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.web-link-flame[data-v-9d156b08] {\n  margin-top: 16px;\n}\n.web-link-flame a[data-v-9d156b08] {\n    font-size: 1.2rem;\n    padding: 8px;\n}\n.sns-link-flame[data-v-9d156b08] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08],\n  .sns-link-flame .tw-btn[data-v-9d156b08],\n  .sns-link-flame .li-btn[data-v-9d156b08] {\n    color: white;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1rem;\n    width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08] {\n    border-color: #3b5998;\n    background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-9d156b08] {\n    border-color: #55acee;\n    background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-9d156b08] {\n    border-color: #00b900;\n    background-color: #00b900;\n}\n", ""]);
 
 
 
@@ -33060,13 +33065,7 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "allstyle" },
-    [
-      _c("donation-top"),
-      _vm._v(" "),
-      _c("donation-main"),
-      _vm._v(" "),
-      _c("school-sub-info")
-    ],
+    [_c("donation-top"), _vm._v(" "), _c("donation-main")],
     1
   )
 }
@@ -35071,12 +35070,12 @@ var render = function() {
                 _c("div", { staticClass: "donaition-img-flame" }, [
                   _c("img", {
                     staticClass: "u-img",
-                    attrs: { src: _vm.activity.activitie_img, alt: "#" }
+                    attrs: { src: _vm.activity.activity_img, alt: "#" }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "donaition-text-flame" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.activity.activitie_name))]),
+                  _c("h1", [_vm._v(_vm._s(_vm.activity.activity_name))]),
                   _vm._v(" "),
                   _c("p", [_vm._v(_vm._s(_vm.activity.top_contents))])
                 ])
@@ -35138,12 +35137,8 @@ var render = function() {
                         _vm._v("公式WEBサイト")
                       ]),
                       _vm._v(" "),
-                      _c("a", { attrs: { href: _vm.activity.school.url } }, [
-                        _vm._v("https://kindai-rugby.jp/")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1)
+                      _c("a", { attrs: { href: _vm.activity.school.url } })
+                    ])
                   ])
                 ]
               )
@@ -35165,30 +35160,6 @@ var staticRenderFns = [
         _vm._v("\n                あと\n                "),
         _c("span", { staticClass: "top-contents-data" }, [_vm._v("244")]),
         _vm._v("日\n              ")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sns-link-flame" }, [
-      _c("div", { staticClass: "media-content btn-flame" }, [
-        _c("a", { staticClass: "button is-medium fb-btn" }, [
-          _c("strong", [_vm._v("Facebookでシェア")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "media-content btn-flame" }, [
-        _c("a", { staticClass: "button is-medium tw-btn" }, [
-          _c("strong", [_vm._v("Twitterでシェア")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "media-content btn-flame" }, [
-        _c("a", { staticClass: "button is-medium li-btn" }, [
-          _c("strong", [_vm._v("LINEでシェア")])
-        ])
       ])
     ])
   }

@@ -2,7 +2,7 @@
   <div class="allstyle">
     <donation-top/>
     <donation-main/>
-    <school-sub-info/>
+    <!-- <school-sub-info/> -->
   </div>
 </template>
 
