@@ -2737,6 +2737,38 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4915,7 +4947,7 @@ exports.push([module.i, "\nsection[data-v-8e3066bc] {\n  margin-top: 80px;\n  ma
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\nsection[data-v-9d156b08] {\n  padding-top: 63px;\n  background-color: #fffdf3;\n}\nsection .container[data-v-9d156b08] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-9d156b08] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-9d156b08] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-9d156b08] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame p[data-v-9d156b08] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-9d156b08] {\n    margin-top: 32px;\n}\nsection .tile.is-4[data-v-9d156b08] {\n    -webkit-box-flex: 0;\n        -ms-flex: none;\n            flex: none;\n    width: 33.3333333333%;\n    position: fixed;\n    top: 10%;\n    right: 1%;\n    /* margin: 0; */\n}\nsection .top-right-flame[data-v-9d156b08] {\n    margin-top: 32px;\n    padding: 16px;\n}\nsection .top-right-flame .top-title[data-v-9d156b08] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.btn-flame[data-v-9d156b08] {\n  text-align: center;\n  margin-top: 24px;\n}\n.btn-flame .custom-btn[data-v-9d156b08] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.web-link-flame[data-v-9d156b08] {\n  margin-top: 16px;\n}\n.web-link-flame a[data-v-9d156b08] {\n    font-size: 1.2rem;\n    padding: 8px;\n}\n.sns-link-flame[data-v-9d156b08] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08],\n  .sns-link-flame .tw-btn[data-v-9d156b08],\n  .sns-link-flame .li-btn[data-v-9d156b08] {\n    color: white;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1rem;\n    width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08] {\n    border-color: #3b5998;\n    background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-9d156b08] {\n    border-color: #55acee;\n    background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-9d156b08] {\n    border-color: #00b900;\n    background-color: #00b900;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-9d156b08] {\n  padding-top: 63px;\n  background-color: #fffdf3;\n}\nsection .container[data-v-9d156b08] {\n    max-width: 1160px;\n}\nsection .container .donation-title[data-v-9d156b08] {\n      margin-top: 32px;\n}\nsection .container .donation-title h1[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 2rem;\n}\nsection .child-flame .donaition-text-flame[data-v-9d156b08] {\n    margin-top: 16px;\n    font-size: 1.3rem;\n}\nsection .child-flame .donaition-text-flame h1[data-v-9d156b08] {\n      font-size: 2rem;\n      font-weight: bold;\n      padding-bottom: 24px;\n}\nsection .child-flame .donaition-text-flame p[data-v-9d156b08] {\n      padding-bottom: 32px;\n}\nsection .child-flame .donaition-img-flame[data-v-9d156b08] {\n    margin-top: 32px;\n}\nsection .tile.is-4[data-v-9d156b08] {\n    -webkit-box-flex: 0;\n        -ms-flex: none;\n            flex: none;\n    width: 33.3333333333%;\n    position: fixed;\n    top: 10%;\n    right: 1%;\n    /* margin: 0; */\n}\nsection .top-right-flame[data-v-9d156b08] {\n    margin-top: 32px;\n    padding: 16px;\n}\nsection .top-right-flame .top-title[data-v-9d156b08] {\n      font-size: 1.6rem;\n}\nsection .top-right-flame .top-contents[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 3rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle[data-v-9d156b08] {\n      font-weight: bold;\n      font-size: 1.8rem;\n      text-align: right;\n}\nsection .top-right-flame .top-subtitle .top-contents-data[data-v-9d156b08] {\n        font-weight: bold;\n        font-size: 3rem;\n}\n.btn-flame[data-v-9d156b08] {\n  text-align: center;\n  margin-top: 24px;\n}\n.btn-flame .custom-btn[data-v-9d156b08] {\n    background-color: #ffe035;\n    color: #333333;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1.6rem;\n    width: 100%;\n    border-color: #ffe035;\n}\n.web-link-flame[data-v-9d156b08] {\n  margin-top: 16px;\n}\n.web-link-flame a[data-v-9d156b08] {\n    font-size: 1.2rem;\n    padding: 8px;\n}\n.sns-link-flame[data-v-9d156b08] {\n  margin-top: 40px;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08],\n  .sns-link-flame .tw-btn[data-v-9d156b08],\n  .sns-link-flame .li-btn[data-v-9d156b08] {\n    color: white;\n    height: 4rem;\n    font-weight: bold;\n    font-size: 1rem;\n    width: 90%;\n}\n.sns-link-flame .fb-btn[data-v-9d156b08] {\n    border-color: #3b5998;\n    background-color: #3b5998;\n}\n.sns-link-flame .tw-btn[data-v-9d156b08] {\n    border-color: #55acee;\n    background-color: #55acee;\n}\n.sns-link-flame .li-btn[data-v-9d156b08] {\n    border-color: #00b900;\n    background-color: #00b900;\n}\n.detail[data-v-9d156b08] {\n  padding: -0.5rem;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n@media screen and (max-width: 768px) {\n.tile.is-4[data-v-9d156b08] {\n    display: none;\n}\n.child-right-flame-sp[data-v-9d156b08] {\n    display: block;\n    z-index: 1;\n    background-color: #fff;\n    width: 100%;\n    position: fixed;\n    bottom: 0%;\n    /* margin: 0; */\n}\n}\n", ""]);
 
 
 
@@ -35143,6 +35175,62 @@ var render = function() {
                 ]
               )
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "child-right-flame-sp" }, [
+            _c("div", { staticClass: "columns detail" }, [
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass: "card-text col has-text-centered",
+                    staticStyle: { "font-size": "0.9rem" }
+                  },
+                  [
+                    _vm._v("\n            寄付金額\n            "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("strong", [
+                      _vm._v(_vm._s(_vm.activity.total_donation) + "円")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "p",
+                  {
+                    staticClass: "card-text col has-text-centered",
+                    staticStyle: { "font-size": "0.9rem" }
+                  },
+                  [
+                    _vm._v("\n            応募数\n            "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("strong", [_vm._v(_vm._s(_vm.activity.fans) + "人")])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "media-content btn-flame" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "button is-medium custom-btn",
+                    attrs: { to: "/" }
+                  },
+                  [_c("strong", [_vm._v("この活動を応援")])]
+                )
+              ],
+              1
+            )
           ])
         ])
       ])
@@ -35161,6 +35249,26 @@ var staticRenderFns = [
         _c("span", { staticClass: "top-contents-data" }, [_vm._v("244")]),
         _vm._v("日\n              ")
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column" }, [
+      _c(
+        "p",
+        {
+          staticClass: "card-text col has-text-centered",
+          staticStyle: { "font-size": "0.9rem" }
+        },
+        [
+          _vm._v("\n            残り\n            "),
+          _c("br"),
+          _vm._v(" "),
+          _c("strong", [_vm._v("244日")])
+        ]
+      )
     ])
   }
 ]

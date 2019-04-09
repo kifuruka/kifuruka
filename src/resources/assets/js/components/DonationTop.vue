@@ -50,6 +50,7 @@
                 <p class="top-title">公式WEBサイト</p>
                 <a v-bind:href="activity.school.url"></a>
               </div>
+
               <!-- <div class="sns-link-flame">
                 <div class="media-content btn-flame">
                   <a class="button is-medium fb-btn">
@@ -73,6 +74,37 @@
           </div>
         </div>
       </div>
+      <div class="child-right-flame-sp" >
+        <div class="columns detail">
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              寄付金額
+              <br>
+              <strong>{{activity.total_donation}}円</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              応募数
+              <br>
+              <strong>{{activity.fans}}人</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p class="card-text col has-text-centered" style="font-size:0.9rem">
+              残り
+              <br>
+              <strong>244日</strong>
+            </p>
+          </div>
+        </div>
+        <div class="media-content btn-flame">
+          <router-link to="/" class="button is-medium custom-btn">
+            <strong>この活動を応援</strong>
+          </router-link>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
@@ -218,5 +250,32 @@ section {
     border-color: #00b900;
     background-color: #00b900;
   }
+
+
+
+
+}
+
+.detail {
+  padding: -0.5rem;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+  .tile.is-4 {
+      display: none;
+  }
+  .child-right-flame-sp {
+      display: block;
+      z-index: 1;
+      background-color: #fff;
+      width: 100%;
+      position: fixed;
+      bottom: 0%;
+      // right: 1%;
+      /* margin: 0; */
+  }
+
 }
 </style>
